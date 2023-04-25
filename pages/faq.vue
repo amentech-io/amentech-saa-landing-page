@@ -4,7 +4,7 @@
       <!-- <TheNav type="amenauto" /> -->
       <!-- <faqHero /> -->
       <div class="absolute inset-0 bg-[#14292C] -z-10">
-        <img class="absolute h-full w-full object-cover" src="/pattern2.svg">
+        <!-- <img class="absolute h-full w-full object-cover" src="/pattern2.svg"> -->
       </div>
     </div>
     <div>
