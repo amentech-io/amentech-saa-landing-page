@@ -37,7 +37,7 @@ const cards = [
           >
             <div class="relative">
               <img v-if="idx === 0" class="absolute -right-4 -top-4 lg:top-1/4 lg:scale-200 lg:-left-30 lg:-rotate-110" src="../public/red-arrow.svg" alt="arrow">
-              <img v-if="idx === 1" class="absolute -right-4 -top-13 lg-top-auto lg:bottom-0 lg:rotate-230 lg:scale-110" src="../public/black-arrow.svg" alt="arrow">
+              <img v-if="idx === 1" class="absolute -right-4 -top-13 2xl:bottom-20 lg-top-auto lg:bottom-10 lg:rotate-230 lg:scale-110" src="../public/black-arrow.svg" alt="arrow">
               <img
                 class="mt-5 h-full w-full object-contain lg:mt-0"
                 :src="i.img"
