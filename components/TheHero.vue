@@ -48,7 +48,7 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
 
 <style>
 .intelligente {
-  background: url("/underline-decorator.svg") no-repeat bottom;
+  background: url("/underline-decorator.svg") no-repeat bottom / contain;
 }
 </style>
 

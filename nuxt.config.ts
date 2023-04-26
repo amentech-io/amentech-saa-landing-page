@@ -8,9 +8,6 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     // '@nuxt/image-edge',
   ],
-  experimental: {
-    reactivityTransform: true,
-  },
   unocss: {
     preflight: true,
   },
