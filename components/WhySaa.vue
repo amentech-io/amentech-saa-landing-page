@@ -19,7 +19,7 @@ const cards = [
       <div class="mt-8 flex flex-col gap-8 lg:mt-43 lg:gap-90">
         <div
           v-for="i, idx in cards" :key="idx"
-          class="relative rounded-7 lg:flex lg:items-center lg:bg-white lg:shadow-[0px_4px_25px_0px_#181B3412]"
+          class="relative rounded-7 lg:flex lg:items-center lg:justify-between lg:bg-white lg:shadow-[0px_4px_25px_0px_#181B3412]"
           :class=" idx === 1 && 'flex-row-reverse'"
         >
           <div class="lg:max-w-1/2 lg:px-22 lg:py-17">
@@ -31,10 +31,7 @@ const cards = [
             </p>
           </div>
 
-          <div
-            class="max-w-100 2xl:absolute lg:h-[130%] md:max-w-none 2xl:p-0 md:p-17"
-            :class="idx === 1 ? 'left-0 2xl:translate-y-10' : 'right-0'"
-          >
+          <div class="2xl:my--20 2xl:px-0 2xl:py-0 lg:px-22 lg:py-17">
             <div class="relative">
               <img v-if="idx === 0" class="absolute -right-4 -top-4 lg:top-1/4 lg:scale-200 lg:-left-30 lg:-rotate-110" src="/red-arrow.svg" alt="arrow">
               <img v-if="idx === 1" class="absolute -right-4 -top-13 2xl:bottom-20 lg-top-auto lg:bottom-10 lg:rotate-230 lg:scale-110" src="/black-arrow.svg" alt="arrow">
