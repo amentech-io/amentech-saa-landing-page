@@ -32,8 +32,8 @@ const cards = [
           </div>
 
           <div
-            class="max-w-100 2xl:absolute lg:h-[130%] md:max-w-none 2xl:p-0 md:p-6 2xl:-translate-y-1/30"
-            :class="idx === 1 ? 'left-0' : 'right-0'"
+            class="max-w-100 2xl:absolute lg:h-[130%] md:max-w-none 2xl:p-0 md:p-6"
+            :class="idx === 1 ? 'left-0 2xl:translate-y-10' : 'right-0'"
           >
             <div class="relative">
               <img v-if="idx === 0" class="absolute -right-4 -top-4 lg:top-1/4 lg:scale-200 lg:-left-30 lg:-rotate-110" src="/red-arrow.svg" alt="arrow">
@@ -64,6 +64,6 @@ fr:
     title: Une transparence totale sur vos garanties et le coût de votre assurance.
     subtitle: Nous sommes convaincus que l'assurance ne doit plus être un sujet opaque. Avec SAA, tout est enfin clair et transparent. Fini les mauvaises surprises, nous vous aidons à comprendre très simplement vos garanties et le coût de votre assurance. C'est vous qui choisissez ce que vous couvrez ou ne couvrez pas.
   item2:
-    title: Une transparence totale sur vos garanties et le coût de votre assurance.
-    subtitle: Nous sommes convaincus que l'assurance ne doit plus être un sujet opaque. Avec SAA, tout est enfin clair et transparent. Fini les mauvaises surprises, nous vous aidons à comprendre très simplement vos garanties et le coût de votre assurance. C'est vous qui choisissez ce que vous couvrez ou ne couvrez pas.
+    title: Votre prix en 2 min, et souscription en 10 min
+    subtitle: Changer d'assurance ne devrait faire peur à personne. Notre solution 100% digitale vous permet de souscrire en quelques minutes, sans papiers ni rendez-vous avec votre banquier. Nous vous guidons étape par étape, jusqu'à la signature électronique de votre contrat. Ensuite, nos équipes s'occupent de résilier votre ancien contrat et de gérer la transition d'assurance. Tout simplement.
 </i18n>
