@@ -56,7 +56,7 @@ const cards = [
 
 <i18n lang="yaml">
 fr:
-  title: Pourquoi l’assurance <span class="underline-decorator">digitale SAA<span>
+  title: Pourquoi l’assurance <span class="underline-decorator">digitale SAA</span>
   item1:
     title: Une transparence totale sur vos garanties et le coût de votre assurance.
     subtitle: Nous sommes convaincus que l'assurance ne doit plus être un sujet opaque. Avec SAA, tout est enfin clair et transparent. Fini les mauvaises surprises, nous vous aidons à comprendre très simplement vos garanties et le coût de votre assurance. C'est vous qui choisissez ce que vous couvrez ou ne couvrez pas.
