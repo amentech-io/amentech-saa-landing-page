@@ -32,7 +32,7 @@ const cards = [
           </div>
 
           <div
-            class="max-w-100 2xl:absolute lg:h-[130%] md:max-w-none 2xl:p-0 md:p-6"
+            class="max-w-100 2xl:absolute lg:h-[130%] md:max-w-none 2xl:p-0 md:p-17"
             :class="idx === 1 ? 'left-0 2xl:translate-y-10' : 'right-0'"
           >
             <div class="relative">
