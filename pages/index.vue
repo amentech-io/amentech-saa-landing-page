@@ -9,14 +9,14 @@
       />
     </div>
     <div>
-      <Suspense>
         <WhySaa />
-        <!-- <TheServices /> -->
+          <SaaFeatures />
         <!-- <TheStartup /> -->
         <!-- <TheSolutions /> -->
         <!-- <TheValues /> -->
         <!-- <TheContactUs /> -->
         <!-- <TheFooter /> -->
+      <Suspense>
         <template #fallback>
           <div class="italic op50">
             <span class="animate-pulse">Loading...</span>
