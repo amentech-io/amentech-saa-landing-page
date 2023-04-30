@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { Disclosure, DisclosureButton, DisclosurePanel, TransitionRoot } from '@headlessui/vue'
+import { TransitionRoot } from '@headlessui/vue'
+
 defineProps<{ isActive: boolean }>()
 const localePath = useLocalePath()
-
-const route = useRoute()
 </script>
 
 <template>

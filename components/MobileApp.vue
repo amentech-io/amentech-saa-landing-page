@@ -26,8 +26,6 @@ const itemSelected = ref(0)
 
 function selectItem(idx: number) {
   itemSelected.value = idx
-  console.log('idx', idx)
-  console.log('itemSelected', itemSelected.value)
 }
 </script>
 
@@ -62,8 +60,8 @@ function selectItem(idx: number) {
             :class="idx !== itemSelected && 'lg:hidden'"
             class="relative grid place-content-center lg:row-span-4 lg:col-start-2 lg:row-start-1 lg:h-50rem"
           >
-            <img class="z-10 aspect-1 lg:aspect-auto w-full object-contain" :src="`/mobile-app-${idx + 1}.png`" alt="mobile app">
-            <div class="absolute right-1/2 top-1/2 aspect-1 w-2/3 translate-x-1/2 rounded-full bg-[#BEBBD1]/40 blur-2xl -translate-y-1/2" > </div>
+            <img class="z-10 aspect-1 w-full object-contain lg:aspect-auto" :src="`/mobile-app-${idx + 1}.png`" alt="mobile app">
+            <div class="absolute right-1/2 top-1/2 aspect-1 w-2/3 translate-x-1/2 rounded-full bg-[#BEBBD1]/40 blur-2xl -translate-y-1/2" />
           </div>
         </template>
       </div>

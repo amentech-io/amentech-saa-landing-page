@@ -30,7 +30,7 @@ const cards = [
         <span v-html="t('title')" />
       </h3>
 
-      <div class="mb-8 ml-6 mt-5 pr-6 flex snap-x gap-4 of-x-auto of-y-hidden py-4 pl-1/5 lg:mt-22 lg:justify-center lg:gap-5 2xl:pl-0">
+      <div class="mb-8 ml-6 mt-5 flex snap-x gap-4 of-x-auto of-y-hidden py-4 pl-1/5 pr-6 lg:mt-22 lg:justify-center lg:gap-5 2xl:pl-0">
         <div
           v-for="card, idx in cards" :key="idx"
           class="flex-none snap-start rounded-8 bg-[#F8F8FA] px-5 py-4 shadow-md hover:bg-[#C4CEEF] lg:px-8 lg:py-6"

@@ -1,11 +1,10 @@
 <script setup lang="ts">
-const { t } = useI18n()
 const head = useLocaleHead({ addSeoAttributes: true })
 </script>
 
 <template>
   <div>
-    <Html :lang="head.htmlAttrs.lang">
+    <Html :lang="head.htmlAttrs?.lang">
       <Head>
         <template v-for="(link, index) in head.link" :key="index">
           <Link :hid="link.hid" :rel="link.rel" :href="link.href" :hreflang="link.hreflang" />

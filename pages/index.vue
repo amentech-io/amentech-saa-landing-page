@@ -12,10 +12,10 @@
       <WhySaa />
       <SaaFeatures />
       <MobileApp />
-        <!-- <TheSolutions /> -->
-        <!-- <TheValues /> -->
-        <!-- <TheContactUs /> -->
-        <!-- <TheFooter /> -->
+      <!-- <TheSolutions /> -->
+      <!-- <TheValues /> -->
+      <!-- <TheContactUs /> -->
+      <!-- <TheFooter /> -->
       <Suspense>
         <template #fallback>
           <div class="italic op50">

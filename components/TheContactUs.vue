@@ -41,7 +41,7 @@ const mailto = computed(() => {
   return `mailto:contact@amentech.dz?subject=${contact.object}&body=${contact.body}`
 })
 
-const onSubmit = (e: { preventDefault: () => void }) => {
+function onSubmit(e: { preventDefault: () => void }) {
   result.value.$test()
   if (result.value.$invalid)
     e.preventDefault()
