@@ -22,7 +22,7 @@ watch(selectedLang, v => setLocale(v.code))
   <Listbox v-slot="{ open }" v-model="selectedLang">
     <div class="relative">
       <ListboxButton
-        class="relative cursor-pointer w-full flex cursor-default rounded-lg px-3 py-2 text-left focus-visible:border-indigo-500 focus:outline-none focus-visible:ring-2"
+        class="relative w-full flex cursor-default cursor-pointer rounded-lg px-3 py-2 text-left focus-visible:border-indigo-500 focus:outline-none focus-visible:ring-2"
       >
         <span class="flex items-center truncate">
           {{ selectedLang.name }}

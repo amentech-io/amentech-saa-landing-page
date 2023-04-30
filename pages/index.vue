@@ -9,13 +9,13 @@
       />
     </div>
     <div>
-        <WhySaa />
-          <SaaFeatures />
-        <!-- <TheStartup /> -->
-        <!-- <TheSolutions /> -->
-        <!-- <TheValues /> -->
-        <!-- <TheContactUs /> -->
-        <!-- <TheFooter /> -->
+      <WhySaa />
+      <SaaFeatures />
+      <MobileApp />
+      <!-- <TheSolutions /> -->
+      <!-- <TheValues /> -->
+      <!-- <TheContactUs /> -->
+      <!-- <TheFooter /> -->
       <Suspense>
         <template #fallback>
           <div class="italic op50">
