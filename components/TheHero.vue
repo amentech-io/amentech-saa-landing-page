@@ -47,14 +47,14 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
 </template>
 
 <style>
-.intelligente {
+.underline-decorator-pink {
   background: url("/underline-decorator.svg") no-repeat bottom / contain;
 }
 </style>
 
 <i18n lang="yaml">
 fr:
-  title: L'assurance auto est devenue <span class="intelligente">intelligente</span>
+  title: L'assurance auto est devenue <span class="underline-decorator-pink">intelligente</span>
   subtitle: Des contrats clairs, des remboursements 2x plus rapides, un modèle 100% digital et transparent. Comme ça, vous gagnez du temps, et de l'argent.
   app-is-ready: L’application est disponible sur
   features:
