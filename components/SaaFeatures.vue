@@ -27,7 +27,7 @@ const cards = [
     <div class="mx-auto py-11 container lg:pb-23 lg:pt-25">
       <h3 class="max-w-max flex items-center px-6 text-lg font-bold text-[#C4CEEF] lg:text-5xl">
         <span v-html="t('title')" />
-        <img class="ml--8 mt--8 lg:mt--12 w-16" src="/saa-title-decorator.svg" alt="title decorator">
+        <img class="ml--8 mt--8 w-16 lg:mt--12" src="/saa-title-decorator.svg" alt="title decorator">
       </h3>
 
       <div class="mb-8 ml-6 mt-5 flex snap-x gap-4 of-x-auto of-y-hidden py-4 pl-1/5 pr-6 lg:mt-22 lg:justify-center lg:gap-5 2xl:pl-0">

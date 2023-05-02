@@ -28,7 +28,7 @@ const cards = [
         </div>
 
         <div>
-          <h3 v-html="t('title')" class="max-w-20ch mx-auto px-6 text-center text-lg font-bold lg:text-5xl"></h3>
+          <h3 v-html="t('title')" class="max-w-20.8ch mx-auto px-6 text-center text-lg font-bold lg:text-5xl"></h3>
 
           <p v-html="t('subtitle')" class="mx-auto mt-3 max-w-68ch text-center text-xs font-medium lg:mt-10 lg:text-2xl"></p>
 
@@ -54,7 +54,7 @@ const cards = [
 
 <i18n lang="yaml">
 fr:
-  title: Déclarer un <span class="underline-decorator-pink text-[#1C57BC]">sinistre</span>, c’est aussi simple que ça !
+  title: Déclarer un <span class="underline-decorator-pink text-[#1C57BC]">sinistre</span>, c’est aussi simple que ça!
   subtitle: <span class="text-[#1C57BC]">97%</span> de nos clients restent chez SAA après une gestion de sinistres
   item1:
     title: Que s’est-il passé ?
