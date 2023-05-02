@@ -22,8 +22,9 @@ const cards = [
   <section>
     <div class="mx-auto px-6 py-11 container lg:pb-23 lg:pt-25">
       <div class="grid 2xl:grid-cols-[1fr_1fr]">
-        <div class="hidden my-a 2xl:block">
+        <div class="relative hidden my-a 2xl:block">
           <img src="/reporting-claim-bg.png" alt="phone app">
+          <div class="absolute -z-1 right-1/2 top-1/2 aspect-1 w-3/4 translate-x-1/2 rounded-full bg-[#BEBBD1]/40 blur-2xl -translate-y-1/2" />
         </div>
 
         <div>
