@@ -54,28 +54,6 @@ const cards = [
   </section>
 </template>
 
-<style scoped>
-/* width */
-::-webkit-scrollbar {
-  --at-apply: h-2 w-2;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  --at-apply: gray/10;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  --at-apply: bg-white/20 rounded;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  --at-apply: bg-white/30 rounded;
-}
-</style>
-
 <i18n lang="yaml">
 fr:
   title: Quelles véhicules assurables
