@@ -12,6 +12,7 @@
       <WhySaa />
       <SaaFeatures />
       <MobileApp />
+      <InsurableVehicles />
       <!-- <TheSolutions /> -->
       <!-- <TheValues /> -->
       <!-- <TheContactUs /> -->
