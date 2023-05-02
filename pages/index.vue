@@ -13,7 +13,7 @@
       <SaaFeatures />
       <MobileApp />
       <InsurableVehicles />
-      <!-- <TheSolutions /> -->
+      <ReportingClaim />
       <!-- <TheValues /> -->
       <!-- <TheContactUs /> -->
       <!-- <TheFooter /> -->
