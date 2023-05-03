@@ -14,7 +14,7 @@
       <MobileApp />
       <InsurableVehicles />
       <ReportingClaim />
-      <!-- <TheValues /> -->
+      <OptimalProtection />
       <!-- <TheContactUs /> -->
       <!-- <TheFooter /> -->
       <Suspense>
