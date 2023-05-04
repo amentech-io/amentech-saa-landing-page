@@ -49,7 +49,7 @@ const cards = [
           <div class="grid grid-cols-2 mt-8 gap-4 md:grid-cols-3 2xl:mt-0">
             <div
               v-for="card, idx in cards" :key="idx"
-              class="px-5 py-4 shadow-lg lg:px-8 lg:py-6"
+              class="px-5 py-4 lg:px-8 lg:py-6"
             >
               <div class="mx-auto h-9 w-9 rounded-full lg:h-26 lg:w-26">
                 <img :src="card.icon" alt="guard card">
