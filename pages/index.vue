@@ -16,7 +16,7 @@
       <ReportingClaim />
       <OptimalProtection />
       <QuestionAnswers />
-      <!-- <TheFooter /> -->
+      <AppStore />
       <Suspense>
         <template #fallback>
           <div class="italic op50">
