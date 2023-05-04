@@ -15,7 +15,7 @@
       <InsurableVehicles />
       <ReportingClaim />
       <OptimalProtection />
-      <!-- <TheContactUs /> -->
+      <QuestionAnswers />
       <!-- <TheFooter /> -->
       <Suspense>
         <template #fallback>
