@@ -40,9 +40,9 @@ const cards = [
         <Disclosure
           v-for="card, idx in cards"
           v-slot="{ open }" :key="idx"
-          as="div" class="rounded-md px-4 py-2 font-bold shadow-md lg:rounded-5 lg:px-8 lg:py-6 lg:text-2xl all:transition"
+          as="div" class="rounded-md bg-white px-4 py-2 font-bold shadow-md lg:rounded-5 lg:px-8 lg:py-6 lg:text-2xl all:transition"
         >
-          <DisclosureButton as="div" class="flex justify-between text-xs lg:text-6">
+          <DisclosureButton as="div" class="flex cursor-pointer justify-between text-xs lg:text-6">
             <span>{{ card.title }}</span>
             <UnoIcon i-ic-outline-keyboard-arrow-down class="ml-2 h-5 w-5 flex-none text-[#1C57BC]" :class="open && 'rotate--180'" />
           </DisclosureButton>
