@@ -15,8 +15,8 @@
       <InsurableVehicles />
       <ReportingClaim />
       <OptimalProtection />
-      <!-- <TheContactUs /> -->
-      <!-- <TheFooter /> -->
+      <QuestionAnswers />
+      <AppStore />
       <Suspense>
         <template #fallback>
           <div class="italic op50">

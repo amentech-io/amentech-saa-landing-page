@@ -29,7 +29,7 @@ const cards = [
         <img class="ml--8 mt--4 w-16" src="/saa-title-decorator-blue.svg" alt="title decorator">
       </h3>
 
-      <p class="mx-auto mt-3 max-w-68ch text-center text-xs font-medium lg:mt-10 lg:text-2xl">
+      <p class="mx-auto px-6 mt-3 max-w-68ch text-center text-xs font-medium lg:mt-10 lg:text-2xl">
         {{ t('subtitle') }}
       </p>
 
