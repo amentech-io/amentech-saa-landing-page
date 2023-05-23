@@ -29,12 +29,12 @@ const menuIsOpen = ref(false)
             </NuxtLink>
           </li>
           <li>
-            <a
+            <NuxtLink
               class="inline-flex items-center rounded-md px-3 py-2 text-lg font-semibold hover:text-opacity-100 focus:outline-none focus-visible:ring-2"
-              href="#contact-us"
+              to="contact"
             >
               {{ $t('contact-us') }}
-            </a>
+            </NuxtLink>
           </li>
           <li>
             <NuxtLink
