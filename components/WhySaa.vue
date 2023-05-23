@@ -10,7 +10,7 @@ const cards = [
 </script>
 
 <template>
-  <section class="relative bg-[#eee] pb-10 pt-5 lg:pb-49 lg:pt-20">
+  <section class="relative pb-10 pt-5 lg:pb-49 lg:pt-20">
     <div class="absolute right-1/2 top-1/2 aspect-1 w-1/4 translate-x-1/2 rounded-full bg-[#BEBBD1]/30 blur-3xl -translate-y-1/2" />
 
     <div class="mx-auto px-6 container">

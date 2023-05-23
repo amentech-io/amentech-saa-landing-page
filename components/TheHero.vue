@@ -26,12 +26,12 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
         </li>
       </ul>
 
-      <a
+      <NuxtLink
         class="mt-4 inline-block rounded-5 bg-[#161C34] px-10 py-2 font-semibold text-white transition lg:mt-15 lg:px-18 lg:py-5 lg:text-lg hover:opacity-90 hover:ring-4 hover:ring-white/50"
-        href="#contact-us"
+        to="contact"
       >
         {{ $t('contact-us') }}
-      </a>
+      </NuxtLink>
       <p class="mt-3 text-5px tracking-wider lg:mt-8 lg:text-base lg:text-base">
         {{ t('app-is-ready') }}
       </p>
