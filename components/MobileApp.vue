@@ -42,10 +42,20 @@ function selectItem(idx: number) {
         <template
           v-for="card, idx in cards" :key="idx"
         >
-          <button class="flex justify-center text-left lg:block" @click="selectItem(idx)">
-            <div class="rounded-lg px-3 pb-4 pt-6 lg:rounded-8 hover:bg-[#C4CEEF] lg:px-8 lg:py-6">
+          <button
+            lg="from-[#1C57BC] via-[#9D5CA2] to-[rgba(252,81,133,0.94)] from-0% to-98% via-47% bg-gradient-to-bl"
+            class="flex justify-center border-5 border-white rounded-9.7 text-left lg:block hover:border-dashed"
+            @click="selectItem(idx)"
+          >
+            <div class="rounded-lg bg-[white] px-3 pb-4 pt-6 lg:rounded-8 lg:px-8 lg:py-6">
               <div class="mt-4 flex items-center lg:mt-6">
-                <span class="text-bold mr-1.5 h-8 w-8 flex flex-none items-center justify-center border border-[#1C57BC] rounded-full bg-white text-sm text-[#1C57BC]">{{ idx + 1 }}</span>
+                <div class="from-[#1C57BC] via-[#9D5CA2] to-[rgba(252,81,133,0.94)] from-0% to-98% via-47% bg-gradient-to-bl p-0.5 rounded-full mr-1.5">
+                  <span
+                    class="text-bold h-8 w-8 flex flex-none items-center justify-center rounded-full bg-white text-sm lg:text-lg"
+                  >
+                    {{ idx + 1 }}
+                  </span>
+                </div>
                 <p class="text-sm font-bold lg:text-2xl">
                   {{ card.title }}
                 </p>
@@ -93,7 +103,7 @@ function selectItem(idx: number) {
 
 <i18n lang="yaml">
 fr:
-  title: Si <span class="underline-decorator">rapide</span> que vous pouvez le faire pendant que votre café est encore chaud
+  title: Si <span class="underline-gradient">rapide</span> que vous pouvez le faire pendant que votre café est encore chaud
   subtitle: Nous avons rendu cela super simple - il n'est pas nécessaire de déterrer de vieux dossiers ou de la paperasse. Au cas où vous en auriez besoin, nous avons des conseillers non-commissionnés prêts à vous aider à chaque étape du processus.
   item1:
     title: Obtenez un devis instantané et sans engagement
