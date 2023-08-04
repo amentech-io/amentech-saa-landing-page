@@ -23,17 +23,19 @@ const cards = [
 </script>
 
 <template>
-  <section class="bg-[#181B34]">
+  <section class="relative">
+    <div class="absolute inset-0 bg-[#181B34] -z-2">
+      <img class="h-full w-full object-cover" src="/why-saa-auto-bg.svg" alt="background lines">
+    </div>
     <div class="mx-auto py-11 container lg:pb-23 lg:pt-25">
       <h3 class="max-w-max flex items-center px-6 text-lg font-bold text-[#C4CEEF] lg:text-5xl">
         <span v-html="t('title')" />
-        <img class="ml--8 mt--8 w-16 lg:mt--12" src="/saa-title-decorator.svg" alt="title decorator">
       </h3>
 
       <div class="mb-8 ml-6 mt-5 flex snap-x gap-4 of-x-auto of-y-hidden py-4 pl-1/5 pr-6 lg:mt-22 lg:justify-center lg:gap-5 2xl:pl-0">
         <div
           v-for="card, idx in cards" :key="idx"
-          class="flex-none snap-start rounded-8 bg-[#F8F8FA] px-5 py-4 shadow-md hover:bg-[#C4CEEF] lg:px-8 lg:py-6"
+          class="card-gradient-border relative flex-none snap-start rounded-8 bg-[#4C4F66] px-5 py-4 text-white shadow-md hover:bg-[#8C8EA0] lg:px-8 lg:py-6"
         >
           <p class="mt-4 max-w-15ch text-sm font-bold lg:mt-6 lg:text-2xl">
             {{ card.title }}
@@ -66,6 +68,12 @@ const cards = [
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   --at-apply: bg-white/30 rounded;
+}
+
+.card-gradient-border:hover::after {
+  content: '';
+  --at-apply: absolute inset-0 -m-1 rounded-9 -z-2
+    bg-[#1C57BC] from-[#1C57BC] via-[#9D5CA2] to-[rgba(252,81,133,0.94)] from-0% to-98% via-47% bg-gradient-to-bl;
 }
 </style>
 
