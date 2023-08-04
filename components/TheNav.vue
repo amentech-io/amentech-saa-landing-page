@@ -23,14 +23,14 @@ const menuIsOpen = ref(false)
           <li>
             <NuxtLink
               :to="localePath('index')"
-              class="inline-flex items-center rounded-md px-3 py-2 text-lg font-semibold hover:text-opacity-100 focus:outline-none focus-visible:ring-2"
+              class="nav-hover relative inline-flex items-center rounded-md px-3 py-2 text-lg font-semibold hover:text-opacity-100 focus:outline-none focus-visible:ring-2"
             >
               {{ $t('home') }}
             </NuxtLink>
           </li>
           <li>
             <NuxtLink
-              class="inline-flex items-center rounded-md px-3 py-2 text-lg font-semibold hover:text-opacity-100 focus:outline-none focus-visible:ring-2"
+              class="nav-hover relative inline-flex items-center rounded-md px-3 py-2 text-lg font-semibold hover:text-opacity-100 focus:outline-none focus-visible:ring-2"
               to="contact"
             >
               {{ $t('contact-us') }}
@@ -39,7 +39,7 @@ const menuIsOpen = ref(false)
           <li>
             <NuxtLink
               :to="localePath('faq')"
-              class="inline-flex items-center rounded-md px-3 py-2 text-lg font-semibold hover:text-opacity-100 focus:outline-none focus-visible:ring-2"
+              class="nav-hover relative inline-flex items-center rounded-md px-3 py-2 text-lg font-semibold hover:text-opacity-100 focus:outline-none focus-visible:ring-2"
             >
               FAQ
             </NuxtLink>
@@ -66,3 +66,16 @@ const menuIsOpen = ref(false)
     </div>
   </nav>
 </template>
+
+<style>
+.nav-hover:hover::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  height: 5px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #1C57BC 0%, #9D5CA2 47.76%, rgba(252, 81, 133, 0.94) 98.04%);
+}
+</style>
