@@ -20,12 +20,16 @@ const cards = [
         <div
           v-for="i, idx in cards" :key="idx"
           class="relative rounded-7 lg:flex lg:items-center lg:justify-between lg:bg-white lg:shadow-[0px_4px_25px_0px_#181B3412]"
-          :class=" idx === 1 && 'flex-row-reverse'"
+          :class="idx === 1 && 'flex-row-reverse'"
         >
           <div class="lg:max-w-1/2 lg:px-22 lg:py-17">
-            <h3 class="text-sm font-bold text-[#1C57BC] lg:text-3xl">
+            <h3 class="text-sm font-bold lg:text-3xl">
               {{ i.title }}
             </h3>
+            <div
+              class="absolute mt-4 h-px w-3/4 border-b border-white border-dashed bg-[#EC5189]"
+              :class="idx === 1 ? 'right-0' : 'left-0'"
+            />
             <p class="mt-4 text-justify text-xs lg:mt-12 lg:text-xl">
               {{ i.subtitle }}
             </p>
@@ -33,8 +37,6 @@ const cards = [
 
           <div class="2xl:my--20 2xl:px-0 2xl:py-0 lg:px-22 lg:py-17">
             <div class="relative">
-              <img v-if="idx === 0" class="absolute -right-4 -top-4 lg:top-1/4 lg:scale-200 lg:-left-30 lg:-rotate-110" src="/red-arrow.svg" alt="arrow">
-              <img v-if="idx === 1" class="absolute -right-4 -top-13 2xl:bottom-20 lg-top-auto lg:bottom-10 lg:rotate-230 lg:scale-110" src="/black-arrow.svg" alt="arrow">
               <img
                 class="mt-5 h-full w-full object-contain lg:mt-0"
                 :src="i.img"
@@ -48,15 +50,9 @@ const cards = [
   </section>
 </template>
 
-<style>
-.underline-decorator {
-  background: url("/underline-decorator2.svg") no-repeat bottom / contain;
-}
-</style>
-
 <i18n lang="yaml">
 fr:
-  title: Pourquoi l’assurance <span class="underline-decorator">digitale SAA</span>
+  title: Pourquoi l’assurance <span class="underline-gradient">digitale SAA</span>
   item1:
     title: Une transparence totale sur vos garanties et le coût de votre assurance.
     subtitle: Nous sommes convaincus que l'assurance ne doit plus être un sujet opaque. Avec SAA, tout est enfin clair et transparent. Fini les mauvaises surprises, nous vous aidons à comprendre très simplement vos garanties et le coût de votre assurance. C'est vous qui choisissez ce que vous couvrez ou ne couvrez pas.
