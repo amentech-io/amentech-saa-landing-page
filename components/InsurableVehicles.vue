@@ -22,14 +22,16 @@ const cards = [
 </script>
 
 <template>
-  <section class="bg-[#DEDDE8]/50">
+  <section class="relative">
+    <div class="absolute inset-0 bg-[#EDF2F9] -z-10">
+      <img class="object-cover w-full h-full" src="/insurable-vehicles.svg" alt="">
+    </div>
     <div class="mx-auto py-11 container lg:pb-23 lg:pt-25">
       <h3 class="mx-auto max-w-max flex items-center px-6 text-center text-lg font-bold lg:text-5xl">
         <span v-html="t('title')" />
-        <img class="ml--8 mt--4 w-16" src="/saa-title-decorator-blue.svg" alt="title decorator">
       </h3>
 
-      <p class="mx-auto px-6 mt-3 max-w-68ch text-center text-xs font-medium lg:mt-10 lg:text-2xl">
+      <p class="mx-auto mt-3 max-w-68ch px-6 text-center text-xs font-medium lg:mt-10 lg:text-2xl">
         {{ t('subtitle') }}
       </p>
 
