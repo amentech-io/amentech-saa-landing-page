@@ -45,7 +45,7 @@ watch(selectedLang, v => setLocale(v.code))
             :value="lang"
           >
             <li
-              class="relative cursor-pointer select-none py-2 pl-10 pr-4"
+              class="relative text-black cursor-pointer select-none py-2 pl-10 pr-4"
               :class="active && 'bg-[#181B34]/20'"
             >
               <span class="block truncate">
