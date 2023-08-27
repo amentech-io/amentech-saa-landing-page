@@ -33,12 +33,13 @@ const cards = [
 <template>
   <section class="relative">
     <div class="mx-auto py-11 container lg:pb-23 lg:pt-25">
+      <div class="absolute aspect-1 w-1/6 rounded-full bg-[#FC5185]/25 blur-300 -translate-y-1/2" />
+
       <h3 class="flex items-center px-6 text-lg font-bold lg:text-5xl">
         <span v-html="t('title')" />
       </h3>
 
       <div class="grid mx-6 mb-8 mt-5 gap-5 lg:grid-cols-3 lg:mt-22">
-        <!-- #1C57BC, #1C57BC, #EE4E80 -->
         <div
           v-for="card, idx in cards" :key="idx"
           hover="from-[#1C57BC]/40 via-[#1C57BC]/15 to-[#EE4E80]/34 from-10% to-100% via-52% bg-gradient-to-br"
