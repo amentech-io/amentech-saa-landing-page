@@ -11,7 +11,7 @@ const cards = [
 
 <template>
   <section class="relative pb-10 pt-5 lg:pb-49 lg:pt-20">
-    <div class="absolute right-1/2 top-1/2 aspect-1 w-1/4 translate-x-1/2 rounded-full bg-[#BEBBD1]/30 blur-3xl -translate-y-1/2" />
+    <div class="absolute right-1/2 top-1/2 aspect-1 w-1/5 translate-x-1/2 rounded-full bg-[#FC5185]/25 blur-300 -translate-y-1/2" />
 
     <div class="mx-auto px-6 container">
       <h2 class="text-center text-lg font-bold lg:text-5xl" v-html="t('title')" />
@@ -19,17 +19,13 @@ const cards = [
       <div class="mt-8 flex flex-col gap-8 lg:mt-43 lg:gap-90">
         <div
           v-for="i, idx in cards" :key="idx"
-          class="relative rounded-7 lg:flex lg:items-center lg:justify-between lg:bg-white lg:shadow-[0px_4px_25px_0px_#181B3412]"
+          class="relative rounded-7 lg:flex lg:items-center lg:justify-between lg:bg-[#1C57BC]/10 lg:shadow-[0px_4px_25px_0px_#181B3412]"
           :class="idx === 1 && 'flex-row-reverse'"
         >
           <div class="lg:max-w-1/2 lg:px-22 lg:py-17">
             <h3 class="text-sm font-bold lg:text-3xl">
               {{ i.title }}
             </h3>
-            <div
-              class="absolute mt-4 h-px w-3/4 border-b border-white border-dashed bg-[#EC5189]"
-              :class="idx === 1 ? 'right-0' : 'left-0'"
-            />
             <p class="mt-4 text-justify text-xs lg:mt-12 lg:text-xl">
               {{ i.subtitle }}
             </p>
@@ -52,7 +48,7 @@ const cards = [
 
 <i18n lang="yaml">
 fr:
-  title: Pourquoi l’assurance <span class="underline-gradient">digitale SAA</span>
+  title: Pourquoi l’assurance <span class="border rounded-xl border-[#EE4E80] p-2">digitale SAA</span>
   item1:
     title: Une transparence totale sur vos garanties et le coût de votre assurance.
     subtitle: Nous sommes convaincus que l'assurance ne doit plus être un sujet opaque. Avec SAA, tout est enfin clair et transparent. Fini les mauvaises surprises, nous vous aidons à comprendre très simplement vos garanties et le coût de votre assurance. C'est vous qui choisissez ce que vous couvrez ou ne couvrez pas.
