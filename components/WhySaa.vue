@@ -11,7 +11,7 @@ const cards = [
 
 <template>
   <section class="relative pb-10 pt-5 lg:pb-49 lg:pt-20">
-    <div class="absolute right-1/2 top-1/2 aspect-1 w-1/5 translate-x-1/2 rounded-full bg-[#FC5185]/25 blur-300 -translate-y-1/2" />
+    <div class="absolute right-1/2 top-1/2 aspect-1 w-1/5 translate-x-full rounded-full bg-[#FC5185]/25 blur-300 -translate-y-1/2" />
 
     <div class="mx-auto px-6 container">
       <h2 class="text-center text-lg font-bold lg:text-5xl" v-html="t('title')" />
