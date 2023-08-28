@@ -31,7 +31,9 @@ function selectItem(idx: number) {
 
 <template>
   <section>
-    <div class="mx-auto mb-12 px-6 pt-6 container lg:pb-27 lg:pt-17">
+    <div class="relative mx-auto mb-12 px-6 pt-6 container lg:pb-27 lg:pt-17">
+      <div class="absolute aspect-1 w-1/6 rounded-full bg-[#FC5185]/25 blur-130 translate-x-full" />
+
       <h3 class="mx-auto max-w-32ch text-center text-lg font-bold lg:text-5xl" v-html="t('title')" />
 
       <p class="mx-auto mt-3 max-w-68ch text-center text-xs font-medium lg:mt-10 lg:text-2xl">
@@ -43,23 +45,21 @@ function selectItem(idx: number) {
           v-for="card, idx in cards" :key="idx"
         >
           <button
-            lg="from-[#1C57BC] via-[#9D5CA2] to-[rgba(252,81,133,0.94)] from-0% to-98% via-47% bg-gradient-to-bl"
-            class="flex justify-center border-5 border-white rounded-9.7 text-left lg:block hover:border-dashed"
+            hover="from-[#1C57BC]/20 to-[#FC5185]/20 from-0% to-100% bg-gradient-to-r border-rose-500/30"
+            class="group border border-transparent rounded-3xl text-left lg:block"
             @click="selectItem(idx)"
           >
-            <div class="rounded-lg bg-[white] px-3 pb-4 pt-6 lg:rounded-8 lg:px-8 lg:py-6">
-              <div class="mt-4 flex items-center lg:mt-6">
-                <div class="from-[#1C57BC] via-[#9D5CA2] to-[rgba(252,81,133,0.94)] from-0% to-98% via-47% bg-gradient-to-bl p-0.5 rounded-full mr-1.5">
-                  <span
-                    class="text-bold h-8 w-8 flex flex-none items-center justify-center rounded-full bg-white text-sm lg:text-lg"
-                  >
-                    {{ idx + 1 }}
-                  </span>
-                </div>
-                <p class="text-sm font-bold lg:text-2xl">
-                  {{ card.title }}
-                </p>
+            <div class="grid grid-cols-[auto_1fr] rounded-lg px-3 pb-4 pt-6 lg:rounded-8 lg:px-8 lg:py-6">
+              <div class="row-span-2 my-auto mr-8 mt-4 flex items-center lg:mt-6">
+                <span
+                  class="text-extrabold h-15 w-15 flex flex-none items-center justify-center rounded-2xl bg-[#192346] pb-0.8 text-sm text-white group-hover:bg-white lg:text-3xl group-hover:text-[#2657BA]"
+                >
+                  {{ idx + 1 }}
+                </span>
               </div>
+              <p class="text-sm font-bold lg:text-2xl">
+                {{ card.title }}
+              </p>
               <p class="mt-3 max-w-50ch text-xs leading-loose lg:mt-4 lg:text-xl">
                 {{ card.description }}
               </p>
@@ -103,7 +103,7 @@ function selectItem(idx: number) {
 
 <i18n lang="yaml">
 fr:
-  title: Si <span class="underline-gradient">rapide</span> que vous pouvez le faire pendant que votre café est encore chaud
+  title: Si <span class="mb-1 bg-white text-[#0D1035] px-2 pb-1 rounded-xl">rapide</span> que vous pouvez le faire pendant que votre café est encore chaud
   subtitle: Nous avons rendu cela super simple - il n'est pas nécessaire de déterrer de vieux dossiers ou de la paperasse. Au cas où vous en auriez besoin, nous avons des conseillers non-commissionnés prêts à vous aider à chaque étape du processus.
   item1:
     title: Obtenez un devis instantané et sans engagement
