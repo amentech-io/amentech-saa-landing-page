@@ -22,36 +22,42 @@ const cards = [
 </script>
 
 <template>
-  <section class="relative">
-    <div class="absolute inset-0 bg-[#EDF2F9] -z-10">
-      <img class="object-cover w-full h-full" src="/insurable-vehicles.svg" alt="">
-    </div>
-    <div class="mx-auto py-11 container lg:pb-23 lg:pt-25">
+  <section class="lg:mt-30">
+    <div class="relative mx-auto py-11 container lg:pb-23 lg:pt-25">
+      <div class="relative top--40">
+        <div class="absolute inset-0 mx-auto aspect-1 w-1/5 rounded-full bg-[#FC5185]/25 blur-120" />
+        <img class="absolute inset-0 mx-auto" src="/arc.png" alt="arc">
+      </div>
+
       <h3 class="mx-auto max-w-max flex items-center px-6 text-center text-lg font-bold lg:text-5xl">
         <span v-html="t('title')" />
       </h3>
 
-      <p class="mx-auto mt-3 max-w-68ch px-6 text-center text-xs font-medium lg:mt-10 lg:text-2xl">
+      <p class="mx-auto mt-3 max-w-60ch px-6 text-center text-xs font-medium lg:mt-10 lg:text-2xl">
         {{ t('subtitle') }}
       </p>
 
       <div class="mt-5 flex flex-col items-center gap-4 lg:mt-22 lg:flex-row lg:justify-center lg:gap-5 2xl:pl-0">
         <div
           v-for="card, idx in cards" :key="idx"
-          class="flex-none px-5 py-4 text-center lg:px-8 lg:py-6"
+          class="group relative flex flex-none gap-4 px-5 py-4 text-center lg:px-27 lg:py-8 lg:text-3xl"
         >
+          <div class="absolute inset-0 z--1 rounded-full from-0% to-100% bg-gradient-to-l group-hover:from-[#1C57BC] group-hover:to-[#FC5185]" />
+          <div class="absolute inset-px z--1 rounded-full bg-[#05031F]" />
+          <div class="absolute inset-px z--1 rounded-full from-[#1C57BC30] via-[#1C57BC0A] to-[#1C57BC1C] from-0% to-100% via-50% bg-gradient-to-br" />
+
           <div>
-            <img class="mx-auto h-12 w-12 rounded-full bg-white p-2 lg:h-18 lg:w-18 lg:p-3" :src="card.icon" alt="">
+            <img class="mx-auto h-12 w-12 p-2 lg:h-18 lg:w-18 lg:p-3" :src="card.icon" alt="">
           </div>
 
           <p class="mt-4 text-sm font-bold lg:mt-6 lg:text-2xl">
             {{ card.title }}
           </p>
-          <p class="mt-3 max-w-30ch text-xs leading-loose lg:mt-4 lg:text-xl">
-            {{ card.description }}
-          </p>
         </div>
       </div>
+      <p class="mx-auto mt-3 max-w-60ch px-6 text-center text-xs font-medium lg:mt-13 lg:text-2xl">
+        {{ t('subsubtitle') }}
+      </p>
     </div>
   </section>
 </template>
@@ -59,14 +65,15 @@ const cards = [
 <i18n lang="yaml">
 fr:
   title: Quelles véhicules assurables
-  subtitle: Understand your insurance policy options. Identify the best value. Enjoy peace of mind.
+  subtitle: Découvrez notre gamme complète d'assurances adaptées à chaque véhicule. Profitez d'une couverture optimale pour vos précieux biens roulants, en toute tranquillité sur la route.
   item1:
-    title: Voiture
+    title: Moto
     description: Entreprise Publique Economique, agréée pour pratiquer l’ensemble des branches d’assurance,
   item2:
-    title: Moto
+    title: Voiture
     description: Entreprise Publique Economique, agréée pour pratiquer l’ensemble des branches d’assurance,
   item3:
     title: Camion
     description: Entreprise Publique Economique, agréée pour pratiquer l’ensemble des branches d’assurance,
+  subsubtitle: Roulez en toute confiance avec notre assurance motos sur mesure, adaptée aux besoins des motards passionnés de liberté et d'aventure.
 </i18n>
