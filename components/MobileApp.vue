@@ -32,7 +32,7 @@ function selectItem(idx: number) {
 <template>
   <section>
     <div class="relative mx-auto mb-12 px-6 pt-6 container lg:pb-27 lg:pt-17">
-      <div class="absolute aspect-1 w-1/6 rounded-full bg-[#FC5185]/25 blur-130 translate-x-full" />
+      <div class="absolute aspect-1 w-1/6 translate-x-full rounded-full bg-[#FC5185]/25 blur-130" />
 
       <h3 class="mx-auto max-w-32ch text-center text-lg font-bold lg:text-5xl" v-html="t('title')" />
 
@@ -50,7 +50,7 @@ function selectItem(idx: number) {
             @click="selectItem(idx)"
           >
             <div class="grid grid-cols-[auto_1fr] rounded-lg px-3 pb-4 pt-6 lg:rounded-8 lg:px-8 lg:py-6">
-              <div class="row-span-2 my-auto mr-8 mt-4 flex items-center lg:mt-6">
+              <div class="row-span-2 my-auto mr-8 flex items-center lg:mt-6">
                 <span
                   class="text-extrabold h-15 w-15 flex flex-none items-center justify-center rounded-2xl bg-[#192346] pb-0.8 text-sm text-white group-hover:bg-white lg:text-3xl group-hover:text-[#2657BA]"
                 >
