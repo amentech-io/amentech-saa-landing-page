@@ -6,11 +6,10 @@ const { t } = useI18n({
 
 <template>
   <section
-    class="relative z--10 mt--32 pt-62"
-    style="background: linear-gradient(0deg, rgba(190, 187, 209, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);"
+    class="relative z--10 pt-62"
   >
-    <div class="grid grid-rows-[min-content_1fr] grid-cols-2 mx-auto px-6 container">
-      <div class="col-span-2 pb-3 lg:col-span-1">
+    <div class="grid grid-cols-[auto_1fr] grid-rows-[min-content_1fr] mx-auto px-6 container">
+      <div class="max-w-190 col-span-2 pb-3 lg:col-span-1">
         <h2 class="text-lg font-bold lg:text-5xl" v-html="t('title')" />
         <p class="mx-auto mt-3 text-xs font-medium lg:mt-9 lg:text-2xl" v-html="t('subtitle')" />
       </div>
@@ -19,7 +18,7 @@ const { t } = useI18n({
         <img src="/store-side.png" alt="phone" class="mx-auto">
       </div>
 
-      <div class="mt-3">
+      <div class="mt-3 flex flex-col justify-end">
         <p class="text-xs">
           L’application est
         </p>
