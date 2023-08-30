@@ -79,7 +79,7 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
 
 @keyframes blur-movement {
 from {
-  transform: translateX(0%);
+  transform: translateX(-100%);
 }
 
 to {
