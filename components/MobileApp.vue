@@ -49,7 +49,9 @@ function selectItem(idx: number) {
             class="group border border-transparent rounded-3xl text-left lg:block"
             @click="selectItem(idx)"
           >
-            <div class="grid grid-cols-[auto_1fr] rounded-lg px-3 pb-4 pt-6 lg:rounded-8 lg:px-8 lg:py-6">
+            <div
+              class="grid grid-cols-[auto_1fr] rounded-lg px-3 pb-4 pt-6 lg:rounded-8 lg:px-8 lg:py-6"
+            >
               <div class="row-span-2 my-auto mr-8 flex items-center lg:mt-6">
                 <span
                   class="text-extrabold h-15 w-15 flex flex-none items-center justify-center rounded-2xl bg-[#192346] pb-0.8 text-sm text-white group-hover:bg-white lg:text-3xl group-hover:text-[#2657BA]"
@@ -71,7 +73,6 @@ function selectItem(idx: number) {
             class="relative grid place-content-center lg:row-span-4 lg:col-start-2 lg:row-start-1 lg:h-50rem"
           >
             <img class="z-10 aspect-1 w-full object-contain lg:aspect-auto" :src="`/mobile-app-${idx + 1}.png`" alt="mobile app">
-            <div class="absolute right-1/2 top-1/2 aspect-1 w-2/3 translate-x-1/2 rounded-full bg-[#BEBBD1]/40 blur-2xl -translate-y-1/2" />
           </div>
         </template>
       </div>

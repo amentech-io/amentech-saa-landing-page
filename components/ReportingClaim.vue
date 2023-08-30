@@ -30,7 +30,7 @@ const cards = [
         <div>
           <h3 class="max-w-18ch text-lg font-bold lg:text-5xl" v-html="t('title')" />
 
-          <p class="mx-auto mt-3 max-w-68ch text-center text-xs font-medium lg:mt-10 lg:text-left lg:text-2xl" v-html="t('subtitle')" />
+          <p class="mx-auto mt-3 max-w-68ch text-xs font-medium lg:mt-10 lg:text-2xl" v-html="t('subtitle')" />
 
           <div class="mx-1 mt-5 flex flex-wrap justify-center gap-4 lg:mt-22 lg:flex-row 2xl:flex-nowrap lg:gap-5 2xl:pl-0">
             <div
@@ -40,7 +40,7 @@ const cards = [
                 ...(idx === 1 && { '--color': '#1C57BC, #1C57BC21' }),
                 ...(idx === 2 && { '--color': '#FFFFFF, #FFFFFF21' }),
               }"
-              class="box-gradient relative border-1 border-transparent rounded-3 of-hidden"
+              class="box-gradient relative of-hidden border-1 border-transparent rounded-3"
               :class="{
                 'from-[#47003C] via-[#21002B] to-[#25002A]': idx === 0,
                 'from-[#1F0044] via-[#13002A] to-[#110031]': idx === 1,

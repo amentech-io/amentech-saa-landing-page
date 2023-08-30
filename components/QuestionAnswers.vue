@@ -37,7 +37,7 @@ const cards = [
       <h3 class="mx-auto text-lg font-bold lg:text-5xl" v-html="t('title')" />
       <p class="mx-auto mt-3 text-xs font-medium lg:mt-9 lg:text-2xl" v-html="t('subtitle')" />
 
-      <div class="grid grid-cols-3 mt-5 gap-10 lg:grid-cols-2 lg:mt-28">
+      <div class="grid grid-cols-1 mt-5 gap-10 lg:grid-cols-2 lg:mt-28">
         <Disclosure
           v-for="card, idx in cards"
           v-slot="{ open }" :key="idx"
@@ -59,7 +59,7 @@ const cards = [
 
 <i18n lang="yaml">
 fr:
-  title: Vous avez des questions? <span class="text-[#1C57BC] bg-white pb-2 px-3 rounded-2xl">On a des réponses</span>
+  title: Vous avez des questions? <span class="text-[#1C57BC] bg-white pb-2 px-3 rounded-2xl">On&nbsp;a&nbsp;des&nbsp;réponses</span>
   subtitle: Une question reste sans réponse ? N’hésitez pas à consulter notre FAQ ou un conseiller via le chat !
   item1:
     title: Doit-on déclarer tout changement survenu à son assureur ?
