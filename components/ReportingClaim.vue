@@ -35,25 +35,29 @@ const cards = [
           <div class="mx-1 mt-5 flex flex-wrap justify-center gap-4 lg:mt-22 lg:flex-row 2xl:flex-nowrap lg:gap-5 2xl:pl-0">
             <div
               v-for="card, idx in cards" :key="idx"
-              class="relative rounded-xl px-5 py-4 lg:px-8 lg:py-6"
+              :style="{
+                ...(idx === 0 && { '--color': '#F85186A6, #F5518721' }),
+                ...(idx === 1 && { '--color': '#1C57BC, #1C57BC21' }),
+                ...(idx === 2 && { '--color': '#FFFFFF, #FFFFFF21' }),
+              }"
+              class="box-gradient relative border-1 border-transparent rounded-3 of-hidden"
+              :class="{
+                'from-[#47003C] via-[#21002B] to-[#25002A]': idx === 0,
+                'from-[#1F0044] via-[#13002A] to-[#110031]': idx === 1,
+                'from-[#3C2C4C] via-[#15012A] to-[#231538]': idx === 2,
+              }"
             >
-              <div class="absolute inset-px z--2 rounded-3 bg-[#05031F]" />
-              <div v-if="idx === 0" class="absolute inset-0 z--3 rounded-3 bg-[#F85186]" />
-              <div v-if="idx === 0" class="absolute inset-px z--1 rounded-3 from-[#F85186]/30 to-[#F55187]/10 from-0% to-100% bg-gradient-to-bl" />
-
-              <div v-if="idx === 1" class="absolute inset-0 z--3 rounded-3 bg-[#1C57BC]" />
-              <div v-if="idx === 1" class="absolute inset-px z--1 rounded-3 from-[#1C57BC]/30 to-[#1C57BC]/10 from-0% to-100% bg-gradient-to-bl" />
-
-              <div v-if="idx === 2" class="absolute inset-0 z--3 rounded-3 bg-[#FFFFFF]/30" />
-              <div v-if="idx === 2" class="absolute inset-px z--1 rounded-3 from-[#FFFFFF]/10 to-[#FFFFFF]/5 from-0% to-100% bg-gradient-to-bl" />
-
-              <span class="inline-block h-4 w-4 flex items-center justify-center rounded-2 bg-[#1C57BC]/20 text-xs font-extrabold text-white lg:h-10 lg:w-10 lg:text-xl">{{ idx + 1 }}</span>
-              <p class="mt-4 max-w-12ch text-sm font-bold lg:mt-6 lg:text-2xl">
-                {{ card.title }}
-              </p>
-              <p class="mt-3 max-w-18ch text-xs lg:mt-4 lg:text-xl lg:leading-loose">
-                {{ card.description }}
-              </p>
+              <div
+                class="h-full w-full bg-gradient-to-br px-5 py-4 lg:px-8 lg:py-6"
+              >
+                <span class="inline-block h-4 w-4 flex items-center justify-center rounded-2 bg-[#1C57BC]/20 text-xs font-extrabold text-white lg:h-10 lg:w-10 lg:text-xl">{{ idx + 1 }}</span>
+                <p class="mt-4 max-w-12ch text-sm font-bold lg:mt-6 lg:text-2xl">
+                  {{ card.title }}
+                </p>
+                <p class="mt-3 max-w-18ch text-xs lg:mt-4 lg:text-xl lg:leading-loose">
+                  {{ card.description }}
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -61,6 +65,14 @@ const cards = [
     </div>
   </section>
 </template>
+
+<style>
+.box-gradient {
+  /* --color: red, darkorchid; */
+  background: linear-gradient(#05031F, #05031F) padding-box,
+    linear-gradient(to bottom right, var(--color)) border-box;
+}
+</style>
 
 <i18n lang="yaml">
 fr:
