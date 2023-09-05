@@ -26,7 +26,7 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
         <img src="/hero-bg-left.png" alt="">
       </div>
     </div>
-    <div v-motion-slide-left class="mx-auto">
+    <div class="mx-auto">
       <h1
         class="max-w-30ch text-center text-8 font-bold leading-10 lg:text-7xl lg:leading-24"
         v-html=" t('title')"

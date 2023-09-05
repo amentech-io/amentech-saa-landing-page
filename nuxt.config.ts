@@ -4,8 +4,8 @@ export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
     '@nuxtjs/i18n',
-    '@vueuse/motion/nuxt',
     '@vueuse/nuxt',
+    // '@vueuse/motion/nuxt',
     // '@nuxt/image-edge',
   ],
   unocss: {
