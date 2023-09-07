@@ -19,6 +19,11 @@ const cards = [
     description: t('item3.description'),
   },
 ]
+
+const selectedItem = ref(1)
+function clickHandler(idx: number) {
+  selectedItem.value = idx+1
+}
 </script>
 
 <template>
@@ -41,6 +46,7 @@ const cards = [
         <div
           v-for="card, idx in cards" :key="idx"
           class="text-cente [background:linear-gradient(#1F0044,#13002A,#110031)_padding-box,linear-gradient(to_right,#D6528E,#2F2EB7)_border-box] relative flex flex-none gap-4 border border-[#05031F] rounded-full px-5 py-4 hover:border-transparent lg:px-27 lg:py-8 lg:text-3xl"
+          @click="clickHandler(idx)"
         >
           <div>
             <img class="mx-auto h-12 w-12 p-2 lg:h-18 lg:w-18 lg:p-3" :src="card.icon" alt="">
@@ -51,8 +57,8 @@ const cards = [
           </p>
         </div>
       </div>
-      <p class="mx-auto mt-3 max-w-60ch px-6 text-center text-xs font-medium lg:mt-13 lg:text-2xl">
-        {{ t('subsubtitle') }}
+      <p class="mx-auto mt-3 max-w-64ch px-6 text-center text-xs font-medium lg:mt-13 lg:text-2xl">
+        {{ t(`item${selectedItem}.description`) }}
       </p>
     </div>
   </section>
@@ -64,12 +70,11 @@ fr:
   subtitle: Découvrez notre gamme complète d'assurances adaptées à chaque véhicule. Profitez d'une couverture optimale pour vos précieux biens roulants, en toute tranquillité sur la route.
   item1:
     title: Moto
-    description: Entreprise Publique Economique, agréée pour pratiquer l’ensemble des branches d’assurance,
+    description: Roulez en toute confiance avec notre assurance motos sur mesure, adaptée aux besoins des motards passionnés de liberté et d'aventure.
   item2:
     title: Voiture
-    description: Entreprise Publique Economique, agréée pour pratiquer l’ensemble des branches d’assurance,
+    description: La couverture parfaite pour votre moyen de transport quotidien, protégez votre voiture avec une assurance adaptée à vos besoins.
   item3:
     title: Camion
-    description: Entreprise Publique Economique, agréée pour pratiquer l’ensemble des branches d’assurance,
-  subsubtitle: Roulez en toute confiance avec notre assurance motos sur mesure, adaptée aux besoins des motards passionnés de liberté et d'aventure.
+    description: Une protection solide pour votre véhicule utilitaire, bénéficiez d'une assurance spécialement conçue pour votre camion et vos activités professionnelles.
 </i18n>
