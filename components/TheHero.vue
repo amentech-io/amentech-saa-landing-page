@@ -28,7 +28,7 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
     </div>
     <div class="mx-auto">
       <h1
-        class="max-w-30ch text-center text-8 font-bold leading-10 lg:text-7xl lg:leading-24"
+        class="max-w-30ch text-center text-8 font-bold leading-10 lg:text-6xl lg:leading-24"
         v-html=" t('title')"
       />
       <p class="mx-auto my-4 max-w-62ch text-center text-3 leading-10.5 leading-4 lg:my-15 lg:text-6 lg:leading-7">
