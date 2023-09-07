@@ -32,7 +32,7 @@ const cards = [
 
           <p class="mx-auto mt-3 max-w-68ch text-xs font-medium lg:mt-10 lg:text-2xl" v-html="t('subtitle')" />
 
-          <div class="mx-1 mt-5 flex flex-wrap justify-center gap-4 lg:mt-22 lg:flex-row 2xl:flex-nowrap lg:gap-5 2xl:pl-0">
+          <div class="mx-1 mt-5 flex justify-center gap-4 lg:mt-22 lg:flex-row 2xl:flex-nowrap lg:gap-5 2xl:pl-0">
             <div
               v-for="card, idx in cards" :key="idx"
               :style="{
@@ -51,10 +51,10 @@ const cards = [
                 class="h-full w-full bg-gradient-to-br px-5 py-4 lg:px-8 lg:py-6"
               >
                 <span class="inline-block h-4 w-4 flex items-center justify-center rounded-2 bg-[#1C57BC]/20 text-xs font-extrabold text-white lg:h-10 lg:w-10 lg:text-xl">{{ idx + 1 }}</span>
-                <p class="mt-4 max-w-12ch text-sm font-bold lg:mt-6 lg:text-2xl">
+                <p class="mt-4 max-w-12ch text-xs font-bold lg:mt-6 lg:text-2xl">
                   {{ card.title }}
                 </p>
-                <p class="mt-3 max-w-18ch text-xs lg:mt-4 lg:text-xl lg:leading-loose">
+                <p class="mt-3 max-w-18ch text-10px lg:mt-4 lg:text-xl lg:leading-loose">
                   {{ card.description }}
                 </p>
               </div>
