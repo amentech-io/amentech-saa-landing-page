@@ -6,7 +6,7 @@ const { t } = useI18n({
   useScope: 'local',
 })
 
-const contact = reactive({
+let contact = reactive({
   fullName: '',
   email: '',
   object: '',
@@ -52,8 +52,19 @@ function onSubmit(e: { preventDefault: () => void }) {
   e.preventDefault()
   result.value.$test()
 
-  if (!result.value.$invalid)
+  if (!result.value.$invalid) {
     $fetch('/api/contact', { method: 'post', body: contact })
+    result.value.$reset()
+
+    contact = {
+      fullName: '',
+      email: '',
+      object: '',
+      phone: '',
+      body: '',
+      }
+
+  }
 }
 </script>
 
