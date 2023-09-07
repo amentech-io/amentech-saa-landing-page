@@ -13,6 +13,8 @@
     "@headlessui/vue": "^1.7.13",
     "@nuxtjs/i18n": "8.0.0-beta.10",
     "@vueuse/motion": "2.0.0-beta.27",
+    "firebase": "^10.3.1",
+    "vue-recaptcha": "3.0.0-alpha.2",
     "vue-tiny-validate": "^0.2.4"
   },
   "devDependencies": {
@@ -27,6 +29,7 @@
     "eslint": "^8.39.0",
     "nuxt": "^3.4.2",
     "typescript": "^5.0.4",
-    "unocss-preset-primitives": "0.0.1-beta.5"
+    "unocss-preset-primitives": "0.0.1-beta.5",
+    "valibot": "^0.13.1"
   }
 }

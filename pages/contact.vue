@@ -4,7 +4,6 @@
       <TheNav />
     </div>
     <div>
-      ...
       <TheContactUs />
     </div>
   </div>
