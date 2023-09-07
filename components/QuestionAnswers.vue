@@ -41,16 +41,16 @@ const cards = [
         <Disclosure
           v-for="card, idx in cards"
           v-slot="{ open }" :key="idx"
-          as="div" class="rounded-md py-2 font-bold shadow-md lg:rounded-5 lg:py-6 lg:text-2xl all:transition"
+          as="div" class="relative py-2 font-bold shadow-md [&[data-headlessui-state=open]]:bg-[#09113A] lg:py-6 lg:text-2xl all:transition"
         >
-          <DisclosureButton as="div" class="relative mb-4 flex cursor-pointer items-center justify-between text-xs lg:text-6">
+          <DisclosureButton as="div" class="mb-4 flex cursor-pointer items-center justify-between px-5 text-xs lg:text-6">
             <span>{{ card.title }}</span>
             <UnoIcon i-ic-outline-keyboard-arrow-down class="ml-2 h-10 w-10 flex-none" :class="open && 'rotate--180'" />
-            <div class="absolute mt-29 h-px w-full from-[#FC5185] to-[#1C57BC] bg-gradient-to-l" />
           </DisclosureButton>
           <DisclosurePanel class="text-md mt-8 text-[#181B34]/60">
             ...
           </DisclosurePanel>
+          <div class="absolute bottom-0 h-2px w-full from-[#FC5185] to-[#1C57BC] bg-gradient-to-l" />
         </Disclosure>
       </div>
     </div>
