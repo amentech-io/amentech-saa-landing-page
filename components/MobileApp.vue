@@ -47,7 +47,7 @@ function selectItem(idx: number) {
           <button
             hover="from-[#1C57BC]/20 to-[#FC5185]/20 from-0% to-100% bg-gradient-to-r border-rose-500/30"
             class="group border border-transparent rounded-3xl text-left lg:block"
-            @click="selectItem(idx)"
+            @mouseover="selectItem(idx)"
           >
             <div
               class="grid grid-cols-[auto_1fr] rounded-lg px-3 pb-4 pt-6 lg:rounded-8 lg:px-8 lg:py-6"
