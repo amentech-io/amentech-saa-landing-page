@@ -80,7 +80,7 @@ const cards = [
 
 .card-gradient-border:hover::after {
   content: '';
-  --at-apply: absolute inset-0 -m-1 rounded-9 -z-2
+  --at-apply: absolute inset-0 -m-0.5 rounded-9 -z-2
     bg-[#1C57BC] from-[#1C57BC] via-[#9D5CA2] to-[rgba(252,81,133,0.94)] from-0% to-98% via-47% bg-gradient-to-bl;
 }
 </style>
