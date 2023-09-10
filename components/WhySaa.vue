@@ -11,18 +11,18 @@ const cards = [
 
 <template>
   <section class="relative pb-10 pt-5 lg:pb-49 lg:pt-20">
-    <div class="absolute right-1/2 top-1/2 aspect-1 w-1/5 translate-x-full rounded-full bg-[#FC5185]/25 blur-300 -translate-y-1/2" />
+    <div class="absolute right-1/2 top-1/2 aspect-1 w-1/3 translate-x-full rounded-full bg-[#FC5185]/25 blur-300 -translate-y-1/2" />
 
     <div class="mx-auto px-6 container">
       <h2 class="text-center text-lg font-bold lg:text-5xl" v-html="t('title')" />
 
-      <div class="mt-8 flex flex-col gap-8 lg:mt-43 lg:gap-90">
+      <div class="mt-8 flex flex-col gap-8 lg:mt-43 lg:gap-52">
         <div
           v-for="i, idx in cards" :key="idx"
           class="relative rounded-7 lg:flex lg:items-center lg:justify-between lg:bg-[#1C57BC]/10 lg:shadow-[0px_4px_25px_0px_#181B3412]"
           :class="idx === 1 && 'flex-row-reverse'"
         >
-          <div class="lg:max-w-1/2 lg:px-22 lg:py-17">
+          <div class="lg:mx-auto lg:max-w-1/2 lg:px-22 lg:py-17">
             <h3 class="text-sm font-bold lg:text-3xl">
               {{ i.title }}
             </h3>
