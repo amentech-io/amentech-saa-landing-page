@@ -6,7 +6,7 @@ const { t } = useI18n({
 
 <template>
   <section
-    class="relative z--10 pt-30 lg:pt-62"
+    class="pt-30 lg:pt-62"
   >
     <div class="grid grid-cols-[auto_1fr] grid-rows-[min-content_1fr] mx-auto px-6 container">
       <div class="col-span-2 max-w-190 pb-3 lg:col-span-1">
@@ -18,8 +18,8 @@ const { t } = useI18n({
         <img src="/store-side.png" alt="phone" class="mx-auto">
       </div>
 
-      <div class="mt-3 flex flex-col justify-end">
-        <p class="text-xs">
+      <div class="mt-3 flex flex-col lg:mt-17">
+        <p class="text-xs lg:text-lg">
           L’application est
         </p>
 
