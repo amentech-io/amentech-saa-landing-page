@@ -59,7 +59,7 @@ const cards = [
 
 <i18n lang="yaml">
 fr:
-  title: Vous avez des questions? <span class="text-[#1C57BC] bg-white pb-2 px-3 rounded-2xl">On&nbsp;a&nbsp;des&nbsp;réponses</span>
+  title: Vous avez des questions? <span class="text-[#1C57BC] bg-[#D9F3F4] pb-2 px-3 rounded-2xl">On&nbsp;a&nbsp;des&nbsp;réponses</span>
   subtitle: Une question reste sans réponse ? N’hésitez pas à consulter notre FAQ ou un conseiller via le chat !
   item1:
     title: Doit-on déclarer tout changement survenu à son assureur ?
