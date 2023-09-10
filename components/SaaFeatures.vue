@@ -39,13 +39,12 @@ const cards = [
         <span v-html="t('title')" />
       </h3>
 
-      <div class="grid mx-6 mb-8 mt-5 gap-5 lg:grid-cols-3 lg:mt-22">
+      <div class="grid mx-6 mb-8 mt-5 gap-5 lg:grid-cols-3 lg:grid-rows-2 lg:mt-22">
         <div
           v-for="card, idx in cards" :key="idx"
-          hover="from-[#1C57BC]/40 via-[#1C57BC]/15 to-[#EE4E80]/34 from-10% to-100% via-52% bg-gradient-to-br"
-          class="card-gradient-border relative flex-none snap-start rounded-8 bg-[#0D1035] px-5 py-4 text-white shadow-md lg:px-8 lg:py-6"
+          class="box-gradient relative flex-none snap-start border border-transparent rounded-8 px-5 py-4 text-white shadow-md hover:border-transparent lg:px-8 lg:py-6"
         >
-          <p class="mt-4 max-w-15ch text-sm font-bold lg:mt-6 lg:text-2xl">
+          <p class="mt-4 max-w-20ch text-sm font-bold lg:mt-6 lg:text-2xl">
             {{ card.title }}
           </p>
           <p class="mt-3 text-xs leading-loose lg:mt-4 lg:text-xl">
@@ -78,10 +77,15 @@ const cards = [
   --at-apply: bg-white/30 rounded;
 }
 
-.card-gradient-border:hover::after {
-  content: '';
-  --at-apply: absolute inset-0 -m-0.5 rounded-9 -z-2
-    bg-[#1C57BC] from-[#1C57BC] via-[#9D5CA2] to-[rgba(252,81,133,0.94)] from-0% to-98% via-47% bg-gradient-to-bl;
+.box-gradient {
+  --color: #0D1035,#0D1035;
+  --bg-color: #0D1035,#0D1035;
+  background: linear-gradient(140deg, var(--bg-color)) padding-box,
+    linear-gradient(45deg, var(--color)) border-box;
+}
+.box-gradient:hover {
+  --color: #3F56B3,#F25187;
+  --bg-color: #250666 60%, #510043;
 }
 </style>
 
