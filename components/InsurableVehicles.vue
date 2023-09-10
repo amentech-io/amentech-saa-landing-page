@@ -46,7 +46,7 @@ function clickHandler(idx: number) {
         <div
           v-for="card, idx in cards" :key="idx"
           class="text-cente [background:linear-gradient(#1F0044,#13002A,#110031)_padding-box,linear-gradient(to_right,#D6528E,#2F2EB7)_border-box] relative flex flex-none gap-4 border border-[#05031F] rounded-full px-5 py-4 hover:border-transparent lg:px-27 lg:py-8 lg:text-3xl"
-          @click="clickHandler(idx)"
+          @mouseover="clickHandler(idx)"
         >
           <div>
             <img class="mx-auto h-12 w-12 p-2 lg:h-18 lg:w-18 lg:p-3" :src="card.icon" alt="">
