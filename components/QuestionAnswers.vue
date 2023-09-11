@@ -37,14 +37,15 @@ const cards = [
       <h3 class="mx-auto text-lg font-bold lg:text-5xl" v-html="t('title')" />
       <p class="mx-auto mt-3 text-xs font-medium lg:mt-9 lg:text-2xl" v-html="t('subtitle')" />
 
-      <div class="grid grid-cols-1 mt-5 gap-10 lg:grid-cols-2 lg:mt-28">
+      <div class="grid mt-5 gap-x-10 lg:grid-flow-col-dense lg:grid-cols-2 lg:mt-28">
         <Disclosure
           v-for="card, idx in cards"
           v-slot="{ open }" :key="idx"
-          as="div" class="relative py-2 font-bold shadow-md [&[data-headlessui-state=open]]:bg-[#09113A] lg:py-6 lg:text-2xl all:transition"
+          :class="{ 'col-start-2': idx === 5 || idx === 4 }"
+          as="div" class="relative col-start-1 py-40 font-bold shadow-md [&[data-headlessui-state=open]]:bg-[#09113A] hover:bg-[#09113A] lg:py-6 lg:text-2xl all:transition"
         >
-          <DisclosureButton as="div" class="mb-4 flex cursor-pointer items-center justify-between px-5 text-xs lg:text-6">
-            <span>{{ card.title }}</span>
+          <DisclosureButton as="div" class="mb-4 flex cursor-pointer items-center justify-between px-5 text-xs leading-normal lg:text-6">
+            <span>{{ card.title }} </span>
             <UnoIcon i-ic-outline-keyboard-arrow-down class="ml-2 h-10 w-10 flex-none" :class="open && 'rotate--180'" />
           </DisclosureButton>
           <DisclosurePanel class="text-md mt-8 text-[#181B34]/60">
