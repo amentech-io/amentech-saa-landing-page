@@ -37,13 +37,13 @@ const cards = [
 
       <div class="grid px-4 pt-6 2xl:grid-cols-[1fr_1.2fr] lg:py-15">
         <div class="my-auto lg:ml-30">
-          <h3 class="text-lg font-bold lg:text-5xl" v-html="t('title')" />
+          <h3 class="text-lg font-bold lg:text-4xl" v-html="t('title')" />
 
           <p class="mx-auto mt-3 text-xs font-medium lg:mt-10 lg:text-2xl" v-html="t('subtitle')" />
         </div>
 
         <div>
-          <div class="grid grid-cols-2 mt-8 gap-4 md:grid-cols-3 2xl:mt-0">
+          <div class="grid grid-cols-2 mt-8 gap-3 md:grid-cols-3 2xl:mt-0">
             <div
               v-for="card, idx in cards" :key="idx"
               class="px-5 py-4 lg:px-8 lg:py-6"
@@ -51,7 +51,7 @@ const cards = [
               <div class="mx-auto h-9 w-9 rounded-full lg:h-26 lg:w-26">
                 <img :src="card.icon" alt="guard card">
               </div>
-              <p class="mt-4 text-center text-xs font-bold lg:mt-6 lg:text-2xl">
+              <p class="mt-4 text-center text-xs font-bold lg:mt-6 lg:whitespace-nowrap lg:text-xl">
                 {{ card.title }}
               </p>
             </div>
