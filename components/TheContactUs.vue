@@ -29,10 +29,11 @@ onMounted(() => {
 
 async function onSubmit(v, { resetForm }) {
   const data = await $fetch('/api/contact', { method: 'post', body: v })
-  if (data.validateData.success)
+  if (data.validateData.success) {
     alert('done')
+    resetForm()
+  }
   getCaptcha()
-  resetForm()
 }
 </script>
 
@@ -128,7 +129,7 @@ async function onSubmit(v, { resetForm }) {
           <!-- <img src="/api/captcha" alt=""> -->
           <img
             :src="captcha" alt="captcha"
-            class="cursor-pointer rounded-2xl w-38 bg-white object-contain px-4"
+            class="w-38 cursor-pointer rounded-2xl bg-white object-contain px-4"
             @click="getCaptcha()"
           >
           <div class="of-hidden border border-[#181B34] rounded-2xl text-black/80 hover:border-[#181B34]/60">
