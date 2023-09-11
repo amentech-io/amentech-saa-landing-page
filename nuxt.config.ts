@@ -16,12 +16,13 @@ export default defineNuxtConfig({
     preflight: true,
   },
   i18n: {
-    // vueI18n: '/i18n.config.ts',
-    vueI18n: {
-      legacy: false,
-      locale: 'fr',
-    },
+    vueI18n: '/i18n.config.ts',
     langDir: 'locales',
+    compilation: {
+      // jit: false,
+      strictMessage: false,
+      // escapeHtml: true,
+    },
     lazy: true,
     locales: [
       { code: 'fr', iso: 'fr-DZ', file: 'fr.yml' },
