@@ -59,7 +59,7 @@ function selectItem(idx: number) {
                   {{ idx + 1 }}
                 </span>
               </div>
-              <p class="text-sm font-bold lg:text-2xl">
+              <p class="text-sm max-w-38ch font-bold lg:text-2xl">
                 {{ card.title }}
               </p>
               <p class="mt-3 max-w-50ch text-xs leading-loose lg:mt-4 lg:text-xl">
@@ -107,15 +107,15 @@ fr:
   title: Si <span class="mb-1 bg-white text-[#0D1035] px-2 pb-1 rounded-xl">rapide</span> que vous pouvez le faire pendant que votre café est encore chaud
   subtitle: Nous avons rendu cela super simple - il n'est pas nécessaire de déterrer de vieux dossiers ou de la paperasse. Au cas où vous en auriez besoin, nous avons des conseillers non-commissionnés prêts à vous aider à chaque étape du processus.
   item1:
-    title: Obtenez un devis instantané et sans engagement
-    description: Répondez à quelques questions rapides personnalisez les détails de votre couverture et obtenez un taux estimé en quelques secondes.
+    title: Recevez votre devis instantané sans engagement en quelques clics!
+    description: Personnalisez les détails de votre couverture en répondant à quelques questions rapides et obtenez un taux estimé en quelques secondes.
   item2:
-    title: Postulez en ligne en 20 minutes
-    description: 'Conseil de pro : économisez 10% la première année lorsque vous souscrivez avec la couverture'
+    title: Poursuivez à une souscription façilement!
+    description: Avec NSURI en quelques clics, devenez Assuré à travers notre processus en Ligne facile et optimisé.
   item3:
-    title: Découvrez immédiatement si vous êtes approuvé
-    description: Ou si nous avons besoin d’un peu plus d’informations ( la plupart du temps, nous n’en avons pas ! )
+    title: Payez votre contrat en un clic!
+    description: Faites le paiement en ligne de votre contrat en toute simplicité avec NSURI ! Gagnez du temps et profitez de la commodité de gérer votre assurance en ligne.
   item4:
-    title: Activez votre police lorsque vous êtes prêt
-    description: Votre couverture, votre horaire. le paiement n’est requis que lorsque vous êtes prêt à appuyer sur “go”
+    title: Votre contrat prêt à démarrer
+    description: votre contrat devient actif, vous offrant une protection instantanée et une tranquillité d'esprit totale. Plus besoin d'attendre, profitez pleinement de votre assurance personnalisée dès maintenant!
 </i18n>
