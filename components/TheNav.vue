@@ -53,9 +53,8 @@ const menuIsOpen = ref(false)
         <div class="ml-a flex items-center lg:hidden">
           <TheLangSelect class="text-3 [&_span]:text-3" />
 
-          <div class="h-4 w-0.5 bg-gray-4" />
+          <div class="mr-3 h-4 w-1px bg-gray-4" />
 
-          <span class="mr-3 h-1/6 w-0.5 bg-white/50" />
           <button class="py-2" @click="menuIsOpen = !menuIsOpen">
             <UnoIcon :class="!menuIsOpen ? 'i-ic-baseline-menu' : 'i-ic-baseline-close'" />
           </button>
