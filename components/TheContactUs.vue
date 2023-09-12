@@ -167,11 +167,12 @@ async function onSubmit(v, { resetForm }) {
           </div>
         </div>
 
-        <div class="flex justify-end pt-3 lg:pt-7">
+        <div class="pt-3 lg:pt-7">
           <button
-            class="inline-block w-full rounded-2xl from-[#1C57BC] via-[#9D5CA2] to-[rgba(252,81,133,0.94)] from-0% to-98% via-47% bg-gradient-to-l px-10 py-2 font-semibold text-white transition lg:px-18 lg:py-5 lg:text-lg hover:opacity-90 hover:ring-4 hover:ring-white/50"
+            class="group w-full inline-flex items-center justify-center rounded-2xl from-[#1C57BC] via-[#9D5CA2] to-[rgba(252,81,133,0.94)] from-0% to-98% via-47% bg-gradient-to-l px-10 py-2 font-semibold text-white transition lg:px-18 lg:py-5 lg:text-lg hover:opacity-90 hover:ring-4 hover:ring-white/50"
           >
-            {{ $t('send') }}
+            <span>{{ $t('send') }}</span>
+            <UnoIcon i-ic-baseline-arrow-forward class="ml-2 inline-block h-5 w-5 transition group-hover:translate-x-1" />
           </button>
         </div>
       </Form>
