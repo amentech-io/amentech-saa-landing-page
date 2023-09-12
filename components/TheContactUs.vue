@@ -57,10 +57,11 @@ async function onSubmit(v, { resetForm }) {
 
       <Form
         v-slot="fieldErrors"
-        class="relative mx-auto mt-6 max-w-80ch border border-[#D95188]/30 rounded-5 bg-white/10 text-xl lg:mt-14 space-y-2 lg:px-19 lg:py-25 lg:shadow-[0px_0px_25px_0px_#181B341A] sm:space-y-8"
+        class="relative mx-auto mt-6 max-w-80ch border border-[#D95188]/30 rounded-5 bg-white/10 px-2 py-4 text-xl lg:mt-14 space-y-2 lg:px-19 lg:py-25 lg:shadow-[0px_0px_25px_0px_#181B341A] sm:space-y-8"
         :validation-schema="fieldSchema"
         @submit="onSubmit"
       >
+        <pre> {{ fieldErrors }} </pre>
         <div class="absolute left-0 top-0 translate-x--2/3 translate-y--1/3">
           <img src="/contact-location-icon.svg" alt="contact location">
         </div>
@@ -95,10 +96,41 @@ async function onSubmit(v, { resetForm }) {
         <div class="flex flex-col space-y-2">
           <label for="object" class="text-xs font-medium lg:text-5">{{ $t('subject') }} *</label>
           <div
-            class="of-hidden border border-[#181B34] rounded-2xl text-black/80 hover:border-[#181B34]/60"
+            class="of-hidden border border-[#181B34] rounded-2xl bg-white pr-2 text-black/80 hover:border-[#181B34]/60"
             :class="{ 'ring ring-red': fieldErrors.errors.object }"
           >
-            <Field id="object" name="object" class="w-full px-3 py-4 text-xs outline-none lg:text-base" type="text" />
+            <Field id="object" as="select" name="object" value="Tea" class="tex-tred w-full bg-white px-3 py-4 text-xs outline-none lg:text-base" @change="(e) => console.log(e)">
+              <option value="Devis d'assurance">
+                Devis d'assurance
+              </option>
+              <option value="Réclamation d'assurance">
+                Réclamation d'assurance
+              </option>
+              <option value="Support technique">
+                Support technique
+              </option>
+              <option value="Partenariat">
+                Partenariat
+              </option>
+              <option value="Questions générales">
+                Questions générales
+              </option>
+              <option value="Problèmes de facturation">
+                Problèmes de facturation
+              </option>
+              <option value="Commentaires et suggestions">
+                Commentaires et suggestions
+              </option>
+              <option value="Problèmes de connexion">
+                Problèmes de connexion
+              </option>
+              <option value="Assistance en ligne">
+                Assistance en ligne
+              </option>
+              <option value="Informations sur la politique">
+                Informations sur la politique
+              </option>
+            </Field>
           </div>
         </div>
 
@@ -126,7 +158,6 @@ async function onSubmit(v, { resetForm }) {
         </div>
 
         <div class="flex gap-6">
-          <!-- <img src="/api/captcha" alt=""> -->
           <img
             :src="captcha" alt="captcha"
             class="w-38 cursor-pointer rounded-2xl bg-white object-contain px-4"
