@@ -5,12 +5,12 @@ const { t } = useI18n({
 const cards = [
   {
     title: t('item1.title'),
-    icon: '/car.svg',
+    icon: '/moto.svg',
     description: t('item1.description'),
   },
   {
     title: t('item2.title'),
-    icon: '/moto.svg',
+    icon: '/car.svg',
     description: t('item2.description'),
   },
   {
