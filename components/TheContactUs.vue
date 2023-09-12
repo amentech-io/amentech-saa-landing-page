@@ -61,7 +61,6 @@ async function onSubmit(v, { resetForm }) {
         :validation-schema="fieldSchema"
         @submit="onSubmit"
       >
-        <pre> {{ fieldErrors }} </pre>
         <div class="absolute left-0 top-0 translate-x--2/3 translate-y--1/3">
           <img src="/contact-location-icon.svg" alt="contact location">
         </div>
