@@ -31,7 +31,7 @@ function selectItem(idx: number) {
 
 <template>
   <section>
-    <div class="relative mx-auto mb-12 px-6 pt-6 container lg:pb-27 lg:pt-17">
+    <div class="relative mx-auto px-6 pt-6 container lg:pt-17">
       <div class="absolute aspect-1 w-1/6 translate-x-full rounded-full bg-[#FC5185]/25 blur-130" />
 
       <h3 class="mx-auto max-w-32ch text-center text-lg font-bold lg:text-5xl" v-html="t('title')" />

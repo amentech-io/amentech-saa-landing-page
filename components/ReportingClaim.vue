@@ -20,7 +20,7 @@ const cards = [
 
 <template>
   <section>
-    <div class="mx-auto px-6 py-11 container lg:pb-23 lg:pt-25">
+    <div class="mx-auto px-6 py-11 container lg:pb-23 lg:pt-50">
       <div class="grid 2xl:grid-cols-2">
         <div class="relative my-a hidden 2xl:block 2xl:pr-14">
           <img src="/reporting-claim-bg.png" alt="phone app">

@@ -31,7 +31,7 @@ const cards = [
 </script>
 
 <template>
-  <section class="mx-auto px-6 container">
+  <section class="mx-auto px-6 pt-9 container lg:pt-54">
     <div class="relative rounded-2 bg-white text-[#181B34] lg:rounded-10">
       <div class="absolute bottom-0 right-0 z-20 aspect-1 w-1/6 translate-x-1/2 translate-y-1/2 rounded-full bg-[#FC5185]/25 blur-150" />
 

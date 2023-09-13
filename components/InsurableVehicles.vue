@@ -22,12 +22,12 @@ const cards = [
 
 const selectedItem = ref(1)
 function clickHandler(idx: number) {
-  selectedItem.value = idx+1
+  selectedItem.value = idx + 1
 }
 </script>
 
 <template>
-  <section class="lg:mt-30">
+  <section class="mt-12 lg:mt-40">
     <div class="relative mx-auto py-11 container lg:pb-23 lg:pt-25">
       <div class="relative mb-40">
         <div class="absolute inset-0 mx-auto aspect-1 w-1/5 rounded-full bg-[#FC5185]/25 blur-120" />
