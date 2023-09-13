@@ -28,10 +28,10 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
     </div>
     <div class="mx-auto">
       <h1
-        class="max-w-30ch text-center text-8 font-bold leading-10 lg:text-6xl lg:leading-24"
+        class="max-w-30ch text-center text-2xl font-black leading-10 lg:text-6xl lg:leading-24"
         v-html=" t('title')"
       />
-      <p class="mx-auto my-4 max-w-62ch text-center text-3 leading-10.5 leading-4 lg:my-15 lg:text-6 lg:leading-7">
+      <p class="mx-auto my-4 max-w-68ch text-center text-xs leading-10.5 leading-4 lg:my-15 lg:text-xl lg:leading-8">
         {{ t('subtitle') }}
       </p>
 
@@ -48,7 +48,7 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
 
       <div class="flex justify-center">
         <NuxtLink
-          class="mt-4 inline-block rounded-3 from-[#1C57BC] via-[#9D5CA2] to-[rgba(252,81,133,0.94)] from-0% to-98% via-47% bg-gradient-to-l px-10 py-2 font-semibold text-white transition lg:mt-15 lg:px-18 lg:py-5 lg:text-lg hover:opacity-90 hover:ring-4 hover:ring-white/50"
+          class="mt-4 inline-block rounded-4 from-[#1C57BC] via-[#9D5CA2] to-[rgba(252,81,133,0.94)] from-0% to-98% via-47% bg-gradient-to-l px-10 py-2 font-extrabold text-white transition lg:mt-15 lg:px-18 lg:py-5 lg:text-xl hover:opacity-90 hover:ring-4 hover:ring-white/50"
           to="contact"
         >
           {{ $t('contact-us') }}
@@ -90,7 +90,7 @@ to {
 
 <i18n lang="yaml">
 fr:
-  title: <span class="underline-gradient">NSURI</span>,l’assurances Simplifiées en Quelques Clics !
+  title: <span class="underline-gradient">NSURI</span>,&nbsp; l’assurances Simplifiées en Quelques Clics !
   subtitle: Découvrez NSURI, l'assurance digitale réinventée en quelques clics ! Simplifiez la gestion instantanée de vos contrats, souscrivez de nouvelles couvertures personnalisées et suivez vos sinistres en temps réel, pour une tranquillité de conduite inégalée.
   features:
     item1: 100% mobile et flexible
