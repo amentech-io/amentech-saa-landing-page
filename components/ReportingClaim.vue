@@ -69,7 +69,8 @@ const cards = [
 <style>
 .box-gradient {
   /* --color: red, darkorchid; */
-  background: linear-gradient(#05031F, #05031F) padding-box,
+  --bg-color: #05031F,#05031F;
+  background: linear-gradient(var(--bg-color)) padding-box,
     linear-gradient(to bottom right, var(--color)) border-box;
 }
 </style>
