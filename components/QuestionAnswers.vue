@@ -43,7 +43,7 @@ const cards = [
           v-slot="{ open }" :key="idx"
           :class="{ 'lg:col-start-2': idx === 5 || idx === 4 }"
           as="div"
-          class="relative my-1 col-start-1 shadow-md [&[data-headlessui-state=open]]:bg-[#09113A] hover:bg-[#09113A] all:transition"
+          class="relative col-start-1 shadow-md [&[data-headlessui-state=open]]:bg-[#09113A] hover:bg-[#09113A] all:transition"
         >
           <DisclosureButton as="div" class="my-8 flex cursor-pointer items-center justify-between px-5 text-xs leading-normal lg:text-lg">
             <span>{{ card.title }} </span>
