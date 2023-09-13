@@ -42,7 +42,7 @@ const cards = [
       <div class="grid mx-6 mb-8 mt-5 gap-5 lg:grid-cols-3 lg:grid-rows-2 lg:mt-22">
         <div
           v-for="card, idx in cards" :key="idx"
-          class="box-gradient relative flex-none snap-start border border-transparent rounded-8 px-5 py-4 text-white shadow-md hover:border-transparent lg:px-8 lg:py-6"
+          class="box-gradient relative flex-none snap-start border-1px border-transparent rounded-8 px-5 py-4 text-white shadow-md hover:border-transparent lg:px-8 lg:py-6"
         >
           <p class="mt-4 max-w-20ch text-sm font-bold lg:mt-6 lg:text-2xl">
             {{ card.title }}
