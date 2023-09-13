@@ -14,7 +14,7 @@ const cards = [
     <div class="absolute right-1/2 top-1/2 aspect-1 w-1/3 translate-x-full rounded-full bg-[#FC5185]/25 blur-300 -translate-y-1/2" />
 
     <div class="mx-auto px-6 container">
-      <h2 class="text-center text-lg font-bold lg:text-5xl" v-html="t('title')" />
+      <h2 class="text-center text-lg font-bold lg:text-4xl" v-html="t('title')" />
 
       <div class="mt-8 flex flex-col gap-8 lg:mt-43 lg:gap-52">
         <div
