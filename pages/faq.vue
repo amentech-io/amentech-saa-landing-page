@@ -53,7 +53,7 @@ const cards = [
     <div class="mx-auto flex flex-col gap-y-12 px-6 container lg:mt-42 lg:flex-row">
       <div class="relative h-full w-full lg:h-full">
         <div class="absolute aspect-1 h-full w-1/2 translate-x-full rounded-full bg-[#1C57BC]/26 blur-200" />
-        <img src="faq-side.png" alt="">
+        <img src="/faq-side.png" alt="">
       </div>
       <div class="max-w-70ch pl-0 lg:pl-8">
         <h4
