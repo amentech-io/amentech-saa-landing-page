@@ -13,6 +13,7 @@
       <OptimalProtection />
       <QuestionAnswers />
       <AppStore />
+      <Footer />
       <Suspense>
         <template #fallback>
           <div class="italic op50">
