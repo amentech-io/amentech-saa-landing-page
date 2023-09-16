@@ -6,7 +6,7 @@ const { t } = useI18n({
 
 <template>
   <section
-    class="pt-28 lg:pt-62"
+    class="pt-28 lg:mb-10 lg:pt-62"
   >
     <div class="grid grid-cols-[auto_1fr] grid-rows-[min-content_1fr] mx-auto px-6 container">
       <div class="col-span-2 max-w-190 pb-3 lg:col-span-1">
