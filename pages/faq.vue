@@ -75,7 +75,7 @@ const cards = [
     </div>
   </div>
 
-  <div class="grid mx-auto mt-18 gap-8 px-6 container lg:mt-28">
+  <div class="lg:mb-34 grid mx-auto mt-18 gap-8 px-6 container lg:mt-28">
     <Disclosure
       v-for="card, idx in cards"
       v-slot="{ open }" :key="idx"
@@ -91,6 +91,8 @@ const cards = [
       </DisclosurePanel>
     </Disclosure>
   </div>
+
+  <Footer />
 </template>
 
 <i18n lang="yaml">

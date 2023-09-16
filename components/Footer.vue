@@ -44,7 +44,7 @@ const footer = [
 </script>
 
 <template>
-  <footer class="from-transparent via-[#2C1030]/80 to-transparent bg-gradient-to-b">
+  <footer class="border-t border-[#2C1030] from-transparent via-[#2C1030]/80 to-transparent bg-gradient-to-b">
     <div class="mx-auto flex flex-col pb-13 pt-15 container 2xl:flex-row">
       <div>
         <div class="max-w-38">
@@ -70,7 +70,7 @@ const footer = [
         </div>
       </div>
 
-      <div class="grid mt-6 2xl:mt-0 gap-8 lg:grid-cols-4 2xl:ml-auto">
+      <div class="grid mt-6 gap-8 lg:grid-cols-4 2xl:ml-auto 2xl:mt-0">
         <Disclosure
           v-for="i, idx in footer"
           v-slot="{ open }"

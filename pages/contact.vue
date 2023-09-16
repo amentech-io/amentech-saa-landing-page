@@ -6,5 +6,6 @@
     <div>
       <TheContactUs />
     </div>
+    <Footer />
   </div>
 </template>
