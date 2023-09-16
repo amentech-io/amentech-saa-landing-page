@@ -15,11 +15,11 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
       <div class="grid grid-cols-2 flex-auto place-items-center">
         <div
           style="animation: blur-movement 5s linear 2s infinite alternate;"
-          class="hidden lg:block aspect-1 w-90 rounded-full bg-[#1C57BC]/30 blur-200 -translate-x-[100%]"
+          class="hidden aspect-1 w-90 rounded-full bg-[#1C57BC]/30 blur-200 lg:block -translate-x-[100%]"
         />
         <div
           style="animation: blur-movement 5s linear 2s infinite alternate-reverse;"
-          class="hidden lg:block aspect-1 w-100 translate-x-[100%] rounded-full bg-[#FC5185]/30 blur-200"
+          class="hidden aspect-1 w-100 translate-x-[100%] rounded-full bg-[#FC5185]/30 blur-200 lg:block"
         />
       </div>
       <div class="my-auto mr-25 hidden lg:block">

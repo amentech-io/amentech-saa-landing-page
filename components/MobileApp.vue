@@ -59,7 +59,7 @@ function selectItem(idx: number) {
                   {{ idx + 1 }}
                 </span>
               </div>
-              <p class="text-sm max-w-38ch font-bold lg:text-2xl">
+              <p class="max-w-38ch text-sm font-bold lg:text-2xl">
                 {{ card.title }}
               </p>
               <p class="mt-3 max-w-50ch text-xs leading-loose lg:mt-4 lg:text-xl">

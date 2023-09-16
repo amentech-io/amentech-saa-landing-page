@@ -13,7 +13,7 @@ const head = useLocaleHead({ addSeoAttributes: true })
           <Meta :hid="meta.hid" :property="meta.property" :content="meta.content" />
         </template>
       </Head>
-      <Body class="font-sans bg-[#05031F] text-white">
+      <Body class="bg-[#05031F] font-sans text-white">
         <slot />
       </Body>
     </Html>
