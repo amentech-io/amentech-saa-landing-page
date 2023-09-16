@@ -64,9 +64,9 @@ const footer = [
         </p>
 
         <div class="mt-5 flex gap-x-8">
-          <UnoIcon class="i-custom-linkedin ml-2 h-7 w-7 text-white" />
-          <UnoIcon class="i-custom-facebook ml-2 h-7 w-7 text-white" />
-          <UnoIcon class="i-custom-twitter ml-2 h-7 w-7 text-white" />
+          <a href="https://www.linkedin.com/company/soci%C3%A9t%C3%A9nationaledassurance/"><UnoIcon class="i-custom-linkedin ml-2 h-7 w-7 text-white" /></a>
+          <a href="https://fr-fr.facebook.com/ww.saa.dz/"><UnoIcon class="i-custom-facebook ml-2 h-7 w-7 text-white" /></a>
+          <a href="#"><UnoIcon class="i-custom-twitter ml-2 h-7 w-7 text-white" /></a>
         </div>
       </div>
 
