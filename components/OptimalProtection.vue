@@ -31,22 +31,19 @@ const cards = [
 </script>
 
 <template>
-  <section>
-    <div class="mx-auto rounded-2 bg-[#181B34] container lg:rounded-10">
-      <div class="grid pt-14 2xl:grid-cols-[1fr_1.2fr] lg:pt-25">
-        <div class="relative ml-10 mr-5 text-white lg:ml-30">
-          <div class="relative">
-            <img class="absolute top--8 ml--6 w-13 rotate--90 lg:top--21 lg:ml--10 lg:w-26" src="/saa-title-decorator.svg" alt="title decorator">
-            <h3 class="text-lg font-bold lg:text-5xl" v-html="t('title')" />
-          </div>
+  <section class="mx-auto px-6 pt-9 container lg:pt-54">
+    <div class="relative rounded-2 bg-white text-[#181B34] lg:rounded-10">
+      <div class="absolute bottom-0 right-0 z-20 aspect-1 w-1/6 translate-x-1/2 translate-y-1/2 rounded-full bg-[#FC5185]/25 blur-150" />
+
+      <div class="grid px-4 pt-6 2xl:grid-cols-[1fr_1.2fr] lg:py-15">
+        <div class="my-auto lg:ml-30">
+          <h3 class="text-lg font-bold lg:text-4xl" v-html="t('title')" />
 
           <p class="mx-auto mt-3 text-xs font-medium lg:mt-10 lg:text-2xl" v-html="t('subtitle')" />
-
-          <div class="absolute right-1/2 top-1/2 aspect-1 w-3/4 translate-x-1/2 rounded-full bg-[#BEBBD1]/40 blur-2xl -z-1 -translate-y-1/2" />
         </div>
 
         <div>
-          <div class="grid grid-cols-2 mt-8 gap-4 md:grid-cols-3 2xl:mt-0">
+          <div class="grid grid-cols-2 mt-8 gap-3 md:grid-cols-3 2xl:mt-0">
             <div
               v-for="card, idx in cards" :key="idx"
               class="px-5 py-4 lg:px-8 lg:py-6"
@@ -54,7 +51,7 @@ const cards = [
               <div class="mx-auto h-9 w-9 rounded-full lg:h-26 lg:w-26">
                 <img :src="card.icon" alt="guard card">
               </div>
-              <p class="mt-4 text-center text-xs font-bold text-white lg:mt-6 lg:text-2xl">
+              <p class="mt-4 text-center text-xs font-bold lg:mt-6 lg:whitespace-nowrap lg:text-xl">
                 {{ card.title }}
               </p>
             </div>
@@ -67,8 +64,8 @@ const cards = [
 
 <i18n lang="yaml">
 fr:
-  title: Une protection optimale
-  subtitle: SAA a sélectionné les garanties essentielles pour protéger au mieux votre véhicule et son conducteur (ça c'est vous !)
+  title: Des garanties sur mesure!
+  subtitle: SAA vous propose une sélection soigneusement élaborée de garanties essentielles pour protéger au mieux votre véhicule et son conducteur - c'est vous ! Profitez d'une couverture complète et personnalisée qui vous offre une tranquillité d'esprit totale sur la route, où que vous alliez.
   item1:
     title: Responsabilité civile
   item2:

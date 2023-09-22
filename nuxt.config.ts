@@ -4,20 +4,25 @@ export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
     '@nuxtjs/i18n',
-    '@vueuse/motion/nuxt',
     '@vueuse/nuxt',
+    '@sidebase/nuxt-session',
+    '@vee-validate/nuxt',
+    // '@tailvue/nuxt',
+    // 'vue-recaptcha/nuxt',
+    // '@vueuse/motion/nuxt',
     // '@nuxt/image-edge',
   ],
   unocss: {
     preflight: true,
   },
   i18n: {
-    // vueI18n: '/i18n.config.ts',
-    vueI18n: {
-      legacy: false,
-      locale: 'fr',
-    },
+    vueI18n: '/i18n.config.ts',
     langDir: 'locales',
+    compilation: {
+      // jit: false,
+      strictMessage: false,
+      // escapeHtml: true,
+    },
     lazy: true,
     locales: [
       { code: 'fr', iso: 'fr-DZ', file: 'fr.yml' },

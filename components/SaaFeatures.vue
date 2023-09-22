@@ -19,26 +19,35 @@ const cards = [
     title: t('item4.title'),
     description: t('item4.description'),
   },
+  {
+    title: t('item5.title'),
+    description: t('item5.description'),
+  },
+  {
+    title: t('item6.title'),
+    description: t('item6.description'),
+  },
 ]
 </script>
 
 <template>
-  <section class="bg-[#181B34]">
+  <section class="relative">
     <div class="mx-auto py-11 container lg:pb-23 lg:pt-25">
-      <h3 class="max-w-max flex items-center px-6 text-lg font-bold text-[#C4CEEF] lg:text-5xl">
+      <div class="absolute aspect-1 w-1/6 rounded-full bg-[#FC5185]/25 blur-300 -translate-y-1/2" />
+
+      <h3 class="flex items-center px-6 text-lg font-bold lg:text-5xl">
         <span v-html="t('title')" />
-        <img class="ml--8 mt--8 w-16 lg:mt--12" src="/saa-title-decorator.svg" alt="title decorator">
       </h3>
 
-      <div class="mb-8 ml-6 mt-5 flex snap-x gap-4 of-x-auto of-y-hidden py-4 pl-1/5 pr-6 lg:mt-22 lg:justify-center lg:gap-5 2xl:pl-0">
+      <div class="grid mx-6 mb-8 mt-5 gap-5 lg:grid-cols-3 lg:grid-rows-2 lg:mt-22">
         <div
           v-for="card, idx in cards" :key="idx"
-          class="flex-none snap-start rounded-8 bg-[#F8F8FA] px-5 py-4 shadow-md hover:bg-[#C4CEEF] lg:px-8 lg:py-6"
+          class="box-gradient relative flex-none snap-start border-1px border-transparent rounded-8 px-5 py-4 text-white shadow-md hover:border-transparent lg:px-8 lg:py-6"
         >
-          <p class="mt-4 max-w-15ch text-sm font-bold lg:mt-6 lg:text-2xl">
+          <p class="mt-4 max-w-20ch text-sm font-bold lg:mt-6 lg:text-2xl">
             {{ card.title }}
           </p>
-          <p class="mt-3 max-w-24ch text-xs leading-loose lg:mt-4 lg:text-xl">
+          <p class="mt-3 text-xs leading-loose lg:mt-4 lg:text-xl">
             {{ card.description }}
           </p>
         </div>
@@ -67,21 +76,38 @@ const cards = [
 ::-webkit-scrollbar-thumb:hover {
   --at-apply: bg-white/30 rounded;
 }
+
+.box-gradient {
+  --color: #0D1035,#0D1035;
+  --bg-color: #0D1035,#0D1035;
+  background: linear-gradient(140deg, var(--bg-color)) padding-box,
+    linear-gradient(45deg, var(--color)) border-box;
+}
+.box-gradient:hover {
+  --color: #3F56B3,#F25187;
+  --bg-color: #250666 60%, #510043;
+}
 </style>
 
 <i18n lang="yaml">
 fr:
-  title: Pourquoi l’assurance auto <span class="block">chez SAA?</span>
+  title: Pourquoi l’assurance auto chez SAA?
   item1:
-    title: Simplicité
-    description: Dès que vous souscrivez, vous recevez votre attestation dans l’application même un dimanche!
+    title: Agence d'Assurance à Portée de Main
+    description: Notre application mobile met votre agence d'assurance à portée de main, vous permettant de gérer toutes vos polices et besoins d'assurance depuis n'importe où.
   item2:
-    title: Tout ce qu’il faut au juste prix
-    description: Profitez de vos garanties essentielles avec une assistance 0km incluse pour tous nos contrats.
+    title: Souscription en Quelques Clics
+    description: Obtenez une couverture d'assurance sans tracas grâce à une souscription simple et rapide en quelques clics seulement.
   item3:
-    title: 100% mobile, 0% paperasse
-    description: Souscrivez en 4 min et on prend en charge sans frais la résiliation de votre ancienne assurance.
+    title: Gestion Facile des Polices
+    description: Centraliser et gérer toutes vos polices d'assurance en temps réel, avec facilité et simplicité.
   item4:
-    title: Personnalisable à tout moment
-    description: Ajustez le montant de vos franchises, votre plafond de garantie conducteur et ajoutez la valeur d’achat du véhicule.
+    title: Notifications Utiles
+    description: Recevez des rappels de paiement et des alertes sur les mises à jour de vos polices directement sur votre mobile.
+  item5:
+    title: Déclarations de Réclamations
+    description: Facilitées Déclarez vos sinistres directement depuis l'application pour un traitement rapide et efficace.
+  item6:
+    title: Améliorations constantes
+    description: Bénéficiez d'améliorations régulières pour une expérience d'assurance toujours à la pointe de l'innovation.
 </i18n>

@@ -5,12 +5,12 @@ const { t } = useI18n({
 const cards = [
   {
     title: t('item1.title'),
-    icon: '/car.svg',
+    icon: '/moto.svg',
     description: t('item1.description'),
   },
   {
     title: t('item2.title'),
-    icon: '/moto.svg',
+    icon: '/car.svg',
     description: t('item2.description'),
   },
   {
@@ -19,37 +19,47 @@ const cards = [
     description: t('item3.description'),
   },
 ]
+
+const selectedItem = ref(1)
+function clickHandler(idx: number) {
+  selectedItem.value = idx + 1
+}
 </script>
 
 <template>
-  <section class="bg-[#DEDDE8]/50">
-    <div class="mx-auto py-11 container lg:pb-23 lg:pt-25">
+  <section class="mt-12 lg:mt-40">
+    <div class="relative mx-auto py-11 container lg:pb-23 lg:pt-25">
+      <div class="relative mb-40">
+        <div class="absolute inset-0 mx-auto aspect-1 w-1/5 rounded-full bg-[#FC5185]/25 blur-120" />
+        <img class="absolute inset-0 mx-auto" src="/arc.png" alt="arc">
+      </div>
+
       <h3 class="mx-auto max-w-max flex items-center px-6 text-center text-lg font-bold lg:text-5xl">
         <span v-html="t('title')" />
-        <img class="ml--8 mt--4 w-16" src="/saa-title-decorator-blue.svg" alt="title decorator">
       </h3>
 
-      <p class="mx-auto px-6 mt-3 max-w-68ch text-center text-xs font-medium lg:mt-10 lg:text-2xl">
+      <p class="mx-auto mt-3 max-w-60ch px-6 text-center text-xs font-medium lg:mt-10 lg:text-2xl">
         {{ t('subtitle') }}
       </p>
 
-      <div class="mt-5 flex flex-col items-center gap-4 lg:mt-22 lg:flex-row lg:justify-center lg:gap-5 2xl:pl-0">
+      <div class="mt-5 flex flex-wrap justify-center gap-4 lg:mt-22 lg:justify-center lg:gap-5 2xl:pl-0">
         <div
           v-for="card, idx in cards" :key="idx"
-          class="flex-none px-5 py-4 text-center lg:px-8 lg:py-6"
+          class="text-cente [background:linear-gradient(#1F0044,#13002A,#110031)_padding-box,linear-gradient(to_right,#D6528E,#2F2EB7)_border-box] relative flex flex-none gap-4 border border-[#05031F] rounded-full px-5 py-4 hover:border-transparent lg:px-27 lg:py-8 lg:text-3xl"
+          @mouseover="clickHandler(idx)"
         >
           <div>
-            <img class="mx-auto h-12 w-12 rounded-full bg-white p-2 lg:h-18 lg:w-18 lg:p-3" :src="card.icon" alt="">
+            <img class="mx-auto h-12 w-12 p-2 lg:h-18 lg:w-18 lg:p-3" :src="card.icon" alt="">
           </div>
 
           <p class="mt-4 text-sm font-bold lg:mt-6 lg:text-2xl">
             {{ card.title }}
           </p>
-          <p class="mt-3 max-w-30ch text-xs leading-loose lg:mt-4 lg:text-xl">
-            {{ card.description }}
-          </p>
         </div>
       </div>
+      <p class="mx-auto mt-3 max-w-64ch px-6 text-center text-xs font-medium lg:mt-13 lg:text-2xl">
+        {{ t(`item${selectedItem}.description`) }}
+      </p>
     </div>
   </section>
 </template>
@@ -57,14 +67,14 @@ const cards = [
 <i18n lang="yaml">
 fr:
   title: Quelles véhicules assurables
-  subtitle: Understand your insurance policy options. Identify the best value. Enjoy peace of mind.
+  subtitle: Découvrez notre gamme complète d'assurances adaptées à chaque véhicule. Profitez d'une couverture optimale pour vos précieux biens roulants, en toute tranquillité sur la route.
   item1:
-    title: Voiture
-    description: Entreprise Publique Economique, agréée pour pratiquer l’ensemble des branches d’assurance,
-  item2:
     title: Moto
-    description: Entreprise Publique Economique, agréée pour pratiquer l’ensemble des branches d’assurance,
+    description: Roulez en toute confiance avec notre assurance motos sur mesure, adaptée aux besoins des motards passionnés de liberté et d'aventure.
+  item2:
+    title: Voiture
+    description: La couverture parfaite pour votre moyen de transport quotidien, protégez votre voiture avec une assurance adaptée à vos besoins.
   item3:
     title: Camion
-    description: Entreprise Publique Economique, agréée pour pratiquer l’ensemble des branches d’assurance,
+    description: Une protection solide pour votre véhicule utilitaire, bénéficiez d'une assurance spécialement conçue pour votre camion et vos activités professionnelles.
 </i18n>

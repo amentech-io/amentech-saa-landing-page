@@ -20,30 +20,44 @@ const cards = [
 
 <template>
   <section>
-    <div class="mx-auto px-6 py-11 container lg:pb-23 lg:pt-25">
+    <div class="mx-auto px-6 py-11 container lg:pb-23 lg:pt-50">
       <div class="grid 2xl:grid-cols-2">
-        <div class="relative my-a hidden 2xl:block">
+        <div class="relative my-a hidden 2xl:block 2xl:pr-14">
           <img src="/reporting-claim-bg.png" alt="phone app">
-          <div class="absolute right-1/2 top-1/2 aspect-1 w-3/4 translate-x-1/2 rounded-full bg-[#BEBBD1]/40 blur-2xl -z-1 -translate-y-1/2" />
+          <div class="absolute right-1/2 top-1/2 aspect-1 w-3/4 translate-x-1/2 rounded-full bg-[#FC5185]/25 blur-250 -z-1 -translate-y-1/2" />
         </div>
 
         <div>
-          <h3 class="mx-auto max-w-20.8ch px-6 text-center text-lg font-bold lg:text-5xl" v-html="t('title')" />
+          <h3 class="max-w-18ch text-lg font-bold lg:text-5xl" v-html="t('title')" />
 
-          <p class="mx-auto mt-3 max-w-68ch text-center text-xs font-medium lg:mt-10 lg:text-2xl" v-html="t('subtitle')" />
+          <p class="mx-auto mt-3 max-w-68ch text-xs font-medium lg:mt-10 lg:text-2xl" v-html="t('subtitle')" />
 
-          <div class="mt-5 flex flex-wrap justify-center gap-4 lg:mt-22 lg:flex-row 2xl:flex-nowrap lg:gap-5 2xl:pl-0">
+          <div class="mx-1 mt-5 flex justify-center gap-4 lg:mt-22 lg:flex-row 2xl:flex-nowrap lg:gap-5 2xl:pl-0">
             <div
               v-for="card, idx in cards" :key="idx"
-              class="rounded-xl bg-white px-5 py-4 shadow-lg lg:px-8 lg:py-6"
+              :style="{
+                ...(idx === 0 && { '--color': '#F85186A6, #F5518721' }),
+                ...(idx === 1 && { '--color': '#1C57BC, #1C57BC21' }),
+                ...(idx === 2 && { '--color': '#FFFFFF, #FFFFFF21' }),
+              }"
+              class="box-gradient relative of-hidden border-1 border-transparent rounded-3"
+              :class="{
+                'from-[#47003C] via-[#21002B] to-[#25002A]': idx === 0,
+                'from-[#1F0044] via-[#13002A] to-[#110031]': idx === 1,
+                'from-[#3C2C4C] via-[#15012A] to-[#231538]': idx === 2,
+              }"
             >
-              <span class="inline-block h-4 w-4 flex items-center justify-center rounded-full bg-[#1C57BC] text-xs font-bold text-white lg:h-6 lg:w-6">{{ idx + 1 }}</span>
-              <p class="mt-4 max-w-12ch text-sm font-bold lg:mt-6 lg:text-2xl">
-                {{ card.title }}
-              </p>
-              <p class="mt-3 max-w-18ch text-xs lg:mt-4 lg:text-xl lg:leading-loose">
-                {{ card.description }}
-              </p>
+              <div
+                class="h-full w-full bg-gradient-to-br px-5 py-4 lg:px-8 lg:py-6"
+              >
+                <span class="inline-block h-4 w-4 flex items-center justify-center rounded-2 bg-[#1C57BC]/20 text-xs font-extrabold text-white lg:h-10 lg:w-10 lg:text-xl">{{ idx + 1 }}</span>
+                <p class="mt-4 max-w-12ch text-xs font-bold lg:mt-6 lg:text-2xl">
+                  {{ card.title }}
+                </p>
+                <p class="mt-3 max-w-18ch text-10px lg:mt-4 lg:text-xl lg:leading-loose">
+                  {{ card.description }}
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -52,10 +66,19 @@ const cards = [
   </section>
 </template>
 
+<style>
+.box-gradient {
+  /* --color: red, darkorchid; */
+  --bg-color: #05031F,#05031F;
+  background: linear-gradient(var(--bg-color)) padding-box,
+    linear-gradient(to bottom right, var(--color)) border-box;
+}
+</style>
+
 <i18n lang="yaml">
 fr:
-  title: Déclarer un <span class="underline-decorator-pink text-[#1C57BC]">sinistre</span>, c’est aussi simple que ça!
-  subtitle: <span class="text-[#1C57BC]">97%</span> de nos clients restent chez SAA après une gestion de sinistres
+  title: Déclarer un <span class="border rounded-xl border-[#EE4E80] px-2 pb-1px leading-10">sinistre</span>, c’est aussi simple que ça!
+  subtitle: Un sinistre ? Nous Sommes Là pour Vous. Une déclaration facile et une prise en charge rapide !
   item1:
     title: Que s’est-il passé ?
     description: Envoyez-nous vos photos et vos documents sur l’appli.

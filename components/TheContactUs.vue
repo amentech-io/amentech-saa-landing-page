@@ -1,110 +1,181 @@
 <script setup lang="ts">
-import useValidate from 'vue-tiny-validate'
+import { toTypedSchema } from '@vee-validate/valibot'
+import { email, minLength, object, string } from 'valibot'
 
 const { t } = useI18n({
   useScope: 'local',
 })
 
-const route = useRoute()
-
-const contact = reactive({
-  fullName: '',
-  email: '',
-  object: '',
-  body: '',
+const ContactSchema = object({
+  fullName: string([minLength(2)]),
+  email: string([email()]),
+  object: string(),
+  captcha: string(),
+  phone: string(),
+  body: string(),
 })
 
-const rules = reactive({
-  fullName: {
-    name: 'required',
-    test: (value: any): boolean => Boolean(value),
-    message: 'le champ du nom complet ne doit pas être vide.',
-  },
-  email: {
-    name: 'required',
-    test: (value: any): boolean => Boolean(value),
-    message: 'le champ du email complet ne doit pas être vide.',
-  },
-  object: {
-    name: 'required',
-    test: (value: any): boolean => Boolean(value),
-    message: 'le champ du object ne doit pas être vide.',
-  },
-  body: {
-    name: 'required',
-    test: (value: any): boolean => Boolean(value),
-    message: 'le champ du message ne doit pas être vide.',
-  },
+const fieldSchema = toTypedSchema(ContactSchema)
+
+const captcha = ref()
+async function getCaptcha() {
+  const img = await $fetch('/api/captcha')
+  // @ts-expect-error TODO: fix typing
+  captcha.value = URL.createObjectURL(img)
+}
+onMounted(() => {
+  getCaptcha()
 })
 
-const { result } = useValidate(contact, rules)
-
-const mailto = computed(() => {
-  return `mailto:contact@amentech.dz?subject=${contact.object}&body=${contact.body}`
-})
-
-function onSubmit(e: { preventDefault: () => void }) {
-  result.value.$test()
-  if (result.value.$invalid)
-    e.preventDefault()
+async function onSubmit(v, { resetForm }) {
+  const data = await $fetch('/api/contact', { method: 'post', body: v })
+  if (data.validateData.success) {
+    alert('done')
+    resetForm()
+  }
+  getCaptcha()
 }
 </script>
 
 <template>
-  <div id="contact-us" class="pt-8">
-    <div class="m-auto flex flex-col gap-x-22 gap-y-3 px-6 py-8 container lg:flex-row">
-      <div class="min-w-1/2 flex flex-col">
+  <div id="contact-us" class="overflow-hidden pt-8">
+    <div class="relative m-auto px-6 py-8 container">
+      <div class="absolute bottom-0 right-0 mr-20">
+        <img src="/contact-mail-icon.svg" alt="contact mail">
+      </div>
+      <div class="flex flex-col">
         <h4
-          class="text-base font-extrabold uppercase md:mt-24 lg:text-9"
+          class="text-center text-base font-extrabold uppercase md:mt-24 lg:text-9"
         >
           {{ $t('contact-us') }}
         </h4>
-        <p class="mt-4 max-w-40ch text-xs lg:mt-13 [&_b]:block lg:text-2xl lg:leading-10" v-html="t('subtitle', { email: 'contact@amentech.dz' })" />
+        <div class="grid mx-auto mt-4 max-w-80ch gap-8 text-center text-xs lg:mt-13 [&_b]:block lg:text-2xl lg:leading-10">
+          <p>{{ t('subtitle1') }}</p>
+          <p>{{ t('subtitle2') }}</p>
+        </div>
       </div>
 
-      <div
-        class="mt-6 max-w-50ch w-full rounded-5 text-xl lg:ml-a lg:mt-0 space-y-2 lg:px-19 lg:py-25 lg:shadow-[0px_0px_25px_0px_#181B341A] sm:space-y-8" @submit="onSubmit"
+      <Form
+        v-slot="fieldErrors"
+        class="relative mx-auto mt-6 max-w-80ch border border-[#D95188]/30 rounded-5 bg-white/10 px-2 py-4 text-xl lg:mt-14 space-y-2 lg:px-19 lg:py-25 lg:shadow-[0px_0px_25px_0px_#181B341A] sm:space-y-8"
+        :validation-schema="fieldSchema"
+        @submit="onSubmit"
       >
-        <div class="flex flex-col space-y-2">
-          <label for="name" class="text-xs font-medium lg:text-5">{{ $t('full-name') }} *</label>
-          <div class="of-hidden border border-[#181B34] rounded-lg text-black/80 hover:border-[#181B34]/60" :class="{ 'ring ring-red': result.fullName.$invalid }">
-            <input id="name" v-model="contact.fullName" class="w-full px-3 py-4 text-xs outline-none lg:text-base" type="text">
-          </div>
+        <div class="absolute left-0 top-0 translate-x--2/3 translate-y--1/3">
+          <img src="/contact-location-icon.svg" alt="contact location">
         </div>
 
-        <div class="flex flex-col space-y-2">
-          <label for="email" class="text-xs font-medium lg:text-5">E-Mail *</label>
-          <div class="of-hidden border border-[#181B34] rounded-lg text-black/80 hover:border-[#181B34]/60" :class="{ 'ring ring-red': result.email.$invalid }">
-            <input id="email" v-model="contact.email" class="w-full px-3 py-4 text-xs outline-none lg:text-base" type="text">
+        <div class="absolute right-0 aspect-1 w-1/2 translate-x-1/2 rounded-full bg-[#FC5185]/25 blur-300 -translate-y-1/2" />
+
+        <div class="flex gap-8">
+          <div class="flex flex-grow flex-col space-y-2">
+            <label for="fullName" class="text-xs font-medium lg:text-5">{{ $t('full-name') }} *</label>
+            <div
+              class="of-hidden border border-[#181B34] rounded-2xl text-black/80 hover:border-[#181B34]/60"
+              :class="{ 'ring ring-red': fieldErrors.errors.fullName }"
+            >
+              <Field
+                id="fullName" name="fullName" type="text"
+                class="w-full px-3 py-4 text-xs outline-none lg:text-base"
+              />
+            </div>
+          </div>
+
+          <div class="flex flex-grow flex-col space-y-2">
+            <label for="email" class="text-xs font-medium lg:text-5">E-Mail *</label>
+            <div
+              class="of-hidden border border-[#181B34] rounded-2xl text-black/80 hover:border-[#i81B34]/60"
+              :class="{ 'ring ring-red': fieldErrors.errors.email }"
+            >
+              <Field id="email" name="email" class="w-full px-3 py-4 text-xs outline-none lg:text-base" type="text" />
+            </div>
           </div>
         </div>
 
         <div class="flex flex-col space-y-2">
           <label for="object" class="text-xs font-medium lg:text-5">{{ $t('subject') }} *</label>
-          <div class="of-hidden border border-[#181B34] rounded-lg text-black/80 hover:border-[#181B34]/60" :class="{ 'ring ring-red': result.object.$invalid }">
-            <input id="object" v-model="contact.object" class="w-full px-3 py-4 text-xs outline-none lg:text-base" type="text">
+          <div
+            class="of-hidden border border-[#181B34] rounded-2xl bg-white pr-2 text-black/80 hover:border-[#181B34]/60"
+            :class="{ 'ring ring-red': fieldErrors.errors.object }"
+          >
+            <Field id="object" as="select" name="object" value="Tea" class="tex-tred w-full bg-white px-3 py-4 text-xs outline-none lg:text-base" @change="(e) => console.log(e)">
+              <option value="Devis d'assurance">
+                Devis d'assurance
+              </option>
+              <option value="Réclamation d'assurance">
+                Réclamation d'assurance
+              </option>
+              <option value="Support technique">
+                Support technique
+              </option>
+              <option value="Partenariat">
+                Partenariat
+              </option>
+              <option value="Questions générales">
+                Questions générales
+              </option>
+              <option value="Problèmes de facturation">
+                Problèmes de facturation
+              </option>
+              <option value="Commentaires et suggestions">
+                Commentaires et suggestions
+              </option>
+              <option value="Problèmes de connexion">
+                Problèmes de connexion
+              </option>
+              <option value="Assistance en ligne">
+                Assistance en ligne
+              </option>
+              <option value="Informations sur la politique">
+                Informations sur la politique
+              </option>
+            </Field>
           </div>
         </div>
 
         <div class="flex flex-col space-y-2">
-          <label for="message" class="text-xs font-medium lg:text-5">Message *</label>
-          <textarea
-            id="message"
-            v-model="contact.body"
-            :class="{ 'ring ring-red': result.body.$invalid }"
-            class="h-full w-full resize-none border border-[#181B34] rounded p-2 px-3 py-4 text-xs text-black/80 outline-none hover:border-[#181B34]/60 lg:rounded-md lg:text-base" rows="3"
+          <label for="phone" class="text-xs font-medium lg:text-5">{{ $t('phone') }} *</label>
+          <div
+            class="of-hidden border border-[#181B34] rounded-2xl text-black/80 hover:border-[#181B34]/60"
+            :class="{ 'ring ring-red': fieldErrors.errors.phone }"
+          >
+            <Field id="phone" name="phone" class="w-full px-3 py-4 text-xs outline-none lg:text-base" type="text" />
+          </div>
+        </div>
+
+        <div class="flex flex-col space-y-2">
+          <label for="body" class="text-xs font-medium lg:text-5">Message *</label>
+          <Field
+            id="body"
+            as="textarea"
+            name="body"
+            type="text"
+            rows="3"
+            class="h-full w-full resize-none border border-[#181B34] rounded-2xl p-2 px-3 py-4 text-xs text-black/80 outline-none hover:border-[#181B34]/60 lg:text-base"
+            :class="{ 'ring ring-red': fieldErrors.errors.body }"
           />
         </div>
 
-        <div class="flex justify-end pt-3 lg:pt-7">
-          <a
-            :href="mailto"
-            class="cursor-pointer rounded-4 bg-[#161C34] px-7 py-1 text-xs font-bold text-white lg:px-19 lg:py-3 lg:text-lg hover:opacity-90 hover:ring-4 hover:ring-offset-2 hover:ring-[#14292C]/30"
-            type="submit"
-            @click="onSubmit"
-          >{{ $t('send') }}</a>
+        <div class="flex gap-6">
+          <img
+            :src="captcha" alt="captcha"
+            class="w-38 cursor-pointer rounded-2xl bg-white object-contain px-4"
+            @click="getCaptcha()"
+          >
+          <div class="of-hidden border border-[#181B34] rounded-2xl text-black/80 hover:border-[#181B34]/60">
+            <Field id="captcha" name="captcha" class="w-full px-3 py-4 text-xs outline-none lg:text-base" type="text" />
+          </div>
         </div>
-      </div>
+
+        <div class="pt-3 lg:pt-7">
+          <button
+            class="group w-full inline-flex items-center justify-center rounded-2xl from-[#1C57BC] via-[#9D5CA2] to-[rgba(252,81,133,0.94)] from-0% to-98% via-47% bg-gradient-to-l px-10 py-2 font-semibold text-white transition lg:px-18 lg:py-5 lg:text-lg hover:opacity-90 hover:ring-4 hover:ring-white/50"
+          >
+            <span>{{ $t('send') }}</span>
+            <UnoIcon i-ic-baseline-arrow-forward class="ml-2 inline-block h-5 w-5 transition group-hover:translate-x-1" />
+          </button>
+        </div>
+      </Form>
     </div>
   </div>
 </template>
@@ -112,5 +183,6 @@ function onSubmit(e: { preventDefault: () => void }) {
 <i18n lang="yaml">
 fr:
   title: Une protection optimale
-  subtitle: Intéressé pour découvrir nos produits et services à travers une démonstration, ou pour résoudre vos problémes bien spécifiques, contactez-nous sur <b>{email}</b> ou envoyez     nous vos informations en remplissant la grille suivante
+  subtitle1: Nos équipes sont là pour répondre à tous vos besoins, que ce soit pour discuter de vos préoccupations, obtenir des informations détaillées sur nos produits,
+  subtitle2: faire une réclamation ou bénéficier d'un service client dévoué qui vous accompagnera tout au long de votre parcours vers une protection complète et adaptée à votre vie
 </i18n>

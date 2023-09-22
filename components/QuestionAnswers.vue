@@ -32,23 +32,27 @@ const cards = [
 
 <template>
   <section>
-    <div class="mx-auto px-6 pt-14 container lg:pt-24">
-      <h3 class="mx-auto text-lg font-bold lg:text-5xl" v-html="t('title')" />
+    <div class="mx-auto px-6 pt-14 container lg:pt-24 lg:pt-53">
+      <div class="absolute aspect-1 w-1/6 rounded-full bg-[#FC5185]/25 blur-300 -translate-y-1/2" />
+      <h3 class="mx-auto text-lg font-bold lg:text-4xl" v-html="t('title')" />
       <p class="mx-auto mt-3 text-xs font-medium lg:mt-9 lg:text-2xl" v-html="t('subtitle')" />
 
-      <div class="mt-5 lg:mt-28 space-y-2 lg:space-y-10">
+      <div class="grid mt-5 gap-x-10 lg:grid-flow-col-dense lg:grid-cols-2 lg:mt-28">
         <Disclosure
           v-for="card, idx in cards"
           v-slot="{ open }" :key="idx"
-          as="div" class="rounded-md bg-white px-4 py-2 font-bold shadow-md lg:rounded-5 lg:px-8 lg:py-6 lg:text-2xl all:transition"
+          :class="{ 'lg:col-start-2': idx === 5 || idx === 4 }"
+          as="div"
+          class="relative col-start-1 shadow-md [&[data-headlessui-state=open]]:bg-[#09113A] hover:bg-[#09113A] all:transition"
         >
-          <DisclosureButton as="div" class="flex cursor-pointer justify-between text-xs lg:text-6">
-            <span>{{ card.title }}</span>
-            <UnoIcon i-ic-outline-keyboard-arrow-down class="ml-2 h-5 w-5 flex-none text-[#1C57BC]" :class="open && 'rotate--180'" />
+          <DisclosureButton as="div" class="my-8 flex cursor-pointer items-center justify-between px-5 text-xs leading-normal lg:text-lg">
+            <span>{{ card.title }} </span>
+            <UnoIcon i-ic-outline-keyboard-arrow-down class="ml-2 h-10 w-10 flex-none" :class="open && 'rotate--180'" />
           </DisclosureButton>
           <DisclosurePanel class="text-md mt-8 text-[#181B34]/60">
             ...
           </DisclosurePanel>
+          <div class="h-1.5px w-full from-[#FC5185] to-[#1C57BC] bg-gradient-to-l" />
         </Disclosure>
       </div>
     </div>
@@ -57,17 +61,17 @@ const cards = [
 
 <i18n lang="yaml">
 fr:
-  title: Vous avez des <span class="underline-decorator-pink"> questions </span>? <span class="text-[#1C57BC]">On a des réponses</span>
+  title: Vous avez des questions? <span class="text-[#1C57BC] bg-[#D9F3F4] pb-2 px-3 rounded-2xl">On&nbsp;a&nbsp;des&nbsp;réponses</span>
   subtitle: Une question reste sans réponse ? N’hésitez pas à consulter notre FAQ ou un conseiller via le chat !
   item1:
     title: Doit-on déclarer tout changement survenu à son assureur ?
-  item2:
-    title: Quelles différences entre une assurance auto au tiers et tous risques ?
   item3:
+    title: Quelles différences entre une assurance auto au tiers et tous risques ?
+  item2:
     title: Quels sont les risques couverts par une assurance voiture ?
-  item4:
-    title: Quelle est la différence entre un conducteur principal et secondaire ?
   item5:
+    title: Quelle est la différence entre un conducteur principal et secondaire ?
+  item4:
     title: Qu’est-ce qu’un relevé d’informations ?
   item6:
     title: Comment calculer le coefficient de bonus-malus ?

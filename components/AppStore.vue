@@ -6,21 +6,20 @@ const { t } = useI18n({
 
 <template>
   <section
-    class="relative z--10 mt--32 pt-62"
-    style="background: linear-gradient(0deg, rgba(190, 187, 209, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);"
+    class="pt-28 lg:mb-10 lg:pt-62"
   >
-    <div class="grid grid-rows-[min-content_1fr] grid-cols-2 mx-auto px-6 container">
-      <div class="col-span-2 pb-3 lg:col-span-1">
+    <div class="grid grid-cols-[auto_1fr] grid-rows-[min-content_1fr] mx-auto px-6 container">
+      <div class="col-span-2 max-w-190 pb-3 lg:col-span-1">
         <h2 class="text-lg font-bold lg:text-5xl" v-html="t('title')" />
-        <p class="mx-auto mt-3 text-xs font-medium lg:mt-9 lg:text-2xl" v-html="t('subtitle')" />
+        <p class="mx-auto mt-3 text-xs lg:mt-9 lg:text-2xl" v-html="t('subtitle')" />
       </div>
 
-      <div class="order-last lg:order-none lg:row-span-2">
-        <img src="/store-side.png" alt="phone" class="mx-auto">
+      <div class="order-last hidden h-30rem lg:order-none lg:row-span-2 lg:ml-auto 2xl:block">
+        <img src="/store-side.png" alt="phone" class="mx-auto h-full object-cover">
       </div>
 
-      <div class="mt-3">
-        <p class="text-xs">
+      <div class="mt-3 hidden flex-col lg:mt-17 2xl:flex">
+        <p class="text-xs lg:text-lg">
           L’application est
         </p>
 

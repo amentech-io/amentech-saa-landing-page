@@ -4,8 +4,8 @@
       <TheNav />
     </div>
     <div>
-      ...
       <TheContactUs />
     </div>
+    <Footer />
   </div>
 </template>
