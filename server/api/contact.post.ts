@@ -9,14 +9,12 @@ function ContactSchema(sessionCaptcha: string) {
     object: string(),
     captcha: string(),
     body: string(),
-  },
-  [
+  }, [
     custom(
       ({ captcha }) => captcha.toString() === sessionCaptcha,
       'The captcha do not match.',
     ),
-  ],
-  )
+  ])
 }
 
 export default defineEventHandler(async (event) => {
