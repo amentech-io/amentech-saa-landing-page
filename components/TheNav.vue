@@ -50,7 +50,7 @@ const menuIsOpen = ref(false)
         </ul>
         <!-- }}} -->
 
-        <div class="ml-a flex items-center lg:hidden">
+        <div class="ml-a flex items-center lg:hidden rtl:flex-row-reverse">
           <TheLangSelect class="text-3 [&_span]:text-3" />
 
           <div class="mr-3 h-4 w-1px bg-gray-4" />
