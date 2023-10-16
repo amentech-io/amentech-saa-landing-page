@@ -77,4 +77,16 @@ fr:
   item3:
     title: Camion
     description: Une protection solide pour votre véhicule utilitaire, bénéficiez d'une assurance spécialement conçue pour votre camion et vos activités professionnelles.
+ar:
+  title: ما هي المركبات القابلة للتأمين
+  subtitle: اكتشف مجموعتنا الكاملة من التأمين المكيفة مع كل مركبة. استمتع بالتغطية المثلى لبضائعك الثمينة، في راحة بال كاملة على الطريق.
+  item1:
+    title: دراجة نارية
+    description: اركب بثقة مع تأمين الدراجات النارية المخصص لدينا، المصمم خصيصًا لاحتياجات راكبي الدراجات المتحمسين للحرية والمغامرة.
+  item2:
+    title: سيارة
+    description: 
+  item3:
+    title: شاحنة
+    description: 
 </i18n>
