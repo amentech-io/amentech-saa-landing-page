@@ -88,4 +88,17 @@ fr:
   item3:
     title: Vous êtes indemnisé !
     description: Après réception de la facture.
+
+ar:
+  title: <span class="border rounded-xl border-[#EE4E80] px-2 pb-1px leading-10">الإبلاغ</span> عن مطالبة، البساطة والسرعة مضمونة!
+  subtitle: كارثة ؟ نحن هنا من أجلك. الإبلاغ السهل والتعامل السريع!
+  item1:
+    title: ماذا حدث؟
+    description: أرسل لنا صورك ووثائقك على التطبيق.
+  item2:
+    title: خبير يتصل بك
+    description: لتقدير مبلغ الأضرار.
+  item3:
+    title: تم تعويضك!
+    description: بعد استلام الفاتورة.
 </i18n>
