@@ -14,7 +14,7 @@ const { t } = useI18n({
         <p class="mx-auto mt-3 text-xs lg:mt-9 lg:text-2xl" v-html="t('subtitle')" />
       </div>
 
-      <div class="order-last hidden h-30rem lg:order-none lg:row-span-2 lg:ml-auto 2xl:block">
+      <div class="order-last hidden h-30rem lg:order-none lg:row-span-2 lg:ms-auto 2xl:block">
         <img src="/store-side.png" alt="phone" class="mx-auto h-full object-cover">
       </div>
 
@@ -36,4 +36,8 @@ const { t } = useI18n({
 fr:
   title: Offrez-vous la meilleure protection pour rouler en toute sérénité
   subtitle: Bénéficiez de tous les avantages d'une assurance automobile complète, mais avec plus de contrôle.
+
+ar:
+  title: امنح نفسك أفضل حماية للركوب بثقة
+  subtitle: احصل على جميع مزايا التأمين الشامل على السيارات، ولكن بمزيد من التحكم.
 </i18n>
