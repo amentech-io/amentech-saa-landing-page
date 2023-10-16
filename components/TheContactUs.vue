@@ -82,7 +82,7 @@ async function onSubmit(v, { resetForm }) {
           </div>
 
           <div class="flex flex-grow flex-col space-y-2">
-            <label for="email" class="text-xs font-medium lg:text-5">E-Mail *</label>
+            <label for="email" class="text-xs font-medium lg:text-5">{{ $t('email') }} *</label>
             <div
               class="of-hidden border border-[#181B34] rounded-2xl text-black/80 hover:border-[#i81B34]/60"
               :class="{ 'ring ring-red': fieldErrors.errors.email }"
@@ -95,7 +95,7 @@ async function onSubmit(v, { resetForm }) {
         <div class="flex flex-col space-y-2">
           <label for="object" class="text-xs font-medium lg:text-5">{{ $t('subject') }} *</label>
           <div
-            class="of-hidden border border-[#181B34] rounded-2xl bg-white pr-2 text-black/80 hover:border-[#181B34]/60"
+            class="of-hidden border border-[#181B34] rounded-2xl bg-white pe-2 text-black/80 hover:border-[#181B34]/60"
             :class="{ 'ring ring-red': fieldErrors.errors.object }"
           >
             <Field id="object" as="select" name="object" value="Tea" class="tex-tred w-full bg-white px-3 py-4 text-xs outline-none lg:text-base" @change="(e) => console.log(e)">
@@ -144,7 +144,7 @@ async function onSubmit(v, { resetForm }) {
         </div>
 
         <div class="flex flex-col space-y-2">
-          <label for="body" class="text-xs font-medium lg:text-5">Message *</label>
+          <label for="body" class="text-xs font-medium lg:text-5">{{ $t('message') }} *</label>
           <Field
             id="body"
             as="textarea"
@@ -172,7 +172,7 @@ async function onSubmit(v, { resetForm }) {
             class="group w-full inline-flex items-center justify-center rounded-2xl from-[#1C57BC] via-[#9D5CA2] to-[rgba(252,81,133,0.94)] from-0% to-98% via-47% bg-gradient-to-l px-10 py-2 font-semibold text-white transition lg:px-18 lg:py-5 lg:text-lg hover:opacity-90 hover:ring-4 hover:ring-white/50"
           >
             <span>{{ $t('send') }}</span>
-            <UnoIcon i-ic-baseline-arrow-forward class="ml-2 inline-block h-5 w-5 transition group-hover:translate-x-1" />
+            <UnoIcon i-ic-baseline-arrow-forward class="ml-2 inline-block h-5 w-5 transition group-hover:translate-x-1 rtl:scale-x--100 rtl:group-hover:translate-x--1" />
           </button>
         </div>
       </Form>
