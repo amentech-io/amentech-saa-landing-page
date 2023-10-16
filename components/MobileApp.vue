@@ -52,17 +52,17 @@ function selectItem(idx: number) {
             <div
               class="grid grid-cols-[auto_1fr] rounded-lg px-3 pb-4 pt-6 lg:rounded-8 lg:px-8 lg:py-6"
             >
-              <div class="row-span-2 my-auto mr-8 flex items-center lg:mt-6">
+              <div class="row-span-2 my-auto me-8 flex items-center lg:mt-6">
                 <span
                   class="text-extrabold h-15 w-15 flex flex-none items-center justify-center rounded-2xl bg-[#192346] pb-0.8 text-sm text-white group-hover:bg-white lg:text-3xl group-hover:text-[#2657BA]"
                 >
                   {{ idx + 1 }}
                 </span>
               </div>
-              <p class="max-w-38ch text-sm font-bold lg:text-2xl">
+              <p class="max-w-38ch text-start text-sm font-bold lg:text-2xl">
                 {{ card.title }}
               </p>
-              <p class="mt-3 max-w-50ch text-xs leading-loose lg:mt-4 lg:text-xl">
+              <p class="mt-3 max-w-50ch text-start text-xs leading-loose lg:mt-4 lg:text-xl">
                 {{ card.description }}
               </p>
             </div>
@@ -118,4 +118,19 @@ fr:
   item4:
     title: Votre contrat prêt à démarrer
     description: votre contrat devient actif, vous offrant une protection instantanée et une tranquillité d'esprit totale. Plus besoin d'attendre, profitez pleinement de votre assurance personnalisée dès maintenant!
+ar:
+  title: <span class="mb-1 bg-white text-[#0D1035] px-2 pb-1 rounded-xl">بسرعة</span>&nbsp; يمكنك القيام بذلك بينما لا تزال قهوتك ساخنة
+  subtitle: احصل على تأمين على السيارات في وقت قياسي مع NSURI، التطبيق الذي يبسط تجربة التأمين على السيارات. لا تضيع الوقت في الإجراءات المملة، فإن نظامنا الأساسي البديهي يسمح لك بالحصول على تغطية مخصصة ببضع نقرات فقط.
+  item1:
+    title: احصل على اقتباس فوري بدون التزام في بضع نقرات فقط!
+    description: خصص تفاصيل التغطية الخاصة بك من خلال الإجابة على بعض الأسئلة السريعة واحصل على معدل مقدر في ثوانٍ.
+  item2:
+    title: استمر في الاشتراك!
+    description:  مع NSURI في بضع نقرات فقط، كن مؤمنًا من خلال عمليتنا السهلة والمحسّنة عبر الإنترنت.
+  item3:
+    title: ادفع عقدك بنقرة واحدة!
+    description: اجعل الدفع عبر الإنترنت لعقدك بسهولة مع NSURI! وفر الوقت واستمتع براحة إدارة التأمين عبر الإنترنت.
+  item4:
+    title: عقدك جاهز للذهاب
+    description: يصبح عقدك نشطًا، مما يمنحك الحماية الفورية وراحة البال الكاملة. لا داعي للانتظار، استفد بالكامل من التأمين الشخصي الآن!
 </i18n>
