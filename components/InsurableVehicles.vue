@@ -48,7 +48,7 @@ function clickHandler(idx: number) {
           class="text-cente [background:linear-gradient(#1F0044,#13002A,#110031)_padding-box,linear-gradient(to_right,#D6528E,#2F2EB7)_border-box] relative flex flex-none gap-4 border border-[#05031F] rounded-full px-5 py-4 hover:border-transparent lg:px-27 lg:py-8 lg:text-3xl"
           @mouseover="clickHandler(idx)"
         >
-          <div>
+          <div class="rtl:scale-x--100">
             <img class="mx-auto h-12 w-12 p-2 lg:h-18 lg:w-18 lg:p-3" :src="card.icon" alt="">
           </div>
 
@@ -77,4 +77,16 @@ fr:
   item3:
     title: Camion
     description: Une protection solide pour votre véhicule utilitaire, bénéficiez d'une assurance spécialement conçue pour votre camion et vos activités professionnelles.
+ar:
+  title: ما هي المركبات القابلة للتأمين
+  subtitle: اكتشف مجموعتنا الكاملة من التأمين المكيفة مع كل مركبة. استمتع بالتغطية المثلى لبضائعك الثمينة، في راحة بال كاملة على الطريق.
+  item1:
+    title: دراجة نارية
+    description: اركب بثقة مع تأمين الدراجات النارية المخصص لدينا، المصمم خصيصًا لاحتياجات راكبي الدراجات المتحمسين للحرية والمغامرة.
+  item2:
+    title: سيارة
+    description:
+  item3:
+    title: شاحنة
+    description:
 </i18n>

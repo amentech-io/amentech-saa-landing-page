@@ -22,9 +22,12 @@ const localePath = useLocalePath()
         </NuxtLink>
       </div>
       <div class="mt-3 b-b pb-3 pt-6 op-80 hover:op-100">
-        <a class="text-sm" href="#contact-us">
+        <NuxtLink
+          class="text-sm"
+          :to="localePath('contact')"
+        >
           <span>{{ $t('contact-us') }}</span>
-        </a>
+        </NuxtLink>
       </div>
       <div class="mt-3 b-b pb-3 pt-6 op-80 hover:op-100">
         <NuxtLink class="text-sm" :to="localePath('/faq')">

@@ -8,7 +8,7 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
 
 <template>
   <div class="mx-auto mb-18 mt-7 w-full flex px-6 container lg:mb-29 lg:mt-32">
-    <div class="absolute inset-0 flex -z-2">
+    <div class="absolute inset-0 flex -z-2 rtl:flex-row-reverse">
       <div class="my-auto ml-25 hidden lg:block">
         <img src="/hero-bg-right.png" alt="">
       </div>
@@ -96,4 +96,11 @@ fr:
     item1: 100% mobile et flexible
     item2: 0% prise de tête
     item3: au juste prix
+ar:
+  title: <span class="underline-gradient">نسوري</span>،&nbsp; تأمين مبسط ببضع نقرات فقط!
+  subtitle: اكتشف NSURI، التأمين الرقمي المعاد اختراعه ببضع نقرات فقط! قم بتبسيط الإدارة الفورية لعقودك، وقم بتغطية شخصية جديدة واتبع مطالباتك في الوقت الفعلي، من أجل قيادة سلام لا مثيل له.
+  features:
+    item1: 100٪ متنقلة ومرنة
+    item2: بالسعر المناسب
+    item3: 0% prise de tête
 </i18n>

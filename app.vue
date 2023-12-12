@@ -3,12 +3,15 @@ useHead({
   title: 'Société Nationale d\'Assurance SAA',
   link: [
     {
-      rel: 'icon', type: 'image/png', href: '/favicon.png',
+      rel: 'icon',
+      type: 'image/png',
+      href: '/favicon.png',
     },
   ],
   meta: [
     {
-      name: 'description', content: 'Entreprise Publique Economique, agréée pour pratiquer l’ensemble des branches d’assurance, La Société Nationale d ’Assurance SAA, est la première société d’assurance et de la réassurance en Algérie.',
+      name: 'description',
+      content: 'Entreprise Publique Economique, agréée pour pratiquer l’ensemble des branches d’assurance, La Société Nationale d ’Assurance SAA, est la première société d’assurance et de la réassurance en Algérie.',
     },
   ],
 })

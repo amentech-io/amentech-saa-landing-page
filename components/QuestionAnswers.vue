@@ -75,4 +75,20 @@ fr:
     title: Qu’est-ce qu’un relevé d’informations ?
   item6:
     title: Comment calculer le coefficient de bonus-malus ?
+
+ar:
+  title: هل لديك أسئلة؟ <span class="text-[#1C57BC] bg-[#D9F3F4] pb-2 px-3 rounded-2xl">لدينا إجابات</span>
+  subtitle: هل يبقى السؤال بلا إجابة ؟ لا تتردد في استشارة الأسئلة الشائعة أو المستشار عبر الدردشة!
+  item1:
+    title: هل يجب أن أبلغ شركة التأمين الخاصة بي عن أي تغييرات ؟
+  item3:
+    title: ما هي الاختلافات بين تأمين السيارات من طرف ثالث وجميع المخاطر ؟
+  item2:
+    title: ما هي المخاطر التي يغطيها التأمين على السيارات ؟
+  item5:
+    title: ما هو بيان المعلومات ؟
+  item4:
+    title: ما الفرق بين السائق الأساسي والثانوي ؟
+  item6:
+    title: كيفية حساب معامل علاوة المالوس ؟
 </i18n>

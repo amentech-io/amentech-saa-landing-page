@@ -33,7 +33,10 @@ export default defineConfig({
     }),
     presetWebFonts({
       fonts: {
-        sans: 'Lato:100,200,300,400,500,600,700,800,900',
+        sans: [
+          'Lato:100,200,300,400,500,600,700,800,900',
+          'El Messiri:100,200,300,400,500,600,700,800,900',
+        ],
         // jost: 'Jost',
         // serif: 'DM Serif Display',
         // mono: 'DM Mono',

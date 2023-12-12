@@ -36,7 +36,7 @@ const cards = [
       <div class="absolute bottom-0 right-0 z-20 aspect-1 w-1/6 translate-x-1/2 translate-y-1/2 rounded-full bg-[#FC5185]/25 blur-150" />
 
       <div class="grid px-4 pt-6 2xl:grid-cols-[1fr_1.2fr] lg:py-15">
-        <div class="my-auto lg:ml-30">
+        <div class="my-auto lg:ms-30">
           <h3 class="text-lg font-bold lg:text-4xl" v-html="t('title')" />
 
           <p class="mx-auto mt-3 text-xs font-medium lg:mt-10 lg:text-2xl" v-html="t('subtitle')" />
@@ -48,7 +48,7 @@ const cards = [
               v-for="card, idx in cards" :key="idx"
               class="px-5 py-4 lg:px-8 lg:py-6"
             >
-              <div class="mx-auto h-9 w-9 rounded-full lg:h-26 lg:w-26">
+              <div class="mx-auto h-9 w-9 rounded-full lg:h-26 lg:w-26 rtl:scale-x--100">
                 <img :src="card.icon" alt="guard card">
               </div>
               <p class="mt-4 text-center text-xs font-bold lg:mt-6 lg:whitespace-nowrap lg:text-xl">
@@ -78,4 +78,20 @@ fr:
     title: Personnes transportées
   item6:
     title: En savoir plus
+
+ar:
+  title: ضمانات للقياس!
+  subtitle: تقدم SAA مجموعة مختارة مصممة بعناية من الضمانات الأساسية لحماية سيارتك وسائقها بشكل أفضل - إنه أنت! استمتع بتغطية شاملة وشخصية تمنحك راحة البال الكاملة على الطريق، أينما ذهبت.
+  item1:
+    title: المسؤولية المدنية
+  item2:
+    title: الدفاع وسبل الانتصاف
+  item3:
+    title: أضرار الاصطدام
+  item4:
+    title: مساعدة
+  item5:
+    title: الأشخاص الذين تم نقلهم
+  item6:
+    title: جميع ضمانات
 </i18n>

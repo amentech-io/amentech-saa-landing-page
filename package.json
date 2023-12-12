@@ -1,6 +1,7 @@
 {
+  "type": "module",
   "private": true,
-  "packageManager": "pnpm@8.7.5",
+  "packageManager": "pnpm@8.9.0",
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
@@ -11,29 +12,27 @@
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.16",
-    "@nuxtjs/i18n": "8.0.0-rc.4",
-    "@vee-validate/nuxt": "^4.11.6",
-    "@vee-validate/valibot": "^4.11.6",
+    "@nuxtjs/i18n": "8.0.0-rc.5",
+    "@vee-validate/nuxt": "^4.11.8",
+    "@vee-validate/valibot": "^4.11.8",
     "@vueuse/motion": "2.0.0",
-    "firebase": "^10.3.1",
-    "vue-recaptcha": "3.0.0-alpha.6"
+    "firebase": "^10.5.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.41.0",
+    "@antfu/eslint-config": "^1.0.0-beta.27",
     "@iconify-json/ic": "^1.1.14",
-    "@nuxt/image-edge": "1.0.0-rc.1-28240731.2506a71",
+    "@nuxt/image-edge": "1.0.0-rc.3-28282346.a10323e",
     "@sidebase/nuxt-session": "^0.2.7",
     "@tailvue/nuxt": "^1.0.0",
-    "@unocss/eslint-config": "^0.55.7",
-    "@unocss/nuxt": "^0.55.7",
-    "@vueuse/core": "^10.4.1",
-    "@vueuse/nuxt": "^10.4.1",
-    "consola": "^3.2.3",
-    "eslint": "^8.49.0",
-    "nuxt": "^3.7.1",
+    "@unocss/eslint-config": "^0.56.5",
+    "@unocss/nuxt": "^0.56.5",
+    "@vueuse/core": "^10.5.0",
+    "@vueuse/nuxt": "^10.5.0",
+    "eslint": "^8.51.0",
+    "nuxt": "^3.7.4",
     "typed-captchapng": "^1.0.4",
     "typescript": "^5.2.2",
-    "unocss-preset-primitives": "0.0.1-beta.11",
-    "valibot": "^0.15.0"
+    "unocss-preset-primitives": "0.0.1-beta.12",
+    "valibot": "^0.19.0"
   }
 }
