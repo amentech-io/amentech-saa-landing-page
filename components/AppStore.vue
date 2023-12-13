@@ -8,13 +8,13 @@ const { t } = useI18n({
   <section
     class="pt-28 lg:mb-10 lg:pt-62"
   >
-    <div class="grid grid-cols-[auto_1fr] grid-rows-[min-content_1fr] mx-auto px-6 container">
+    <div class="grid grid-cols-[auto_1fr] grid-rows-[min-content_1fr] mx-auto gap-x-4 px-6 container">
       <div class="col-span-2 max-w-190 pb-3 lg:col-span-1">
         <h2 class="text-lg font-bold lg:text-5xl" v-html="t('title')" />
         <p class="mx-auto mt-3 text-xs lg:mt-9 lg:text-2xl" v-html="t('subtitle')" />
       </div>
 
-      <div class="order-last hidden h-30rem lg:order-none lg:row-span-2 lg:ms-auto 2xl:block">
+      <div class="order-last hidden lg:order-none lg:row-span-2 lg:ms-auto 2xl:block">
         <img src="/store-side.png" alt="phone" class="mx-auto h-full object-cover">
       </div>
 
