@@ -32,7 +32,7 @@ const cards = [
 
 <template>
   <section class="mx-auto px-6 pt-9 container lg:pt-54">
-    <div class="relative rounded-2 bg-white text-[#181B34] lg:rounded-10">
+    <div class="relative rounded-2 bg-[#005158] text-white lg:rounded-10">
       <div class="absolute bottom-0 right-0 z-20 aspect-1 w-1/6 translate-x-1/2 translate-y-1/2 rounded-full bg-[#FC5185]/25 blur-150" />
 
       <div class="grid px-4 pt-6 2xl:grid-cols-[1fr_1.2fr] lg:py-15">
