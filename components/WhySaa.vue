@@ -56,7 +56,7 @@ fr:
     title: Votre prix en 2 min, et souscription en 10 min
     subtitle: Changer d'assurance ne devrait faire peur à personne. Notre solution 100% digitale vous permet de souscrire en quelques minutes, sans papiers ni rendez-vous avec votre banquier. Nous vous guidons étape par étape, jusqu'à la signature électronique de votre contrat. Ensuite, nos équipes s'occupent de résilier votre ancien contrat et de gérer la transition d'assurance. Tout simplement.
 ar:
-  title: لماذا التأمين <span class="text-[#1C57BC] bg-[#D9F3F4] pb-2 px-3 rounded-2xl">الرقمي SAA</span>
+  title: لماذا التأمين <span class="text-[#FCB932] pb-2 px-3 rounded-2xl">الرقمي SAA</span>
   item1:
     title: الشفافية الكاملة في ضماناتك وتكلفة التأمين الخاص بك.
     subtitle: نحن مقتنعون بأن التأمين يجب ألا يكون موضوعًا مبهمًا بعد الآن. مع SAA، أصبح كل شيء أخيرًا واضحًا وشفافًا. لا مزيد من المفاجآت غير السارة، نحن نساعدك على فهم ضماناتك وتكلفة التأمين الخاص بك. تختار ما تغطيه أو لا تغطيه.
