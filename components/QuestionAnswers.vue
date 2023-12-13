@@ -33,7 +33,7 @@ const cards = [
 <template>
   <section>
     <div class="mx-auto px-6 pt-14 container lg:pt-24 lg:pt-53">
-      <div class="absolute aspect-1 w-1/6 rounded-full bg-[#FC5185]/25 blur-300 -translate-y-1/2" />
+      <div class="absolute aspect-1 w-1/6 rounded-full bg-[#FCB932]/50 blur-300 -translate-y-1/2" />
       <h3 class="mx-auto text-lg font-bold lg:text-4xl" v-html="t('title')" />
       <p class="mx-auto mt-3 text-xs font-medium lg:mt-9 lg:text-2xl" v-html="t('subtitle')" />
 
@@ -43,7 +43,7 @@ const cards = [
           v-slot="{ open }" :key="idx"
           :class="{ 'lg:col-start-2': idx === 5 || idx === 4 }"
           as="div"
-          class="relative col-start-1 shadow-md [&[data-headlessui-state=open]]:bg-[#09113A] hover:bg-[#09113A] all:transition"
+          class="relative col-start-1 [&[data-headlessui-state=open]]:bg-[#FCB932]/15 hover:bg-[#FCB932]/15 all:transition"
         >
           <DisclosureButton as="div" class="my-8 flex cursor-pointer items-center justify-between px-5 text-xs leading-normal lg:text-lg">
             <span>{{ card.title }} </span>
@@ -52,7 +52,7 @@ const cards = [
           <DisclosurePanel class="text-md mt-8 text-[#181B34]/60">
             ...
           </DisclosurePanel>
-          <div class="h-1.5px w-full from-[#FC5185] to-[#1C57BC] bg-gradient-to-l" />
+          <div class="h-1.5px w-full from-[#FCB932] to-[#009EAB] bg-gradient-to-l" />
         </Disclosure>
       </div>
     </div>
@@ -61,7 +61,7 @@ const cards = [
 
 <i18n lang="yaml">
 fr:
-  title: Vous avez des questions? <span class="text-[#1C57BC] bg-[#D9F3F4] pb-2 px-3 rounded-2xl">On&nbsp;a&nbsp;des&nbsp;réponses</span>
+  title: Vous avez des questions? <span class="text-[#FCB932] bg-[#08181B] pb-2 px-3 rounded-2xl">On&nbsp;a&nbsp;des&nbsp;réponses</span>
   subtitle: Une question reste sans réponse ? N’hésitez pas à consulter notre FAQ ou un conseiller via le chat !
   item1:
     title: Doit-on déclarer tout changement survenu à son assureur ?
@@ -77,7 +77,7 @@ fr:
     title: Comment calculer le coefficient de bonus-malus ?
 
 ar:
-  title: هل لديك أسئلة؟ <span class="text-[#1C57BC] bg-[#D9F3F4] pb-2 px-3 rounded-2xl">لدينا إجابات</span>
+  title: هل لديك أسئلة؟ <span class="text-[#FCB932] bg-[#08181B] pb-2 px-3 rounded-2xl">لدينا إجابات</span>
   subtitle: هل يبقى السؤال بلا إجابة ؟ لا تتردد في استشارة الأسئلة الشائعة أو المستشار عبر الدردشة!
   item1:
     title: هل يجب أن أبلغ شركة التأمين الخاصة بي عن أي تغييرات ؟
