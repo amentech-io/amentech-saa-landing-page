@@ -40,7 +40,7 @@ const cards = [
                 ...(idx === 1 && { '--color': '#009EAB, #009EAB21' }),
                 ...(idx === 2 && { '--color': '#002A2D, #002A2D21' }),
               }"
-              class="box-gradient relative of-hidden border-1 border-transparent rounded-3"
+              class="box-gradient relative of-hidden border-2 border-transparent rounded-3"
               :class="{
                 'from-[#F2E8B1] to-[#FCFCF2]': idx === 0,
                 'from-[#9EDCDE] to-[#F7F7F6]': idx === 1,
