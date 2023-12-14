@@ -45,7 +45,7 @@ async function onSubmit(v, { resetForm }) {
       </div>
       <div class="flex flex-col">
         <h4
-          class="text-center text-base font-extrabold uppercase md:mt-24 lg:text-9"
+          class="text-center text-base font-extrabold uppercase lg:text-9"
         >
           {{ $t('contact-us') }}
         </h4>
@@ -71,12 +71,12 @@ async function onSubmit(v, { resetForm }) {
           <div class="flex flex-grow flex-col space-y-2">
             <label for="fullName" class="text-xs font-medium lg:text-5">{{ $t('full-name') }} <span class="text-red-500">*</span></label>
             <div
-              class="of-hidden border border-[#C4B9BA] rounded-2xl text-black/80 hover:border-[#C4B9BA]/60"
-              :class="{ 'ring ring-red': fieldErrors.errors.fullName }"
+              class="of-hidden ring ring-[#C4B9BA] rounded-2xl text-black/80 hover:ring-[#C4B9BA]/60"
+              :class="{ 'ring-red': fieldErrors.errors.fullName }"
             >
               <Field
                 id="fullName" name="fullName" type="text"
-                class="w-full px-3 py-4 text-xs outline-none lg:text-base"
+                class="w-full bg-white px-3 py-4 text-xs outline-none lg:text-base"
               />
             </div>
           </div>
@@ -84,10 +84,10 @@ async function onSubmit(v, { resetForm }) {
           <div class="flex flex-grow flex-col space-y-2">
             <label for="email" class="text-xs font-medium lg:text-5">{{ $t('email') }} <span class="text-red-500">*</span></label>
             <div
-              class="of-hidden border border-[#C4B9BA] rounded-2xl text-black/80 hover:border-[#i81B34]/60"
-              :class="{ 'ring ring-red': fieldErrors.errors.email }"
+              class="of-hidden ring ring-[#C4B9BA] rounded-2xl text-black/80 hover:ring-[#C4B9BA]/60"
+              :class="{ 'ring-red': fieldErrors.errors.email }"
             >
-              <Field id="email" name="email" class="w-full px-3 py-4 text-xs outline-none lg:text-base" type="text" />
+              <Field id="email" name="email" class="w-full bg-white px-3 py-4 text-xs outline-none lg:text-base" type="text" />
             </div>
           </div>
         </div>
@@ -95,10 +95,13 @@ async function onSubmit(v, { resetForm }) {
         <div class="flex flex-col space-y-2">
           <label for="object" class="text-xs font-medium lg:text-5">{{ $t('subject') }} <span class="text-red-500">*</span></label>
           <div
-            class="of-hidden border border-[#C4B9BA] rounded-2xl bg-white pe-2 text-black/80 hover:border-[#C4B9BA]/60"
-            :class="{ 'ring ring-red': fieldErrors.errors.object }"
+            class="of-hidden rounded-2xl bg-white pe-2 text-black/80 ring ring-[#C4B9BA] hover:border-[#C4B9BA]/60"
+            :class="{ 'ring-red': fieldErrors.errors.object }"
           >
-            <Field id="object" as="select" name="object" value="Tea" class="tex-tred w-full bg-white px-3 py-4 text-xs outline-none lg:text-base" @change="(e) => console.log(e)">
+            <Field
+              id="object" as="select" name="object" :value="null"
+              class="w-full bg-white bg-white px-3 py-4 text-xs outline-none lg:text-base"
+            >
               <option value="Devis d'assurance">
                 Devis d'assurance
               </option>
@@ -136,10 +139,10 @@ async function onSubmit(v, { resetForm }) {
         <div class="flex flex-col space-y-2">
           <label for="phone" class="text-xs font-medium lg:text-5">{{ $t('phone') }} <span class="text-red-500">*</span></label>
           <div
-            class="of-hidden border border-[#C4B9BA] rounded-2xl text-black/80 hover:border-[#C4B9BA]/60"
-            :class="{ 'ring ring-red': fieldErrors.errors.phone }"
+            class="of-hidden rounded-2xl text-black/80 ring ring-[#C4B9BA] hover:ring-[#C4B9BA]/60"
+            :class="{ 'ring-red': fieldErrors.errors.phone }"
           >
-            <Field id="phone" name="phone" class="w-full px-3 py-4 text-xs outline-none lg:text-base" type="text" />
+            <Field id="phone" name="phone" class="w-full bg-white px-3 py-4 text-xs outline-none lg:text-base" type="text" />
           </div>
         </div>
 
@@ -151,8 +154,8 @@ async function onSubmit(v, { resetForm }) {
             name="body"
             type="text"
             rows="3"
-            class="h-full w-full resize-none border border-[#C4B9BA] rounded-2xl p-2 px-3 py-4 text-xs text-black/80 outline-none hover:border-[#C4B9BA]/60 lg:text-base"
-            :class="{ 'ring ring-red': fieldErrors.errors.body }"
+            class="h-full w-full resize-none rounded-2xl bg-white p-2 px-3 py-4 text-xs text-black/80 outline-none ring ring-[#C4B9BA] lg:text-base hover:ring-[#C4B9BA]/60"
+            :class="{ 'ring-red': fieldErrors.errors.body }"
           />
         </div>
 
@@ -162,8 +165,11 @@ async function onSubmit(v, { resetForm }) {
             class="w-38 cursor-pointer rounded-2xl bg-white object-contain px-4"
             @click="getCaptcha()"
           >
-          <div class="of-hidden border border-[#C4B9BA] rounded-2xl text-black/80 hover:border-[#C4B9BA]/60">
-            <Field id="captcha" name="captcha" class="w-full px-3 py-4 text-xs outline-none lg:text-base" type="text" />
+          <div
+            class="of-hidden rounded-2xl text-black/80 ring ring-[#C4B9BA] hover:ring-[#C4B9BA]/60"
+            :class="{ 'ring-red': fieldErrors.errors.captcha }"
+          >
+            <Field id="captcha" name="captcha" class="w-full bg-white px-3 py-4 text-xs outline-none lg:text-base" type="text" />
           </div>
         </div>
 
