@@ -50,7 +50,10 @@ const cards = [
               <div
                 class="h-full w-full bg-gradient-to-br px-5 py-4 lg:px-8 lg:py-6"
               >
-                <span class="inline-block h-4 w-4 flex items-center justify-center rounded-2 bg-[#1C57BC]/20 text-xs font-extrabold text-white lg:h-10 lg:w-10 lg:text-xl">{{ idx + 1 }}</span>
+                <span
+                  class="inline-block h-4 w-4 flex items-center justify-center rounded-2 bg-[#FCF1E4] text-xs font-extrabold text-[#005158] lg:h-10 lg:w-10 lg:text-xl">
+                  {{ idx + 1 }}
+                </span>
                 <p class="mt-4 max-w-12ch text-xs font-bold lg:mt-6 lg:text-2xl">
                   {{ card.title }}
                 </p>
