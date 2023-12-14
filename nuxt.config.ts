@@ -43,7 +43,7 @@ export default defineNuxtConfig({
     },
     lazy: true,
     locales: [
-      { code: 'fr', iso: 'fr-DZ', file: 'fr.yml', name: 'Français' },
+      { code: 'fr', iso: 'fr-DZ', file: 'fr.yml', name: 'Français', dir: 'ltr' },
       // { code: 'en', iso: 'en-DZ', file: 'en.yml', name: 'English' },
       { code: 'ar', iso: 'ar-DZ', file: 'ar.yml', name: 'العربية', dir: 'rtl' },
     ],

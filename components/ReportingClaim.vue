@@ -93,7 +93,7 @@ fr:
     description: Après réception de la facture.
 
 ar:
-  title: <span class="border rounded-xl border-[#EE4E80] px-2 pb-1px leading-10">الإبلاغ</span> عن مطالبة، البساطة والسرعة مضمونة!
+  title: <span class="border rounded-xl border-[#FCB932] px-2 pb-1px leading-10">الإبلاغ</span> عن مطالبة، البساطة والسرعة مضمونة!
   subtitle: كارثة ؟ نحن هنا من أجلك. الإبلاغ السهل والتعامل السريع!
   item1:
     title: ماذا حدث؟
