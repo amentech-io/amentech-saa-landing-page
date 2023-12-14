@@ -11,12 +11,17 @@
     "generate": "nuxi generate"
   },
   "dependencies": {
+    "@firebase/app-types": "^0.9.0",
     "@headlessui/vue": "^1.7.16",
     "@nuxtjs/i18n": "8.0.0-rc.5",
     "@vee-validate/nuxt": "^4.11.8",
     "@vee-validate/valibot": "^4.11.8",
     "@vueuse/motion": "2.0.0",
-    "firebase": "^10.5.0"
+    "firebase": "^10.5.0",
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^4.5.0",
+    "nuxt-vuefire": "^1.0.0",
+    "vuefire": "^3.1.19"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^1.0.0-beta.27",
