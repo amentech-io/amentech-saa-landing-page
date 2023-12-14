@@ -23,8 +23,10 @@ export default defineEventHandler(async (event) => {
   const validateData = safeParse(ContactSchema(sessionCaptch), body)
 
   if (validateData.success) {
+    // eslint-disable-next-line unused-imports/no-unused-vars
+    const { captcha, ...rest } = validateData.output
     addDoc(collection(db, 'contact'), {
-      ...body,
+      ...rest,
       timestamp: new Date(),
     }).catch((err: any) => console.error(err))
   }
