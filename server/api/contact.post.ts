@@ -7,6 +7,7 @@ function ContactSchema(sessionCaptcha: string) {
     fullName: string(),
     email: string([email()]),
     object: string(),
+    phone: string(),
     captcha: string(),
     body: string(),
   }, [
@@ -25,7 +26,7 @@ export default defineEventHandler(async (event) => {
   if (validateData.success) {
     // eslint-disable-next-line unused-imports/no-unused-vars
     const { captcha, ...rest } = validateData.output
-    addDoc(collection(db, 'contact'), {
+    addDoc(collection(db, 'contacts'), {
       ...rest,
       timestamp: new Date(),
     }).catch((err: any) => console.error(err))
