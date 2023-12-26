@@ -34,7 +34,7 @@ function selectItem(idx: number) {
     <div class="relative mx-auto px-6 pt-6 container lg:pt-17">
       <div class="absolute aspect-1 w-1/6 translate-x-full rounded-full bg-[#FCB932]/16 blur-130" />
 
-      <h3 class="mx-auto max-w-32ch text-center text-lg font-bold lg:text-5xl" v-html="t('title')" />
+      <h3 class="mx-auto max-w-32ch text-center text-lg font-bold lg:text-12.5/15" v-html="t('title')" />
 
       <p class="mx-auto mt-3 max-w-68ch text-center text-xs font-medium lg:mt-10 lg:text-2xl">
         {{ t('subtitle') }}

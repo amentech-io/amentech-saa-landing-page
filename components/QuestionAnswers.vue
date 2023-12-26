@@ -34,7 +34,7 @@ const cards = [
   <section>
     <div class="mx-auto px-6 pt-14 container lg:pt-24 lg:pt-53">
       <div class="absolute aspect-1 w-1/6 rounded-full bg-[#FCB932]/50 blur-300 -translate-y-1/2" />
-      <h3 class="mx-auto text-lg font-bold lg:text-4xl" v-html="t('title')" />
+      <h3 class="mx-auto text-lg font-bold lg:text-12.5/15" v-html="t('title')" />
       <p class="mx-auto mt-3 text-xs font-medium lg:mt-9 lg:text-2xl" v-html="t('subtitle')" />
 
       <div class="grid mt-5 gap-x-10 lg:grid-flow-col-dense lg:grid-cols-2 lg:mt-28">

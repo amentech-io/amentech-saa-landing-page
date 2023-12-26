@@ -34,7 +34,7 @@ function clickHandler(idx: number) {
         <img class="absolute inset-0 mx-auto" src="/arc.png" alt="arc">
       </div>
 
-      <h3 class="mx-auto max-w-max flex items-center px-6 text-center text-lg font-bold lg:text-5xl">
+      <h3 class="mx-auto max-w-max flex items-center px-6 text-center text-lg font-bold lg:text-12.5/15">
         <span v-html="t('title')" />
       </h3>
 

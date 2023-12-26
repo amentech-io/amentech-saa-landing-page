@@ -28,7 +28,7 @@ const cards = [
         </div>
 
         <div>
-          <h3 class="max-w-18ch text-lg font-bold lg:text-5xl" v-html="t('title')" />
+          <h3 class="max-w-18ch text-lg font-bold lg:text-12.5/15" v-html="t('title')" />
 
           <p class="mx-auto mt-3 max-w-68ch text-xs font-medium lg:mt-10 lg:text-2xl" v-html="t('subtitle')" />
 

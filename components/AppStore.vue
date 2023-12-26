@@ -10,7 +10,7 @@ const { t } = useI18n({
   >
     <div class="grid grid-cols-[auto_1fr] grid-rows-[min-content_1fr] mx-auto gap-x-4 container">
       <div class="col-span-2 max-w-190 pb-3 lg:col-span-1">
-        <h2 class="text-lg font-bold lg:text-5xl" v-html="t('title')" />
+        <h2 class="text-lg font-bold lg:text-12.5/15" v-html="t('title')" />
         <p class="mx-auto mt-3 text-xs lg:mt-9 lg:text-2xl" v-html="t('subtitle')" />
       </div>
 

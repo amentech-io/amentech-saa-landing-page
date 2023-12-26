@@ -35,7 +35,7 @@ const cards = [
     <div class="mx-auto py-11 container lg:pb-23 lg:pt-25">
       <div class="absolute aspect-1 w-1/6 rounded-full bg-[#FC5185]/10 blur-300 -translate-y-1/2" />
 
-      <h3 class="flex items-center px-6 text-lg font-bold lg:text-5xl">
+      <h3 class="flex items-center px-6 text-lg font-bold lg:text-12.5/15">
         <span v-html="t('title')" />
       </h3>
 
