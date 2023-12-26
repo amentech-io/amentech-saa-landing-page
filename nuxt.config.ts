@@ -1,6 +1,7 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
+  devtools: { enabled: false },
   modules: [
     '@unocss/nuxt',
     '@nuxtjs/i18n',

@@ -13,7 +13,7 @@
   "dependencies": {
     "@firebase/app-types": "^0.9.0",
     "@headlessui/vue": "^1.7.16",
-    "@nuxtjs/i18n": "8.0.0-rc.5",
+    "@nuxtjs/i18n": "8.0.0",
     "@vee-validate/nuxt": "^4.11.8",
     "@vee-validate/valibot": "^4.11.8",
     "@vueuse/motion": "2.0.0",
@@ -30,13 +30,14 @@
     "@sidebase/nuxt-session": "^0.2.7",
     "@tailvue/nuxt": "^1.0.0",
     "@unocss/eslint-config": "^0.56.5",
-    "@unocss/nuxt": "^0.56.5",
+    "@unocss/nuxt": "^0.58.0",
     "@vueuse/core": "^10.5.0",
     "@vueuse/nuxt": "^10.5.0",
     "eslint": "^8.51.0",
-    "nuxt": "^3.7.4",
+    "nuxt": "^3.9.0",
     "typed-captchapng": "^1.0.4",
     "typescript": "^5.2.2",
+    "unocss": "^0.58.0",
     "unocss-preset-primitives": "0.0.1-beta.12",
     "valibot": "^0.19.0"
   }
