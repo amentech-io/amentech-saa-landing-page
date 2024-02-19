@@ -71,7 +71,7 @@ async function onSubmit(v, { resetForm }) {
           <div class="flex flex-grow flex-col space-y-2">
             <label for="fullName" class="text-xs font-medium lg:text-5">{{ $t('full-name') }} <span class="text-red-500">*</span></label>
             <div
-              class="of-hidden ring ring-[#C4B9BA] rounded-2xl text-black/80 hover:ring-[#C4B9BA]/60"
+              class="of-hidden rounded-2xl text-black/80 ring ring-[#C4B9BA] hover:ring-[#C4B9BA]/60"
               :class="{ 'ring-red': fieldErrors.errors.fullName }"
             >
               <Field
@@ -84,7 +84,7 @@ async function onSubmit(v, { resetForm }) {
           <div class="flex flex-grow flex-col space-y-2">
             <label for="email" class="text-xs font-medium lg:text-5">{{ $t('email') }} <span class="text-red-500">*</span></label>
             <div
-              class="of-hidden ring ring-[#C4B9BA] rounded-2xl text-black/80 hover:ring-[#C4B9BA]/60"
+              class="of-hidden rounded-2xl text-black/80 ring ring-[#C4B9BA] hover:ring-[#C4B9BA]/60"
               :class="{ 'ring-red': fieldErrors.errors.email }"
             >
               <Field id="email" name="email" class="w-full bg-white px-3 py-4 text-xs outline-none lg:text-base" type="text" />
@@ -175,7 +175,7 @@ async function onSubmit(v, { resetForm }) {
 
         <div class="pt-3 lg:pt-7">
           <button
-            class="group w-full inline-flex items-center justify-center rounded-2xl from-[#009EAB] via-[#017680] to-[#FCB932] from-0% to-98% via-47% bg-gradient-to-l px-10 py-2 font-semibold text-white transition lg:px-18 lg:py-5 lg:text-lg hover:opacity-90 hover:ring-4 hover:ring-white/50"
+            class="group w-full inline-flex items-center justify-center rounded-2xl from-[#009EAB] via-[#017680] to-[#FCB932] from-0% to-98% via-47% bg-gradient-to-l px-10 py-2 text-white font-semibold transition lg:px-18 lg:py-5 lg:text-lg hover:opacity-90 hover:ring-4 hover:ring-white/50"
           >
             <span>{{ $t('send') }}</span>
             <UnoIcon i-ic-baseline-arrow-forward class="ml-2 inline-block h-5 w-5 transition group-hover:translate-x-1 rtl:scale-x--100 rtl:group-hover:translate-x--1" />

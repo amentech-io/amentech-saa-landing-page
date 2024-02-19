@@ -46,7 +46,7 @@ const cards = [
 </script>
 
 <template>
-  <div class="bg-red from-[#0369A1] to-[#053B67] bg-gradient-to-r">
+  <div class="from-[#0369A1] to-[#053B67] bg-gradient-to-r">
     <div class="flex flex-col">
       <TheNav />
     </div>

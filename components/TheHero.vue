@@ -48,7 +48,7 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
 
       <div class="flex justify-center">
         <NuxtLink
-          class="mt-4 inline-block rounded-4 from-[#009EAB] via-[#017680] to-[#FCB932] from-0% to-98% via-47% bg-gradient-to-l px-10 py-2 font-extrabold text-white transition lg:mt-15 lg:px-18 lg:py-5 lg:text-xl hover:opacity-90 hover:ring-4 hover:ring-white/50"
+          class="mt-4 inline-block rounded-4 from-[#009EAB] via-[#017680] to-[#FCB932] from-0% to-98% via-47% bg-gradient-to-l px-10 py-2 text-white font-extrabold transition lg:mt-15 lg:px-18 lg:py-5 lg:text-xl hover:opacity-90 hover:ring-4 hover:ring-white/50"
           to="contact"
         >
           {{ $t('contact-us') }}
