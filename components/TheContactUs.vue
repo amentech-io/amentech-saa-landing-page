@@ -45,7 +45,7 @@ async function onSubmit(v, { resetForm }) {
       </div>
       <div class="flex flex-col">
         <h4
-          class="text-center text-base font-extrabold uppercase md:mt-24 lg:text-9"
+          class="text-center text-base font-extrabold uppercase lg:text-9"
         >
           {{ $t('contact-us') }}
         </h4>
@@ -57,7 +57,7 @@ async function onSubmit(v, { resetForm }) {
 
       <Form
         v-slot="fieldErrors"
-        class="relative mx-auto mt-6 max-w-80ch border border-[#D95188]/30 rounded-5 bg-white/10 px-2 py-4 text-xl lg:mt-14 space-y-2 lg:px-19 lg:py-25 lg:shadow-[0px_0px_25px_0px_#181B341A] sm:space-y-8"
+        class="relative mx-auto mt-6 max-w-80ch border border-[#C1C13F] rounded-5 bg-white/10 px-2 py-4 text-xl lg:mt-14 space-y-2 lg:px-19 lg:py-25 lg:shadow-[0px_0px_25px_0px_#181B341A] sm:space-y-8"
         :validation-schema="fieldSchema"
         @submit="onSubmit"
       >
@@ -65,40 +65,43 @@ async function onSubmit(v, { resetForm }) {
           <img src="/contact-location-icon.svg" alt="contact location">
         </div>
 
-        <div class="absolute right-0 aspect-1 w-1/2 translate-x-1/2 rounded-full bg-[#FC5185]/25 blur-300 -translate-y-1/2" />
+        <div class="absolute right-0 aspect-1 w-1/2 translate-x-1/2 rounded-full bg-[#FCB932]/23 blur-300 -translate-y-1/2" />
 
         <div class="flex gap-8">
           <div class="flex flex-grow flex-col space-y-2">
-            <label for="fullName" class="text-xs font-medium lg:text-5">{{ $t('full-name') }} *</label>
+            <label for="fullName" class="text-xs font-medium lg:text-5">{{ $t('full-name') }} <span class="text-red-500">*</span></label>
             <div
-              class="of-hidden border border-[#181B34] rounded-2xl text-black/80 hover:border-[#181B34]/60"
-              :class="{ 'ring ring-red': fieldErrors.errors.fullName }"
+              class="of-hidden ring ring-[#C4B9BA] rounded-2xl text-black/80 hover:ring-[#C4B9BA]/60"
+              :class="{ 'ring-red': fieldErrors.errors.fullName }"
             >
               <Field
                 id="fullName" name="fullName" type="text"
-                class="w-full px-3 py-4 text-xs outline-none lg:text-base"
+                class="w-full bg-white px-3 py-4 text-xs outline-none lg:text-base"
               />
             </div>
           </div>
 
           <div class="flex flex-grow flex-col space-y-2">
-            <label for="email" class="text-xs font-medium lg:text-5">{{ $t('email') }} *</label>
+            <label for="email" class="text-xs font-medium lg:text-5">{{ $t('email') }} <span class="text-red-500">*</span></label>
             <div
-              class="of-hidden border border-[#181B34] rounded-2xl text-black/80 hover:border-[#i81B34]/60"
-              :class="{ 'ring ring-red': fieldErrors.errors.email }"
+              class="of-hidden ring ring-[#C4B9BA] rounded-2xl text-black/80 hover:ring-[#C4B9BA]/60"
+              :class="{ 'ring-red': fieldErrors.errors.email }"
             >
-              <Field id="email" name="email" class="w-full px-3 py-4 text-xs outline-none lg:text-base" type="text" />
+              <Field id="email" name="email" class="w-full bg-white px-3 py-4 text-xs outline-none lg:text-base" type="text" />
             </div>
           </div>
         </div>
 
         <div class="flex flex-col space-y-2">
-          <label for="object" class="text-xs font-medium lg:text-5">{{ $t('subject') }} *</label>
+          <label for="object" class="text-xs font-medium lg:text-5">{{ $t('subject') }} <span class="text-red-500">*</span></label>
           <div
-            class="of-hidden border border-[#181B34] rounded-2xl bg-white pe-2 text-black/80 hover:border-[#181B34]/60"
-            :class="{ 'ring ring-red': fieldErrors.errors.object }"
+            class="of-hidden rounded-2xl bg-white pe-2 text-black/80 ring ring-[#C4B9BA] hover:border-[#C4B9BA]/60"
+            :class="{ 'ring-red': fieldErrors.errors.object }"
           >
-            <Field id="object" as="select" name="object" value="Tea" class="tex-tred w-full bg-white px-3 py-4 text-xs outline-none lg:text-base" @change="(e) => console.log(e)">
+            <Field
+              id="object" as="select" name="object" :value="null"
+              class="w-full bg-white bg-white px-3 py-4 text-xs outline-none lg:text-base"
+            >
               <option value="Devis d'assurance">
                 Devis d'assurance
               </option>
@@ -134,25 +137,25 @@ async function onSubmit(v, { resetForm }) {
         </div>
 
         <div class="flex flex-col space-y-2">
-          <label for="phone" class="text-xs font-medium lg:text-5">{{ $t('phone') }} *</label>
+          <label for="phone" class="text-xs font-medium lg:text-5">{{ $t('phone') }} <span class="text-red-500">*</span></label>
           <div
-            class="of-hidden border border-[#181B34] rounded-2xl text-black/80 hover:border-[#181B34]/60"
-            :class="{ 'ring ring-red': fieldErrors.errors.phone }"
+            class="of-hidden rounded-2xl text-black/80 ring ring-[#C4B9BA] hover:ring-[#C4B9BA]/60"
+            :class="{ 'ring-red': fieldErrors.errors.phone }"
           >
-            <Field id="phone" name="phone" class="w-full px-3 py-4 text-xs outline-none lg:text-base" type="text" />
+            <Field id="phone" name="phone" class="w-full bg-white px-3 py-4 text-xs outline-none lg:text-base" type="text" />
           </div>
         </div>
 
         <div class="flex flex-col space-y-2">
-          <label for="body" class="text-xs font-medium lg:text-5">{{ $t('message') }} *</label>
+          <label for="body" class="text-xs font-medium lg:text-5">{{ $t('message') }} <span class="text-red-500">*</span></label>
           <Field
             id="body"
             as="textarea"
             name="body"
             type="text"
             rows="3"
-            class="h-full w-full resize-none border border-[#181B34] rounded-2xl p-2 px-3 py-4 text-xs text-black/80 outline-none hover:border-[#181B34]/60 lg:text-base"
-            :class="{ 'ring ring-red': fieldErrors.errors.body }"
+            class="h-full w-full resize-none rounded-2xl bg-white p-2 px-3 py-4 text-xs text-black/80 outline-none ring ring-[#C4B9BA] lg:text-base hover:ring-[#C4B9BA]/60"
+            :class="{ 'ring-red': fieldErrors.errors.body }"
           />
         </div>
 
@@ -162,14 +165,17 @@ async function onSubmit(v, { resetForm }) {
             class="w-38 cursor-pointer rounded-2xl bg-white object-contain px-4"
             @click="getCaptcha()"
           >
-          <div class="of-hidden border border-[#181B34] rounded-2xl text-black/80 hover:border-[#181B34]/60">
-            <Field id="captcha" name="captcha" class="w-full px-3 py-4 text-xs outline-none lg:text-base" type="text" />
+          <div
+            class="of-hidden rounded-2xl text-black/80 ring ring-[#C4B9BA] hover:ring-[#C4B9BA]/60"
+            :class="{ 'ring-red': fieldErrors.errors.captcha }"
+          >
+            <Field id="captcha" name="captcha" class="w-full bg-white px-3 py-4 text-xs outline-none lg:text-base" type="text" />
           </div>
         </div>
 
         <div class="pt-3 lg:pt-7">
           <button
-            class="group w-full inline-flex items-center justify-center rounded-2xl from-[#1C57BC] via-[#9D5CA2] to-[rgba(252,81,133,0.94)] from-0% to-98% via-47% bg-gradient-to-l px-10 py-2 font-semibold text-white transition lg:px-18 lg:py-5 lg:text-lg hover:opacity-90 hover:ring-4 hover:ring-white/50"
+            class="group w-full inline-flex items-center justify-center rounded-2xl from-[#009EAB] via-[#017680] to-[#FCB932] from-0% to-98% via-47% bg-gradient-to-l px-10 py-2 font-semibold text-white transition lg:px-18 lg:py-5 lg:text-lg hover:opacity-90 hover:ring-4 hover:ring-white/50"
           >
             <span>{{ $t('send') }}</span>
             <UnoIcon i-ic-baseline-arrow-forward class="ml-2 inline-block h-5 w-5 transition group-hover:translate-x-1 rtl:scale-x--100 rtl:group-hover:translate-x--1" />

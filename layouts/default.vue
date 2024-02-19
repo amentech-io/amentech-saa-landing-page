@@ -14,7 +14,7 @@ const { localeProperties } = useI18n()
           <Meta :hid="meta.hid" :property="meta.property" :content="meta.content" />
         </template>
       </Head>
-      <Body class="bg-[#05031F] font-sans text-white">
+      <Body class="font-sans text-[#08181B]">
         <slot />
       </Body>
     </Html>

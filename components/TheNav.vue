@@ -75,6 +75,6 @@ const menuIsOpen = ref(false)
   left: 0;
   height: 5px;
   border-radius: 5px;
-  background: linear-gradient(90deg, #1C57BC 0%, #9D5CA2 47.76%, rgba(252, 81, 133, 0.94) 98.04%);
+  background: linear-gradient(-90deg, #FCB932, #009EAB);
 }
 </style>

@@ -15,11 +15,11 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
       <div class="grid grid-cols-2 flex-auto place-items-center">
         <div
           style="animation: blur-movement 5s linear 2s infinite alternate;"
-          class="hidden aspect-1 w-90 rounded-full bg-[#1C57BC]/30 blur-200 lg:block -translate-x-[100%]"
+          class="hidden aspect-1 w-90 rounded-full bg-[#009EAB]/30 blur-200 lg:block -translate-x-[100%]"
         />
         <div
           style="animation: blur-movement 5s linear 2s infinite alternate-reverse;"
-          class="hidden aspect-1 w-100 translate-x-[100%] rounded-full bg-[#FC5185]/30 blur-200 lg:block"
+          class="hidden aspect-1 w-100 translate-x-[100%] rounded-full bg-[#FCB932]/30 blur-200 lg:block"
         />
       </div>
       <div class="my-auto mr-25 hidden lg:block">
@@ -38,7 +38,7 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
       <ul class="flex justify-center gap-14">
         <li v-for="i, idx in features" :key="idx" class="flex items-center gap-2">
           <div
-            class="inline-block rounded-full bg-[#1C57BC] from-[#1C57BC] via-[#9D5CA2] to-[rgba(252,81,133,0.94)] from-0% to-98% via-47% bg-gradient-to-bl p-0.5 lg:p-2"
+            class="inline-block rounded-full bg-[#1C57BC] from-[#009EAB] to-[#FCB932] from-0% to-98% bg-gradient-to-bl p-0.5 lg:p-2"
           >
             <UnoIcon i-ic-baseline-check class="h-2 w-2 text-white lg:h-6 lg:w-6" />
           </div>
@@ -48,7 +48,7 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
 
       <div class="flex justify-center">
         <NuxtLink
-          class="mt-4 inline-block rounded-4 from-[#1C57BC] via-[#9D5CA2] to-[rgba(252,81,133,0.94)] from-0% to-98% via-47% bg-gradient-to-l px-10 py-2 font-extrabold text-white transition lg:mt-15 lg:px-18 lg:py-5 lg:text-xl hover:opacity-90 hover:ring-4 hover:ring-white/50"
+          class="mt-4 inline-block rounded-4 from-[#009EAB] via-[#017680] to-[#FCB932] from-0% to-98% via-47% bg-gradient-to-l px-10 py-2 font-extrabold text-white transition lg:mt-15 lg:px-18 lg:py-5 lg:text-xl hover:opacity-90 hover:ring-4 hover:ring-white/50"
           to="contact"
         >
           {{ $t('contact-us') }}
@@ -61,7 +61,7 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
 <style>
 .underline-gradient {
   position: relative;
-  background: linear-gradient(90deg, #1C57BC 0%, #9D5CA2 47.76%, rgba(252, 81, 133, 0.94) 98.04%);
+  background: conic-gradient(from 0deg at 16.47% 32.32%, #08181B 7deg, rgba(0, 158, 171, 0.50) 55deg, rgba(0, 158, 171, 0.90) 86deg, #FCB932 122deg, rgba(8, 24, 27, 0.95) 205deg);
   background-clip: text;
   color: transparent;
 }
@@ -74,7 +74,7 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
   left: 0;
   height: 4px;
   border-radius: 2px;
-  background: linear-gradient(90deg, #1C57BC 0%, #9D5CA2 47.76%, rgba(252, 81, 133, 0.94) 98.04%);
+  background: linear-gradient(-90deg,#FCB932, #009EAB);
 }
 
 @keyframes blur-movement {

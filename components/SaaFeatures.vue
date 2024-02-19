@@ -31,18 +31,18 @@ const cards = [
 </script>
 
 <template>
-  <section class="relative">
+  <section class="relative bg-[#FEF5E6]">
     <div class="mx-auto py-11 container lg:pb-23 lg:pt-25">
-      <div class="absolute aspect-1 w-1/6 rounded-full bg-[#FC5185]/25 blur-300 -translate-y-1/2" />
+      <div class="absolute aspect-1 w-1/6 rounded-full bg-[#FC5185]/10 blur-300 -translate-y-1/2" />
 
-      <h3 class="flex items-center px-6 text-lg font-bold lg:text-5xl">
+      <h3 class="flex items-center px-6 text-lg font-bold lg:text-12.5/15">
         <span v-html="t('title')" />
       </h3>
 
       <div class="grid mx-6 mb-8 mt-5 gap-5 lg:grid-cols-3 lg:grid-rows-2 lg:mt-22">
         <div
           v-for="card, idx in cards" :key="idx"
-          class="box-gradient relative flex-none snap-start border-1px border-transparent rounded-8 px-5 py-4 text-white shadow-md hover:border-transparent lg:px-8 lg:py-6"
+          class="box-gradient relative flex-none snap-start border-1px border-transparent rounded-8 px-5 py-4 shadow-md hover:border-transparent lg:px-8 lg:py-6"
         >
           <p class="mt-4 max-w-20ch text-sm font-bold lg:mt-6 lg:text-2xl">
             {{ card.title }}
@@ -77,15 +77,16 @@ const cards = [
   --at-apply: bg-white/30 rounded;
 }
 
+/* #009EAB, #F9B933AD, #FCB932, #009EAB */
 .box-gradient {
-  --color: #0D1035,#0D1035;
-  --bg-color: #0D1035,#0D1035;
+  --color: white, white;
+  --bg-color: white, white;
   background: linear-gradient(140deg, var(--bg-color)) padding-box,
     linear-gradient(45deg, var(--color)) border-box;
 }
 .box-gradient:hover {
-  --color: #3F56B3,#F25187;
-  --bg-color: #250666 60%, #510043;
+  --color: #009EAB, #009EAB;
+  --bg-color:  #F7E187, #BEDDBF
 }
 </style>
 

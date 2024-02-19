@@ -32,9 +32,9 @@ function selectItem(idx: number) {
 <template>
   <section>
     <div class="relative mx-auto px-6 pt-6 container lg:pt-17">
-      <div class="absolute aspect-1 w-1/6 translate-x-full rounded-full bg-[#FC5185]/25 blur-130" />
+      <div class="absolute aspect-1 w-1/6 translate-x-full rounded-full bg-[#FCB932]/16 blur-130" />
 
-      <h3 class="mx-auto max-w-32ch text-center text-lg font-bold lg:text-5xl" v-html="t('title')" />
+      <h3 class="mx-auto max-w-32ch text-center text-lg font-bold lg:text-12.5/15" v-html="t('title')" />
 
       <p class="mx-auto mt-3 max-w-68ch text-center text-xs font-medium lg:mt-10 lg:text-2xl">
         {{ t('subtitle') }}
@@ -45,7 +45,7 @@ function selectItem(idx: number) {
           v-for="card, idx in cards" :key="idx"
         >
           <button
-            hover="from-[#1C57BC]/20 to-[#FC5185]/20 from-0% to-100% bg-gradient-to-r border-rose-500/30"
+            hover="from-[#CDEDEE] to-[#FBF6D3] bg-gradient-to-r border-[#009EAB]"
             class="group border border-transparent rounded-3xl text-left lg:block"
             @mouseover="selectItem(idx)"
           >
@@ -54,7 +54,7 @@ function selectItem(idx: number) {
             >
               <div class="row-span-2 my-auto me-8 flex items-center lg:mt-6">
                 <span
-                  class="text-extrabold h-15 w-15 flex flex-none items-center justify-center rounded-2xl bg-[#192346] pb-0.8 text-sm text-white group-hover:bg-white lg:text-3xl group-hover:text-[#2657BA]"
+                  class="text-extrabold h-15 w-15 flex flex-none items-center justify-center rounded-2xl bg-[#FCB932] pb-0.8 text-sm text-white group-hover:bg-white lg:text-3xl group-hover:text-[#009EAB]"
                 >
                   {{ idx + 1 }}
                 </span>
@@ -104,7 +104,7 @@ function selectItem(idx: number) {
 
 <i18n lang="yaml">
 fr:
-  title: Si <span class="mb-1 bg-white text-[#0D1035] px-2 pb-1 rounded-xl">rapide</span> que vous pouvez le faire pendant que votre café est encore chaud
+  title: Si <span class="mb-1 bg-[#FAF0B9] px-2 pb-1 rounded-xl">rapide</span> que vous pouvez le faire pendant que votre café est encore chaud
   subtitle: Nous avons rendu cela super simple - il n'est pas nécessaire de déterrer de vieux dossiers ou de la paperasse. Au cas où vous en auriez besoin, nous avons des conseillers non-commissionnés prêts à vous aider à chaque étape du processus.
   item1:
     title: Recevez votre devis instantané sans engagement en quelques clics!

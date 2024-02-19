@@ -21,36 +21,36 @@ const footer = [
   {
     title: 'Découvrez la SAA',
     list: [
-      { title: 'Présentation', href: '/about' },
-      { title: 'Mot du PDG', href: '/messagepresident' },
-      { title: 'La SAA en chiffre', href: '/saachiffres' },
-      { title: 'Actualité', href: 'news' },
-      { title: 'Appels d\'offre', href: '/calls' },
-      { title: 'Offres d\'emploi', href: '/jobs' },
+      { title: 'Présentation', href: '#/about' },
+      { title: 'Mot du PDG', href: '#/messagepresident' },
+      { title: 'La SAA en chiffre', href: '#/saachiffres' },
+      { title: 'Actualité', href: '#news' },
+      { title: 'Appels d\'offre', href: '#/calls' },
+      { title: 'Offres d\'emploi', href: '#/jobs' },
     ],
   },
   {
     title: 'PRODUITS DE LA SAA',
     list: [
       { title: 'NSURI', href: '#' },
-      { title: 'Assurance auto', href: '/offer/auto"' },
-      { title: 'Assurance catastrophe naturelle', href: '/offer/cat-nat' },
-      { title: 'Assurance multirisque habitation', href: '/offer/multirisque-habitation' },
-      { title: 'Responsabilité civile', href: '/offer/rc' },
-      { title: 'Bateau de plaisance', href: '/offer/bateau-plaisance' },
+      { title: 'Assurance auto', href: '#/offer/auto"' },
+      { title: 'Assurance catastrophe naturelle', href: '#/offer/cat-nat' },
+      { title: 'Assurance multirisque habitation', href: '#/offer/multirisque-habitation' },
+      { title: 'Responsabilité civile', href: '#/offer/rc' },
+      { title: 'Bateau de plaisance', href: '#/offer/bateau-plaisance' },
     ],
   },
 ]
 </script>
 
 <template>
-  <footer class="border-t border-[#2C1030] from-transparent via-[#2C1030]/80 to-transparent bg-gradient-to-b">
-    <div class="mx-auto flex flex-col pb-13 pt-15 container 2xl:flex-row">
+  <footer class="border-t bg-[#002A2D]">
+    <div class="mx-auto flex flex-col px-4 pb-13 pt-15 container 2xl:flex-row">
       <div>
         <div class="max-w-38">
           <img src="/logo-saa.png" alt="">
         </div>
-        <p class="mt-3 uppercase">
+        <p class="mt-3 uppercase text-white">
           {{ t('our-app') }}
         </p>
 
@@ -59,7 +59,7 @@ const footer = [
           <img src="/playstore-mono.png" alt="playstore">
         </div>
 
-        <p class="mt-3 uppercase">
+        <p class="mt-3 uppercase text-white">
           {{ t('follow-us') }}
         </p>
 
@@ -145,7 +145,7 @@ const footer = [
     </div>
 
     <div class="mx-auto flex items-center justify-center gap-4 border-t-1px py-7 container">
-      <p class="text-xs">
+      <p class="text-xs text-white">
         SAA SPA © 2023 Conçu et développé par
       </p>
       <img src="/logo-amentech-mono.png" alt="amentech">
@@ -155,6 +155,6 @@ const footer = [
 
 <i18n lang="yml">
 fr:
-  our-app: get our app
-  follow-us: get our app
+  our-app: TELECHARGER NOTRE APPLICATION
+  follow-us: SUIVEZ NOUS
 </i18n>

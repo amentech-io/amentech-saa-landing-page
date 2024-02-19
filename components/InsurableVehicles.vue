@@ -30,11 +30,11 @@ function clickHandler(idx: number) {
   <section class="mt-12 lg:mt-40">
     <div class="relative mx-auto py-11 container lg:pb-23 lg:pt-25">
       <div class="relative mb-40">
-        <div class="absolute inset-0 mx-auto aspect-1 w-1/5 rounded-full bg-[#FC5185]/25 blur-120" />
+        <div class="absolute inset-0 mx-auto aspect-1 w-1/5 rounded-full bg-[#FCB932]/35 blur-150" />
         <img class="absolute inset-0 mx-auto" src="/arc.png" alt="arc">
       </div>
 
-      <h3 class="mx-auto max-w-max flex items-center px-6 text-center text-lg font-bold lg:text-5xl">
+      <h3 class="mx-auto max-w-max flex items-center px-6 text-center text-lg font-bold lg:text-12.5/15">
         <span v-html="t('title')" />
       </h3>
 
@@ -45,7 +45,7 @@ function clickHandler(idx: number) {
       <div class="mt-5 flex flex-wrap justify-center gap-4 lg:mt-22 lg:justify-center lg:gap-5 2xl:pl-0">
         <div
           v-for="card, idx in cards" :key="idx"
-          class="text-cente [background:linear-gradient(#1F0044,#13002A,#110031)_padding-box,linear-gradient(to_right,#D6528E,#2F2EB7)_border-box] relative flex flex-none gap-4 border border-[#05031F] rounded-full px-5 py-4 hover:border-transparent lg:px-27 lg:py-8 lg:text-3xl"
+          class="text-cente [background:linear-gradient(0deg,rgba(252,185,50,0.32)3.21%,rgba(252,185,50,0.04)46.13%,rgba(252,185,50,0.24)97.93%)] relative flex flex-none gap-4 border border-[#05031F] border-transparent rounded-full px-5 py-4 hover:border-[#009EAB] lg:px-27 lg:py-8 lg:text-3xl"
           @mouseover="clickHandler(idx)"
         >
           <div class="rtl:scale-x--100">
