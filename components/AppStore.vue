@@ -10,8 +10,8 @@ const { t } = useI18n({
   >
     <div class="grid grid-cols-[auto_1fr] grid-rows-[min-content_1fr] mx-auto gap-x-4 container">
       <div class="col-span-2 max-w-190 pb-3 lg:col-span-1">
-        <h2 class="text-lg font-bold lg:text-12.5/15" v-html="t('title')" />
-        <p class="mx-auto mt-3 text-xs lg:mt-9 lg:text-2xl" v-html="t('subtitle')" />
+        <h2 class="text-lg text-[#193B64] font-bold lg:text-12.5/15" v-html="t('title')" />
+        <p class="mx-auto mt-3 text-xs text-[#4A6387] lg:mt-9 lg:text-2xl" v-html="t('subtitle')" />
       </div>
 
       <div class="order-last hidden ps-8 lg:order-none lg:row-span-2 lg:ms-auto 2xl:block">
@@ -19,7 +19,7 @@ const { t } = useI18n({
         <img src="/store-side-rtl.png" alt="phone" class="mx-auto h-full object-cover ltr:hidden">
       </div>
 
-      <div class="mt-3 hidden flex-col lg:mt-17 2xl:flex">
+      <div class="mt-3 hidden w-max flex-col border border-[#9DB2D4] rounded-3xl px-8 py-4 lg:mt-17 2xl:flex">
         <p class="text-xs lg:text-lg">
           L’application est
         </p>
