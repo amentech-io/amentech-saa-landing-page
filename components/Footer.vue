@@ -44,7 +44,7 @@ const footer = [
 </script>
 
 <template>
-  <footer class="border-t bg-[#002A2D]">
+  <footer class="border-t from-[#050E16] via-[#0A163B] to-[#010306] bg-gradient-to-tr">
     <div class="mx-auto flex flex-col px-4 pb-13 pt-15 container 2xl:flex-row">
       <div>
         <div class="max-w-38">
