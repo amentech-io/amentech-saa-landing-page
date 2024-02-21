@@ -32,8 +32,12 @@ const cards = [
 
 <template>
   <section class="mx-auto px-6 pt-9 container lg:pt-54">
-    <div class="relative rounded-2 bg-[#005158] text-white lg:rounded-10">
-      <div class="absolute bottom-0 right-0 z-20 aspect-1 w-1/6 translate-x-1/2 translate-y-1/2 rounded-full bg-[#FCB932]/25 blur-150" />
+    <div class="relative rounded-2 bg-[#193B64] text-white lg:rounded-10">
+      <div class="absolute inset-0">
+        <img class="object-fit h-full w-full" src="/protection-waves.png" alt="">
+      </div>
+
+      <div class="absolute bottom-0 right-0 z-20 aspect-1 w-1/6 translate-x-1/2 translate-y-1/2 rounded-full bg-[#43648A]/25 blur-150" />
 
       <div class="grid px-4 pt-6 2xl:grid-cols-[1fr_1.2fr] lg:py-15">
         <div class="my-auto lg:ms-30">
