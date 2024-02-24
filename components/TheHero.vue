@@ -7,45 +7,45 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
 </script>
 
 <template>
-  <div class="mx-auto mb-18 mt-7 w-full flex px-6 container lg:mb-29 lg:mt-32">
-    <div class="w-full flex">
-      <div class="w-full">
-        <h1
-          class="max-w-20ch text-2xl/10 text-white font-black lg:text-[3.5rem]/24"
-          v-html=" t('title')"
-        />
-        <div class="my-4">
-          <hr class="h-1 w-60 border-none bg-[#F2BC50]">
-          <p class="max-w-52ch text-xs text-white leading-10.5 leading-4 lg:my-15 lg:text-xl lg:leading-8">
-            {{ t('subtitle') }}
-          </p>
-        </div>
+  <div class="relative relative mb-18 mt-7 px-6 lg:mb-20">
+    <div class="mx-auto w-full flex container">
+      <div class="w-full flex">
+        <div class="w-1/2">
+          <h1
+            class="max-w-20ch text-2xl/10 text-white font-black 2xl:text-[3.5rem]/24 lg:text-[2.5rem]/15"
+            v-html=" t('title')"
+          />
+          <div class="my-4">
+            <hr class="h-1 w-60 border-none bg-[#F2BC50]">
+            <p class="max-w-52ch text-xs text-white leading-10.5 leading-4 lg:my-15 lg:text-xl lg:leading-8">
+              {{ t('subtitle') }}
+            </p>
+          </div>
 
-        <ul class="flex gap-14">
-          <li v-for="i, idx in features" :key="idx" class="flex items-center gap-2">
-            <div
-              class="inline-block rounded-full bg-[#F2BC50] p-0.5 lg:p-2"
-            >
-              <UnoIcon i-ic-baseline-check class="h-2 w-2 text-white lg:h-6 lg:w-6" />
+          <ul class="flex gap-5">
+            <li v-for="i, idx in features" :key="idx" class="flex items-center gap-2">
+              <div
+                class="inline-block rounded-full bg-[#F2BC50] p-0.5 lg:p-2"
+              >
+                <UnoIcon i-ic-baseline-check class="h-2 w-2 text-white lg:h-6 lg:w-6" />
+              </div>
+              <span class="text-8px text-white lg:text-lg"> {{ i }} </span>
+            </li>
+          </ul>
+
+          <div class="mt-7">
+            <p class="text-xl text-white font-semibold">
+              {{ t('available-on') }}
+            </p>
+
+            <div class="mt-4">
+              <img src="/stores.png" alt="">
             </div>
-            <span class="text-8px text-white lg:text-lg"> {{ i }} </span>
-          </li>
-        </ul>
-
-        <div class="mt-7">
-          <p class="text-xl text-white font-semibold">
-            {{ t('available-on') }}
-          </p>
-
-          <div class="mt-4">
-            <img src="/stores.png" alt="">
           </div>
         </div>
-      </div>
 
-      <div class="absolute right-0 top-0 h-full w-[40%] flex items-center bg-[#2E619F]">
-        <div class="ml--30 mt-40 w-full">
-          <img class="w-full" src="/hero-right-pic.png" alt="">
+        <div class="absolute right-0 h-full w-1/2">
+          <img class="ml-auto" src="/hero-right-pic.png" alt="">
         </div>
       </div>
     </div>
