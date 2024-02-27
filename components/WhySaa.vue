@@ -19,8 +19,8 @@ const cards = [
       <div class="mt-8 flex flex-col gap-8 lg:mt-43 lg:gap-52">
         <div
           v-for="i, idx in cards" :key="idx"
-          class="relative rounded-7 lg:flex lg:items-center lg:justify-between lg:shadow-[0px_4px_25px_0px_#181B3412]"
-          :class="idx === 1 ? 'flex-row-reverse lg:bg-[#E3E8EB]' : 'lg:bg-[#FAF7F1]'"
+          class="relative rounded-7 lg:flex lg:items-center lg:justify-between lg:bg-[#FAF7F1] lg:shadow-[0px_4px_25px_0px_#181B3412]"
+          :class="idx === 1 && 'flex-row-reverse'"
         >
           <div class="lg:mx-auto lg:max-w-1/2 lg:px-22 lg:py-17">
             <h3
