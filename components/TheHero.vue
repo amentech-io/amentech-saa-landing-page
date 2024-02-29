@@ -12,7 +12,7 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
       <div class="w-full flex">
         <div class="w-1/2">
           <h1
-            class="max-w-20ch text-2xl/10 text-white font-black 2xl:text-[3.5rem]/24 lg:text-[2.5rem]/15"
+            class="max-w-20ch text-2xl/10 text-white font-black 2xl:text-[3.5rem]/19 lg:text-[2.5rem]/15"
             v-html=" t('title')"
           />
           <div class="my-4">
