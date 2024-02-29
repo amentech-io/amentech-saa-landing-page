@@ -41,9 +41,9 @@ const cards = [
 
       <div class="grid px-4 pt-6 2xl:grid-cols-[1fr_1.2fr] lg:py-15">
         <div class="my-auto lg:ms-30">
-          <h3 class="text-lg font-bold lg:text-4xl" v-html="t('title')" />
+          <h3 class="text-lg text-[#F2BC50] font-bold lg:text-4xl" v-html="t('title')" />
 
-          <p class="mx-auto mt-3 text-xs font-medium lg:mt-10 lg:text-2xl" v-html="t('subtitle')" />
+          <div class="mx-auto mt-3 text-xs font-medium lg:mt-10 lg:text-2xl" v-html="t('subtitle')" />
         </div>
 
         <div>
@@ -69,7 +69,9 @@ const cards = [
 <i18n lang="yaml">
 fr:
   title: Des garanties sur mesure!
-  subtitle: N’suri vous propose une sélection soigneusement élaborée de garanties essentielles pour protéger au mieux votre véhicule et son conducteur - c'est vous ! Profitez d'une couverture complète et personnalisée qui vous offre une tranquillité d'esprit totale sur la route, où que vous alliez.
+  subtitle: |
+    <p>N’suri vous propose une sélection soigneusement élaborée de garanties essentielles pour protéger au mieux votre véhicule et son conducteur - c'est vous!</p>
+    <p class="mt-8">Profitez d'une couverture complète et personnalisée qui vous offre une tranquillité d'esprit totale sur la route, où que vous alliez.</p>
   item1:
     title: Responsabilité civile
   item2:
