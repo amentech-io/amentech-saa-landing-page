@@ -15,7 +15,7 @@ const { localeProperties, setLocale, locales } = useI18n()
       <ListboxButton
         class="relative w-full flex cursor-default cursor-pointer rounded-lg px-3 py-2 text-left focus-visible:border-indigo-500 focus:outline-none focus-visible:ring-2"
       >
-        <span class="flex items-center truncate text-white">
+        <span class="flex items-center truncate text-2xl text-white">
           {{ localeProperties.name }}
           <UnoIcon i-ic-round-arrow-drop-down class="ml-2 h-5 w-5" aria-hidden="true" />
         </span>

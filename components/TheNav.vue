@@ -19,18 +19,18 @@ const menuIsOpen = ref(false)
         </NuxtLink>
 
         <!-- {{{ desktop -->
-        <ul class="hidden items-center whitespace-nowrap text-lg fw-semibold lg:flex rtl:flex-row-reverse 2xl:gap-13">
+        <ul class="hidden items-center gap-11 whitespace-nowrap fw-semibold lg:flex rtl:flex-row-reverse 2xl:gap-18">
           <li>
             <NuxtLink
               :to="localePath('index')"
-              class="nav-hover relative inline-flex items-center rounded-md px-3 py-2 text-lg text-white font-semibold hover:text-opacity-100 focus:outline-none focus-visible:ring-2"
+              class="nav-hover relative inline-flex items-center rounded-md px-3 py-2 text-2xl text-white font-semibold hover:text-opacity-100 focus:outline-none focus-visible:ring-2"
             >
               {{ $t('home') }}
             </NuxtLink>
           </li>
           <li>
             <NuxtLink
-              class="nav-hover relative inline-flex items-center rounded-md px-3 py-2 text-lg text-white font-semibold hover:text-opacity-100 focus:outline-none focus-visible:ring-2"
+              class="nav-hover relative inline-flex items-center rounded-md px-3 py-2 text-2xl text-white font-semibold hover:text-opacity-100 focus:outline-none focus-visible:ring-2"
               :to="localePath('contact')"
             >
               {{ $t('contact-us') }}
@@ -39,7 +39,7 @@ const menuIsOpen = ref(false)
           <li>
             <NuxtLink
               :to="localePath('faq')"
-              class="nav-hover relative inline-flex items-center rounded-md px-3 py-2 text-lg text-white font-semibold hover:text-opacity-100 focus:outline-none focus-visible:ring-2"
+              class="nav-hover relative inline-flex items-center rounded-md px-3 py-2 text-2xl text-white font-semibold hover:text-opacity-100 focus:outline-none focus-visible:ring-2"
             >
               FAQ
             </NuxtLink>
