@@ -49,18 +49,18 @@ const cards = [
 
 <i18n lang="yaml">
 fr:
-  title: Pourquoi l’assurance <span class="text-[#F2BC50] bg-[#183A63] pb-2 px-3 rounded-2xl">digitale SAA</span>
+  title: Pourquoi l’assurance <span class="text-[#F2BC50] bg-[#183A63] pb-2 px-3 rounded-2xl">digitale N’suri</span>
   item1:
     title: Une transparence totale sur vos garanties et le coût de votre assurance.
-    subtitle: Nous sommes convaincus que l'assurance ne doit plus être un sujet opaque. Avec SAA, tout est enfin clair et transparent. Fini les mauvaises surprises, nous vous aidons à comprendre très simplement vos garanties et le coût de votre assurance. C'est vous qui choisissez ce que vous couvrez ou ne couvrez pas.
+    subtitle: Nous sommes convaincus que l'assurance ne doit plus être un sujet opaque. Avec N’suri, tout est enfin clair et transparent. Fini les mauvaises surprises, nous vous aidons à comprendre très simplement vos garanties et le coût de votre assurance. C'est vous qui choisissez ce que vous couvrez ou ne couvrez pas.
   item2:
     title: Votre prix en <span class="text-[#F2BC50]">2 min</span>, et souscription en <span class="text-[#F2BC50]">10 min</span>
     subtitle: Changer d'assurance ne devrait faire peur à personne. Notre solution 100% digitale vous permet de souscrire en quelques minutes, sans papiers ni rendez-vous avec votre banquier. Nous vous guidons étape par étape, jusqu'à la signature électronique de votre contrat. Ensuite, nos équipes s'occupent de résilier votre ancien contrat et de gérer la transition d'assurance. Tout simplement.
 ar:
-  title: لماذا التأمين <span class="text-[#FCB932] pb-2 px-3 rounded-2xl">الرقمي SAA</span>
+  title: لماذا التأمين <span class="text-[#FCB932] pb-2 px-3 rounded-2xl">الرقمي N’suri</span>
   item1:
     title: الشفافية الكاملة في ضماناتك وتكلفة التأمين الخاص بك.
-    subtitle: نحن مقتنعون بأن التأمين يجب ألا يكون موضوعًا مبهمًا بعد الآن. مع SAA، أصبح كل شيء أخيرًا واضحًا وشفافًا. لا مزيد من المفاجآت غير السارة، نحن نساعدك على فهم ضماناتك وتكلفة التأمين الخاص بك. تختار ما تغطيه أو لا تغطيه.
+    subtitle: نحن مقتنعون بأن التأمين يجب ألا يكون موضوعًا مبهمًا بعد الآن. مع N’suri، أصبح كل شيء أخيرًا واضحًا وشفافًا. لا مزيد من المفاجآت غير السارة، نحن نساعدك على فهم ضماناتك وتكلفة التأمين الخاص بك. تختار ما تغطيه أو لا تغطيه.
   item2:
     title: سعرك في 2 دقيقة والاشتراك في 10 دقيقة
     subtitle: تغيير التأمين لا ينبغي أن يخيف أي شخص. يتيح لك حلنا الرقمي بنسبة 100٪ الاشتراك في بضع دقائق، بدون أوراق أو موعد مع المصرفي الخاص بك. نحن نرشدك خطوة بخطوة، حتى التوقيع الإلكتروني لعقدك. ثم تهتم فرقنا بإلغاء عقدك القديم وإدارة انتقال التأمين. ببساطة.
