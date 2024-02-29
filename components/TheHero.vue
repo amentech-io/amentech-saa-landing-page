@@ -63,16 +63,16 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
 
 <i18n lang="yaml">
 fr:
-  title: <span class="underline-gradient">N’SURI</span>,&nbsp; l’assurances Simplifiées en Quelques Clics !
-  subtitle: Découvrez NSURI, l'assurance digitale réinventée en quelques clics ! Simplifiez la gestion instantanée de vos contrats, souscrivez de nouvelles couvertures personnalisées et suivez vos sinistres en temps réel, pour une tranquillité de conduite inégalée.
+  title: <span class="text-[#F2BC50]">N’suri</span>,&nbsp; l’assurances Simplifiées en Quelques Clics !
+  subtitle: Découvrez N’suri, l'assurance digitale réinventée en quelques clics ! Simplifiez la gestion instantanée de vos contrats, souscrivez de nouvelles couvertures personnalisées et suivez vos sinistres en temps réel, pour une tranquillité de conduite inégalée.
   features:
     item1: 100% mobile et flexible
     item2: 0% prise de tête
     item3: au juste prix
   available-on: Disponible sur
 ar:
-  title: <span class="underline-gradient">نسوري</span>،&nbsp; تأمين مبسط ببضع نقرات فقط!
-  subtitle: اكتشف NSURI، التأمين الرقمي المعاد اختراعه ببضع نقرات فقط! قم بتبسيط الإدارة الفورية لعقودك، وقم بتغطية شخصية جديدة واتبع مطالباتك في الوقت الفعلي، من أجل قيادة سلام لا مثيل له.
+  title: <span class="text-[#F2BC50]">نسوري</span>،&nbsp; تأمين مبسط ببضع نقرات فقط!
+  subtitle: اكتشف N’suri، التأمين الرقمي المعاد اختراعه ببضع نقرات فقط! قم بتبسيط الإدارة الفورية لعقودك، وقم بتغطية شخصية جديدة واتبع مطالباتك في الوقت الفعلي، من أجل قيادة سلام لا مثيل له.
   features:
     item1: 100٪ متنقلة ومرنة
     item2: بالسعر المناسب
