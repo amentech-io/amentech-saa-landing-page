@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-  title: 'Société Nationale d\'Assurance SAA',
+  title: 'Société Nationale d\'Assurance N’suri',
   link: [
     {
       rel: 'icon',
@@ -11,7 +11,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Entreprise Publique Economique, agréée pour pratiquer l’ensemble des branches d’assurance, La Société Nationale d ’Assurance SAA, est la première société d’assurance et de la réassurance en Algérie.',
+      content: 'Entreprise Publique Economique, agréée pour pratiquer l’ensemble des branches d’assurance, La Société Nationale d ’Assurance N’suri, est la première société d’assurance et de la réassurance en Algérie.',
     },
   ],
 })

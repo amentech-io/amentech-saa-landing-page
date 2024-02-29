@@ -19,18 +19,18 @@ const footer = [
     ],
   },
   {
-    title: 'Découvrez la SAA',
+    title: 'Découvrez la N’suri',
     list: [
       { title: 'Présentation', href: '#/about' },
       { title: 'Mot du PDG', href: '#/messagepresident' },
-      { title: 'La SAA en chiffre', href: '#/saachiffres' },
+      { title: 'La N’suri en chiffre', href: '#/saachiffres' },
       { title: 'Actualité', href: '#news' },
       { title: 'Appels d\'offre', href: '#/calls' },
       { title: 'Offres d\'emploi', href: '#/jobs' },
     ],
   },
   {
-    title: 'PRODUITS DE LA SAA',
+    title: 'PRODUITS DE LA N’suri',
     list: [
       { title: 'NSURI', href: '#' },
       { title: 'Assurance auto', href: '#/offer/auto"' },
@@ -114,7 +114,7 @@ const footer = [
                 Adresse:
               </div>
               <p class="mt-2">
-                Immeuble SAA lot 234 Quartier d’affaires <br> Bab Ezzouar - Alger - Algérie
+                Immeuble N’suri lot 234 Quartier d’affaires <br> Bab Ezzouar - Alger - Algérie
               </p>
             </div>
 
@@ -146,7 +146,7 @@ const footer = [
 
     <div class="mx-auto flex items-center justify-center gap-4 border-t-1px py-7 container">
       <p class="text-xs text-white">
-        SAA SPA © 2023 Conçu et développé par
+        N’suri SPA © 2023 Conçu et développé par
       </p>
       <img src="/logo-amentech-mono.png" alt="amentech">
     </div>

@@ -69,7 +69,7 @@ const cards = [
 <i18n lang="yaml">
 fr:
   title: Des garanties sur mesure!
-  subtitle: SAA vous propose une sélection soigneusement élaborée de garanties essentielles pour protéger au mieux votre véhicule et son conducteur - c'est vous ! Profitez d'une couverture complète et personnalisée qui vous offre une tranquillité d'esprit totale sur la route, où que vous alliez.
+  subtitle: N’suri vous propose une sélection soigneusement élaborée de garanties essentielles pour protéger au mieux votre véhicule et son conducteur - c'est vous ! Profitez d'une couverture complète et personnalisée qui vous offre une tranquillité d'esprit totale sur la route, où que vous alliez.
   item1:
     title: Responsabilité civile
   item2:
@@ -85,7 +85,7 @@ fr:
 
 ar:
   title: ضمانات للقياس!
-  subtitle: تقدم SAA مجموعة مختارة مصممة بعناية من الضمانات الأساسية لحماية سيارتك وسائقها بشكل أفضل - إنه أنت! استمتع بتغطية شاملة وشخصية تمنحك راحة البال الكاملة على الطريق، أينما ذهبت.
+  subtitle: تقدم N’suri مجموعة مختارة مصممة بعناية من الضمانات الأساسية لحماية سيارتك وسائقها بشكل أفضل - إنه أنت! استمتع بتغطية شاملة وشخصية تمنحك راحة البال الكاملة على الطريق، أينما ذهبت.
   item1:
     title: المسؤولية المدنية
   item2:
