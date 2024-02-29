@@ -34,9 +34,10 @@ function selectItem(idx: number) {
     <div class="relative mx-auto px-6 pt-6 container lg:pt-17">
       <h3 class="mx-auto max-w-32ch text-center text-lg text-[#193B64] font-bold lg:text-12.5/15" v-html="t('title')" />
 
-      <p class="mx-auto mt-3 max-w-68ch text-center text-xs text-[#193B64] font-medium lg:mt-10 lg:text-2xl">
-        {{ t('subtitle') }}
-      </p>
+      <p
+        class="mx-auto mt-3 max-w-74ch text-center text-xs text-[#193B64] font-medium lg:mt-10 lg:text-2xl"
+        v-html="t('subtitle')"
+      />
 
       <div class="grid mt-2 gap-4 lg:grid-cols-[1.5fr_1fr] lg:mt-22 2xl:pl-0">
         <template
@@ -103,7 +104,7 @@ function selectItem(idx: number) {
 <i18n lang="yaml">
 fr:
   title: Si <span class="mb-1 bg-[#F2BC50] px-2 pb-1 rounded-xl">rapide</span> que vous pouvez le faire pendant que votre café est encore chaud
-  subtitle: Nous avons rendu cela super simple - il n'est pas nécessaire de déterrer de vieux dossiers ou de la paperasse. Au cas où vous en auriez besoin, nous avons des conseillers non-commissionnés prêts à vous aider à chaque étape du processus.
+  subtitle: Souscrivez à une assurance auto en un temps record grâce à <b>NSURI</b>, l'application qui simplifie votre expérience d'assurance automobile. Ne perdez plus de temps en procédures fastidieuses, notre plateforme intuitive vous permet d'obtenir une couverture sur mesure en quelques clics seulement.
   item1:
     title: Recevez votre devis instantané sans engagement en quelques clics!
     description: Personnalisez les détails de votre couverture en répondant à quelques questions rapides et obtenez un taux estimé en quelques secondes.
