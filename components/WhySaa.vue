@@ -22,7 +22,7 @@ const cards = [
           class="relative rounded-7 lg:flex lg:items-center lg:justify-between lg:bg-[#FAF7F1] lg:shadow-[0px_4px_25px_0px_#181B3412]"
           :class="idx === 1 && 'flex-row-reverse'"
         >
-          <div class="lg:mx-auto lg:max-w-1/2 lg:px-22 lg:py-17">
+          <div class="px-6 py-4 bg-[#FAF7F1] lg:mx-auto lg:max-w-1/2 lg:px-22 lg:py-17">
             <h3
               class="text-sm text-[#193B64] font-bold lg:text-3xl"
               v-html="i.title"
