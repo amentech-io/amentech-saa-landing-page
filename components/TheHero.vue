@@ -10,19 +10,19 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
   <div class="relative mb-18 mt-7 px-6 lg:mb-20">
     <div class="mx-auto w-full flex container">
       <div class="w-full flex">
-        <div class="w-1/2">
+        <div class="lg:w-1/2">
           <h1
-            class="max-w-20ch text-2xl/10 text-white font-black 2xl:text-[3.5rem]/19 lg:text-[2.5rem]/15"
+            class="text-2xl/8 text-white font-black lg:max-w-20ch 2xl:text-[3.5rem]/19 lg:text-[2.5rem]/15"
             v-html=" t('title')"
           />
-          <div class="my-4">
-            <hr class="h-1 w-60 border-none bg-[#F2BC50]">
-            <p class="max-w-52ch text-xs text-white leading-10.5 leading-4 lg:my-15 lg:text-xl lg:leading-8">
+          <div>
+            <hr class="my-4 h-1 w-25 border-none bg-[#F2BC50] lg:w-60">
+            <p class="max-w-52ch text-justify text-xs/6 text-white lg:my-15 lg:text-xl lg:leading-8">
               {{ t('subtitle') }}
             </p>
           </div>
 
-          <ul class="flex gap-5">
+          <ul class="mt-5 flex gap-5">
             <li v-for="i, idx in features" :key="idx" class="flex items-center gap-2">
               <div
                 class="inline-block rounded-full bg-[#F2BC50] p-0.5 lg:p-2"
@@ -33,7 +33,7 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
             </li>
           </ul>
 
-          <div class="mt-7">
+          <div class="mt-7 hidden lg:block">
             <p class="text-xl text-white font-semibold" v-html="t('available-on')" />
 
             <div class="mt-4">
@@ -43,8 +43,9 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
         </div>
 
         <div class="absolute end-0 h-full w-1/2">
-          <img class="ms-auto rtl:hidden" src="/hero-right-pic.png" alt="">
-          <img class="ms-auto ltr:hidden" src="/hero-left-pic.png" alt="">
+          <img class="ms-auto hidden lg:block rtl:hidden" src="/hero-right-pic.png" alt="">
+          <img class="ms-auto hidden lg:block ltr:hidden" src="/hero-left-pic.png" alt="">
+          <img class="ms-auto lg:hidden" src="/hero-mobile-grid.png" alt="">
         </div>
       </div>
     </div>

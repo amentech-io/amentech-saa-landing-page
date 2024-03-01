@@ -11,7 +11,7 @@ const menuIsOpen = ref(false)
 </script>
 
 <template>
-  <nav class="mb-14 lg:bg-transparent">
+  <nav class="lg:mb-14 lg:bg-transparent">
     <div class="w-full">
       <div class="relative z-10 m-auto flex justify-between px-6 container">
         <NuxtLink class="mt-6px w-15 lg:w-45" :to="localePath('index')">
@@ -56,7 +56,10 @@ const menuIsOpen = ref(false)
           <div class="mr-3 h-4 w-1px bg-gray-4" />
 
           <button class="py-2" @click="menuIsOpen = !menuIsOpen">
-            <UnoIcon :class="!menuIsOpen ? 'i-ic-baseline-menu' : 'i-ic-baseline-close'" />
+            <UnoIcon
+              class="bg-white"
+              :class="!menuIsOpen ? 'i-ic-baseline-menu' : 'i-ic-baseline-close'"
+            />
           </button>
         </div>
       </div>
