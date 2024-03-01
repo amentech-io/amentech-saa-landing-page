@@ -7,7 +7,7 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
 </script>
 
 <template>
-  <div class="relative relative mb-18 mt-7 px-6 lg:mb-20">
+  <div class="relative mb-18 mt-7 px-6 lg:mb-20">
     <div class="mx-auto w-full flex container">
       <div class="w-full flex">
         <div class="w-1/2">
@@ -45,7 +45,8 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
         </div>
 
         <div class="absolute end-0 h-full w-1/2">
-          <img class="ml-auto" src="/hero-right-pic.png" alt="">
+          <img class="ms-auto rtl:hidden" src="/hero-right-pic.png" alt="">
+          <img class="ms-auto ltr:hidden" src="/hero-left-pic.png" alt="">
         </div>
       </div>
     </div>

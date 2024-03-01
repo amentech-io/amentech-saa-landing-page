@@ -32,7 +32,7 @@ const cards = [
 
 <template>
   <section>
-    <div class="mx-auto px-6 pt-14 container lg:pt-24 lg:pt-53">
+    <div class="mx-auto px-6 pt-14 container lg:mb-30 lg:pt-24 lg:pt-32">
       <h3 class="mx-auto text-lg text-[#193B64] font-bold lg:text-12.5/15" v-html="t('title')" />
       <p class="mx-auto mt-3 text-xs text-[#4A6387] font-medium lg:mt-9 lg:text-2xl" v-html="t('subtitle')" />
 
