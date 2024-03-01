@@ -44,7 +44,7 @@ const footer = [
 </script>
 
 <template>
-  <footer class="border-t from-[#050E16] via-[#0A163B] to-[#010306] bg-gradient-to-tr">
+  <footer class="from-[#050E16] via-[#0A163B] to-[#010306] bg-gradient-to-tr">
     <div class="mx-auto flex flex-col px-4 pb-13 pt-15 container 2xl:flex-row">
       <div>
         <div class="max-w-38">
@@ -144,11 +144,10 @@ const footer = [
       </div>
     </div>
 
-    <div class="mx-auto flex items-center justify-center gap-4 border-t-1px py-7 container">
-      <p class="text-xs text-white">
-        N’suri SPA © 2023 Conçu et développé par
+    <div class="mx-auto flex items-center justify-center gap-4 border-t-1px border-white/40 py-7 container">
+      <p class="font-branding text-xs text-white">
+        Design and technology by <b>AMENTECH</b>
       </p>
-      <img src="/logo-amentech-mono.png" alt="amentech">
     </div>
   </footer>
 </template>
