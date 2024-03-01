@@ -34,9 +34,7 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
           </ul>
 
           <div class="mt-7">
-            <p class="text-xl text-white font-semibold">
-              {{ t('available-on') }}
-            </p>
+            <p class="text-xl text-white font-semibold" v-html="t('available-on')" />
 
             <div class="mt-4">
               <img src="/stores.png" alt="">
@@ -68,5 +66,6 @@ ar:
   features:
     item1: 100٪ متنقلة ومرنة
     item2: بالسعر المناسب
-    item3: 0% prise de tête
+    item3: 0% صداع
+  available-on: متوفر على &colon;
 </i18n>

@@ -76,7 +76,7 @@ fr:
     title: Comment calculer le coefficient de bonus-malus ?
 
 ar:
-  title: هل لديك أسئلة؟ <span class="text-[#FCB932] bg-[#08181B] pb-2 px-3 rounded-2xl">لدينا إجابات</span>
+  title: هل لديك أسئلة؟ <span class="text-[#F2BC50] bg-[#193B64] pb-2 px-3 rounded-2xl">لدينا إجابات</span>
   subtitle: هل يبقى السؤال بلا إجابة ؟ لا تتردد في استشارة الأسئلة الشائعة أو المستشار عبر الدردشة!
   item1:
     title: هل يجب أن أبلغ شركة التأمين الخاصة بي عن أي تغييرات ؟

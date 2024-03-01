@@ -118,7 +118,7 @@ fr:
     title: Votre contrat prêt à démarrer
     description: votre contrat devient actif, vous offrant une protection instantanée et une tranquillité d'esprit totale. Plus besoin d'attendre, profitez pleinement de votre assurance personnalisée dès maintenant!
 ar:
-  title: <span class="mb-1 bg-white text-[#0D1035] px-2 pb-1 rounded-xl">بسرعة</span>&nbsp; يمكنك القيام بذلك بينما لا تزال قهوتك ساخنة
+  title: <span class="mb-1 bg-[#F2BC50] px-2 pb-1 rounded-xl">بسرعة</span>&nbsp; يمكنك القيام بذلك بينما لا تزال قهوتك ساخنة
   subtitle: احصل على تأمين على السيارات في وقت قياسي مع NSURI، التطبيق الذي يبسط تجربة التأمين على السيارات. لا تضيع الوقت في الإجراءات المملة، فإن نظامنا الأساسي البديهي يسمح لك بالحصول على تغطية مخصصة ببضع نقرات فقط.
   item1:
     title: احصل على اقتباس فوري بدون التزام في بضع نقرات فقط!

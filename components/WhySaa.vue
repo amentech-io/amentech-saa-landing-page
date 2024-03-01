@@ -57,11 +57,11 @@ fr:
     title: Votre prix en <span class="text-[#F2BC50]">2 min</span>, et souscription en <span class="text-[#F2BC50]">10 min</span>
     subtitle: Changer d'assurance ne devrait faire peur à personne. Notre solution 100% digitale vous permet de souscrire en quelques minutes, sans papiers ni rendez-vous avec votre banquier. Nous vous guidons étape par étape, jusqu'à la signature électronique de votre contrat. Ensuite, nos équipes s'occupent de résilier votre ancien contrat et de gérer la transition d'assurance. Tout simplement.
 ar:
-  title: لماذا التأمين <span class="text-[#FCB932] pb-2 px-3 rounded-2xl">الرقمي N’suri</span>
+  title: لماذا التأمين <span class="text-[#F2BC50] bg-[#183A63] pb-2 px-3 rounded-2xl">الرقمي N’suri</span>
   item1:
     title: الشفافية الكاملة في ضماناتك وتكلفة التأمين الخاص بك.
     subtitle: نحن مقتنعون بأن التأمين يجب ألا يكون موضوعًا مبهمًا بعد الآن. مع N’suri، أصبح كل شيء أخيرًا واضحًا وشفافًا. لا مزيد من المفاجآت غير السارة، نحن نساعدك على فهم ضماناتك وتكلفة التأمين الخاص بك. تختار ما تغطيه أو لا تغطيه.
   item2:
-    title: سعرك في 2 دقيقة والاشتراك في 10 دقيقة
+    title: سعرك في <span class="text-[#F2BC50]">2 دقيقة</span> والاشتراك في <span class="text-[#F2BC50]">10 دقيقة</span>
     subtitle: تغيير التأمين لا ينبغي أن يخيف أي شخص. يتيح لك حلنا الرقمي بنسبة 100٪ الاشتراك في بضع دقائق، بدون أوراق أو موعد مع المصرفي الخاص بك. نحن نرشدك خطوة بخطوة، حتى التوقيع الإلكتروني لعقدك. ثم تهتم فرقنا بإلغاء عقدك القديم وإدارة انتقال التأمين. ببساطة.
 </i18n>

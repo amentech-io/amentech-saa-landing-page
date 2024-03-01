@@ -110,7 +110,7 @@ fr:
     title: Améliorations constantes
     description: Bénéficiez d'améliorations régulières pour une expérience d'assurance toujours à la pointe de l'innovation.
 ar:
-  title: لماذا التأمين على السيارات في <span class="text-[#F2BC50] bg-[#183A63] pb-2 px-3 rounded-2xl">N’suri?؟</span>
+  title: لماذا التأمين على السيارات في <span class="text-[#F2BC50] bg-[#183A63] pb-2 px-3 rounded-2xl">N’suri؟</span>
   item1:
     title: وكالة التأمين في متناول يدك
     description: يضع تطبيق الهاتف المحمول الخاص بنا وكالة التأمين الخاصة بك في متناول يدك، مما يسمح لك بإدارة جميع بوالصك واحتياجات التأمين من أي مكان.

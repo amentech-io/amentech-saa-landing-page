@@ -44,7 +44,7 @@ function clickHandler(idx: number) {
       <div class="mt-5 flex flex-wrap justify-center gap-4 lg:mt-22 lg:justify-center lg:gap-5 2xl:pl-0">
         <div
           v-for="card, idx in cards" :key="idx"
-          class="group text-cente relative w-20ch flex flex-none items-center justify-center gap-4 rounded-full bg-[#193B64] px-5 py-4 transition-all hover:w-[30ch] hover:bg-[#F2BC50] lg:px-27 lg:py-8 lg:text-3xl"
+          class="group text-cente relative w-20ch flex flex-none items-center justify-center gap-4 rounded-full bg-[#193B64] px-5 py-4 transition-all hover:w-[30ch] hover:bg-[#F2BC50] lg:px-20 lg:py-8 lg:text-3xl"
           @mouseover="clickHandler(idx)"
         >
           <div class="h-full rtl:scale-x--100">
@@ -58,7 +58,7 @@ function clickHandler(idx: number) {
           </p>
         </div>
       </div>
-      <p class="mx-auto mt-3 text-[#193B64] max-w-64ch px-6 text-center text-xs font-medium lg:mt-13 lg:text-2xl">
+      <p class="mx-auto mt-3 max-w-64ch px-6 text-center text-xs text-[#193B64] font-medium lg:mt-13 lg:text-2xl">
         {{ t(`item${selectedItem}.description`) }}
       </p>
     </div>

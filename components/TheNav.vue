@@ -13,7 +13,7 @@ const menuIsOpen = ref(false)
 <template>
   <nav class="mb-14 lg:bg-transparent">
     <div class="w-full">
-      <div class="relative z-10 m-auto flex justify-between px-6 container rtl:flex-row-reverse">
+      <div class="relative z-10 m-auto flex justify-between px-6 container">
         <NuxtLink class="mt-6px w-15 lg:w-45" :to="localePath('index')">
           <Logo class="flex-none lg:w-auto" />
         </NuxtLink>
