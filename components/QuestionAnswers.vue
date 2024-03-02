@@ -46,7 +46,11 @@ const cards = [
         >
           <DisclosureButton as="div" class="my-8 flex cursor-pointer items-center justify-between px-5 text-xs leading-normal lg:text-lg">
             <span>{{ card.title }} </span>
-            <UnoIcon i-ic-outline-keyboard-arrow-down class="ml-2 h-10 w-10 flex-none" :class="open && 'bg-[#F2BC50] rotate--180'" />
+            <UnoIcon
+              i-ic-outline-keyboard-arrow-down
+              class="me-3 size-6 flex-none lg:size-10"
+              :class="open && 'bg-[#F2BC50] rotate--180'"
+            />
           </DisclosureButton>
           <DisclosurePanel class="text-md mt-8 text-[#181B34]/60">
             ...
