@@ -50,10 +50,10 @@ const menuIsOpen = ref(false)
         </ul>
         <!-- }}} -->
 
-        <div class="ml-a flex items-center lg:hidden rtl:flex-row-reverse">
+        <div class="ms-a flex items-center lg:hidden">
           <TheLangSelect class="text-3 [&_span]:text-3" />
 
-          <div class="mr-3 h-4 w-1px bg-gray-4" />
+          <div class="me-3 h-4 w-1px bg-gray-4" />
 
           <button class="py-2" @click="menuIsOpen = !menuIsOpen">
             <UnoIcon
@@ -64,7 +64,7 @@ const menuIsOpen = ref(false)
         </div>
       </div>
 
-      <HamburgerMenu :is-active="menuIsOpen" />
+      <HamburgerMenu class="relative z-10" :is-active="menuIsOpen" />
     </div>
   </nav>
 </template>
