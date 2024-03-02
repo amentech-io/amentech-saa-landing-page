@@ -44,16 +44,16 @@ function clickHandler(idx: number) {
       <div class="mt-5 flex flex-wrap justify-center gap-4 lg:mt-22 lg:justify-center lg:gap-5 2xl:pl-0">
         <div
           v-for="card, idx in cards" :key="idx"
-          class="group text-cente relative w-20ch flex flex-none items-center justify-center gap-4 rounded-full bg-[#193B64] px-5 py-4 transition-all hover:w-[30ch] hover:bg-[#F2BC50] lg:px-20 lg:py-8 lg:text-3xl"
+          class="group text-cente relative w-15ch flex flex-none items-center justify-center gap-1 rounded-full bg-[#193B64] px-1 py-2 transition-all lg:w-20ch lg:gap-4 hover:bg-[#F2BC50] lg:px-20 lg:py-8 lg:text-3xl lg:hover:w-[30ch]"
           @mouseover="clickHandler(idx)"
         >
-          <div class="h-full rtl:scale-x--100">
+          <div class="h-full scale-50 lg:scale-100">
             <ClientOnly>
-              <component :is="card.icon" class="block text-[#F2BC50] group-hover:text-[#193B64]" />
+              <component :is="card.icon" class="block text-[#F2BC50] lg:scale-100 group-hover:text-[#193B64]" />
             </ClientOnly>
           </div>
 
-          <p class="h-full text-sm text-white font-bold lg:text-2xl group-hover:text-[#193B64]">
+          <p class="text-sm text-white font-bold lg:text-2xl group-hover:text-[#193B64]">
             {{ card.title }}
           </p>
         </div>
