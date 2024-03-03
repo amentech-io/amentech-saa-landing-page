@@ -42,6 +42,7 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
           </div>
         </div>
 
+        <!-- TODO(zirbest): use nuxt image -->
         <div class="absolute end-0 h-full w-1/2">
           <img class="ms-auto hidden lg:block rtl:hidden" src="/hero-right-pic.png" alt="">
           <img class="ms-auto hidden lg:block ltr:hidden" src="/hero-left-pic.png" alt="">
@@ -54,7 +55,7 @@ const features = [t('features.item1'), t('features.item2'), t('features.item3')]
 
 <i18n lang="yaml">
 fr:
-  title: <span class="text-[#F2BC50]">N’suri</span>,&nbsp; l’assurances Simplifiées en Quelques Clics !
+  title: <span class="text-[#F2BC50]">N’suri</span>,&nbsp;assurez votre véhicule en toute simplicité !
   subtitle: Découvrez N’suri, l'assurance digitale réinventée en quelques clics ! Simplifiez la gestion instantanée de vos contrats, souscrivez de nouvelles couvertures personnalisées et suivez vos sinistres en temps réel, pour une tranquillité de conduite inégalée.
   features:
     item1: 100% mobile et flexible
