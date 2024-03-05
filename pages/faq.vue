@@ -50,12 +50,11 @@ const cards = [
     <div class="flex flex-col">
       <TheNav />
     </div>
-    <div class="mx-auto flex flex-col gap-x-8 gap-y-12 px-6 container lg:flex-row lg:py-20">
+    <div class="mx-auto flex flex-col gap-x-8 gap-y-12 px-6 py-10 container lg:flex-row lg:py-20">
       <div class="relative h-full">
-        <div class="absolute right-1/2 aspect-1 h-full translate-x-1/2 translate-x-full rounded-full bg-[#009EAB]/26 blur-000" />
-        <img src="/faq-side.png" alt="">
+        <img src="/faq-side.svg" alt="">
       </div>
-      <div class="max-w-80ch pl-0 lg:pl-8">
+      <div class="my-auto max-w-80ch pl-0 lg:pl-8">
         <h4
           class="text-base text-white font-bold lg:text-7xl"
           v-html="t('title')"
