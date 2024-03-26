@@ -19,18 +19,18 @@ const footer = [
     ],
   },
   {
-    title: 'Découvrez la N’suri',
+    title: 'Découvrez la SAA',
     list: [
       { title: 'Présentation', href: '#/about' },
       { title: 'Mot du PDG', href: '#/messagepresident' },
-      { title: 'La N’suri en chiffre', href: '#/saachiffres' },
+      { title: 'La SAA en chiffre', href: '#/saachiffres' },
       { title: 'Actualité', href: '#news' },
       { title: 'Appels d\'offre', href: '#/calls' },
       { title: 'Offres d\'emploi', href: '#/jobs' },
     ],
   },
   {
-    title: 'PRODUITS DE LA N’suri',
+    title: 'PRODUITS DE LA SAA',
     list: [
       { title: 'NSURI', href: '#' },
       { title: 'Assurance auto', href: '#/offer/auto"' },
@@ -114,7 +114,7 @@ const footer = [
                 Adresse:
               </div>
               <p class="mt-2">
-                Immeuble N’suri lot 234 Quartier d’affaires <br> Bab Ezzouar - Alger - Algérie
+                Immeuble SAA lot 234 Quartier d’affaires <br> Bab Ezzouar - Alger - Algérie
               </p>
             </div>
 
