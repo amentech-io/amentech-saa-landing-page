@@ -16,6 +16,7 @@ const footer = [
       { title: 'Acceuil', href: '/' },
       { title: 'FAQ', href: '/faq' },
       { title: 'Contact', href: '/contact' },
+      { title: 'Conditions générales d’utilisation', href: '/terms-of-use' },
     ],
   },
   {
