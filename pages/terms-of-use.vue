@@ -9,7 +9,7 @@ const { t } = useI18n({
     <div class="flex flex-col">
       <TheNav />
     </div>
-    <div class="mx-auto flex flex-col gap-x-8 gap-y-12 px-6 container lg:flex-row">
+    <div class="mx-auto flex flex-row gap-x-8 gap-y-12 px-6 container">
       <div class="my-auto max-w-80ch pl-0 lg:pl-8">
         <h4
           class="text-base text-white font-bold lg:text-6xl"
@@ -17,7 +17,7 @@ const { t } = useI18n({
         />
         <div class="mt-4 h-1 w-1/2 bg-[#FCB931]" />
       </div>
-      <div class="relative h-full">
+      <div class="relative h-full w-1/2 w-auto">
         <img src="/terms-of-use.png" alt="">
       </div>
     </div>
