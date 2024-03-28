@@ -147,7 +147,7 @@ const footer = [
 
     <div class="mx-auto flex items-center justify-center gap-4 border-t-1px border-white/40 py-7 container">
       <p class="font-branding text-xs text-white">
-        Design and technology by <b>AMENTECH</b>
+        Design and technology by <a href="https://amentech.dz"><b>AMENTECH</b></a>
       </p>
     </div>
   </footer>
