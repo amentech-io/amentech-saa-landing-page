@@ -1,37 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="106" height="106" viewBox="0 0 106 106" fill="none">
-  <circle cx="53" cy="53" r="52.5" fill="white" stroke="url(#paint0_linear_121_20)"/>
-  <path d="M84.4278 51.5308L73.6617 51.2031L65.011 58.7399L58.7196 61.3614L58.1953 73.8135L61.8653 75.1242" stroke="#005158" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
-  <path d="M78.9277 74.7969H84.2476" stroke="#005158" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
-  <path d="M70.5358 81.9981C73.4313 81.9981 75.7786 79.0639 75.7786 75.4444C75.7786 71.8248 73.4313 68.8906 70.5358 68.8906C67.6403 68.8906 65.293 71.8248 65.293 75.4444C65.293 79.0639 67.6403 81.9981 70.5358 81.9981Z" stroke="#005158" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
-  <path d="M84.4403 63.976L75.247 63.6484L71.0527 57.75" stroke="#005158" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
-  <path d="M47.3774 74.7397L53.6688 74.0844L51.5716 64.2538L41.086 59.6662L29.5517 50.4909L21.0547 50.1875" stroke="#005158" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
-  <path d="M21 73.8105L31.6409 73.4219" stroke="#005158" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
-  <path d="M40.0436 80.6231C42.9392 80.6231 45.2864 77.6889 45.2864 74.0694C45.2864 70.4498 42.9392 67.5156 40.0436 67.5156C37.1481 67.5156 34.8008 70.4498 34.8008 74.0694C34.8008 77.6889 37.1481 80.6231 40.0436 80.6231Z" stroke="#005158" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
-  <path d="M34.2518 59.6562L31.6304 62.2777H21" stroke="#005158" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
-  <path d="M61.7415 52.836L68.7223 41.4542L58.4023 45.6269L54.1525 32.7266L50.2072 45.6269L39.8867 41.4542L46.8681 52.836" stroke="url(#paint1_linear_121_20)" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
-  <path d="M44.7324 33.4844L47.4645 38.7968" stroke="url(#paint2_linear_121_20)" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
-  <path d="M63.8453 33.4844L61.1133 38.7968" stroke="url(#paint3_linear_121_20)" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
-  <path d="M54.1484 24V29.3118" stroke="url(#paint4_linear_121_20)" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
-  <defs>
-    <linearGradient id="paint0_linear_121_20" x1="53" y1="0" x2="53" y2="106" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FCB932"/>
-      <stop offset="1" stop-color="#009EAB"/>
-    </linearGradient>
-    <linearGradient id="paint1_linear_121_20" x1="54.3045" y1="32.7266" x2="54.3045" y2="52.836" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FCB932"/>
-      <stop offset="1" stop-color="#009EAB"/>
-    </linearGradient>
-    <linearGradient id="paint2_linear_121_20" x1="46.0984" y1="33.4844" x2="46.0984" y2="38.7968" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FCB932"/>
-      <stop offset="1" stop-color="#009EAB"/>
-    </linearGradient>
-    <linearGradient id="paint3_linear_121_20" x1="62.4793" y1="33.4844" x2="62.4793" y2="38.7968" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FCB932"/>
-      <stop offset="1" stop-color="#009EAB"/>
-    </linearGradient>
-    <linearGradient id="paint4_linear_121_20" x1="54.6484" y1="24" x2="54.6484" y2="29.3118" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FCB932"/>
-      <stop offset="1" stop-color="#009EAB"/>
-    </linearGradient>
-  </defs>
+<svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="53" cy="53" r="52.5" fill="white" stroke="#FCB932"/>
+<path d="M84.4278 51.5308L73.6617 51.2031L65.011 58.7399L58.7196 61.3614L58.1953 73.8135L61.8653 75.1242" stroke="#053B67" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M78.9277 74.7969H84.2476" stroke="#053B67" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M70.5358 81.9981C73.4313 81.9981 75.7786 79.0639 75.7786 75.4444C75.7786 71.8248 73.4313 68.8906 70.5358 68.8906C67.6403 68.8906 65.293 71.8248 65.293 75.4444C65.293 79.0639 67.6403 81.9981 70.5358 81.9981Z" stroke="#053B67" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M84.4403 63.976L75.247 63.6484L71.0527 57.75" stroke="#053B67" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M47.3774 74.7397L53.6688 74.0844L51.5716 64.2538L41.086 59.6662L29.5517 50.4909L21.0547 50.1875" stroke="#053B67" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M21 73.8105L31.6409 73.4219" stroke="#053B67" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M40.0436 80.6231C42.9392 80.6231 45.2864 77.6889 45.2864 74.0694C45.2864 70.4498 42.9392 67.5156 40.0436 67.5156C37.1481 67.5156 34.8008 70.4498 34.8008 74.0694C34.8008 77.6889 37.1481 80.6231 40.0436 80.6231Z" stroke="#053B67" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M34.2518 59.6562L31.6304 62.2777H21" stroke="#053B67" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M61.7415 52.836L68.7223 41.4542L58.4023 45.6269L54.1525 32.7266L50.2072 45.6269L39.8867 41.4542L46.8681 52.836" stroke="#FCB932" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M44.7324 33.4844L47.4645 38.7968" stroke="#FCB932" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M63.8453 33.4844L61.1133 38.7968" stroke="#FCB932" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M54.1484 24V29.3118" stroke="#FCB932" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
 </svg>

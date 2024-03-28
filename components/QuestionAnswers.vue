@@ -32,10 +32,9 @@ const cards = [
 
 <template>
   <section>
-    <div class="mx-auto px-6 pt-14 container lg:pt-24 lg:pt-53">
-      <div class="absolute aspect-1 w-1/6 rounded-full bg-[#FCB932]/50 blur-300 -translate-y-1/2" />
-      <h3 class="mx-auto text-lg font-bold lg:text-12.5/15" v-html="t('title')" />
-      <p class="mx-auto mt-3 text-xs font-medium lg:mt-9 lg:text-2xl" v-html="t('subtitle')" />
+    <div class="mx-auto px-6 pt-14 container lg:mb-30 lg:pt-24 lg:pt-32">
+      <h3 class="mx-auto text-lg text-[#193B64] font-bold lg:text-12.5/15" v-html="t('title')" />
+      <p class="mx-auto mt-3 text-xs text-[#4A6387] font-medium lg:mt-9 lg:text-2xl" v-html="t('subtitle')" />
 
       <div class="grid mt-5 gap-x-10 lg:grid-flow-col-dense lg:grid-cols-2 lg:mt-28">
         <Disclosure
@@ -47,12 +46,16 @@ const cards = [
         >
           <DisclosureButton as="div" class="my-8 flex cursor-pointer items-center justify-between px-5 text-xs leading-normal lg:text-lg">
             <span>{{ card.title }} </span>
-            <UnoIcon i-ic-outline-keyboard-arrow-down class="ml-2 h-10 w-10 flex-none" :class="open && 'rotate--180'" />
+            <UnoIcon
+              i-ic-outline-keyboard-arrow-down
+              class="me-3 size-6 flex-none lg:size-10"
+              :class="open && 'bg-[#F2BC50] rotate--180'"
+            />
           </DisclosureButton>
           <DisclosurePanel class="text-md mt-8 text-[#181B34]/60">
             ...
           </DisclosurePanel>
-          <div class="h-1.5px w-full from-[#FCB932] to-[#009EAB] bg-gradient-to-l" />
+          <div class="h-1.5px w-full bg-[#8FA2B9]" />
         </Disclosure>
       </div>
     </div>
@@ -61,7 +64,7 @@ const cards = [
 
 <i18n lang="yaml">
 fr:
-  title: Vous avez des questions? <span class="text-[#FCB932] bg-[#08181B] pb-2 px-3 rounded-2xl">On&nbsp;a&nbsp;des&nbsp;réponses</span>
+  title: Vous avez des questions? <span class="text-[#F2BC50] bg-[#193B64] pb-2 px-3 rounded-2xl">On&nbsp;a&nbsp;des&nbsp;réponses</span>
   subtitle: Une question reste sans réponse ? N’hésitez pas à consulter notre FAQ ou un conseiller via le chat !
   item1:
     title: Doit-on déclarer tout changement survenu à son assureur ?
@@ -77,7 +80,7 @@ fr:
     title: Comment calculer le coefficient de bonus-malus ?
 
 ar:
-  title: هل لديك أسئلة؟ <span class="text-[#FCB932] bg-[#08181B] pb-2 px-3 rounded-2xl">لدينا إجابات</span>
+  title: هل لديك أسئلة؟ <span class="text-[#F2BC50] bg-[#193B64] pb-2 px-3 rounded-2xl">لدينا إجابات</span>
   subtitle: هل يبقى السؤال بلا إجابة ؟ لا تتردد في استشارة الأسئلة الشائعة أو المستشار عبر الدردشة!
   item1:
     title: هل يجب أن أبلغ شركة التأمين الخاصة بي عن أي تغييرات ؟

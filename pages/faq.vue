@@ -46,27 +46,25 @@ const cards = [
 </script>
 
 <template>
-  <div>
+  <div class="from-[#0369A1] to-[#053B67] bg-gradient-to-r">
     <div class="flex flex-col">
       <TheNav />
     </div>
-    <div class="mx-auto flex flex-col gap-x-8 gap-y-12 px-6 container lg:mt-42 lg:flex-row">
+    <div class="mx-auto flex flex-col gap-x-8 gap-y-12 px-6 py-10 container lg:flex-row lg:py-20">
       <div class="relative h-full">
-        <div class="absolute aspect-1 h-full translate-x-full rounded-full bg-[#009EAB]/26 blur-200" />
-        <img src="/faq-side.png" alt="">
+        <img src="/faq-side.svg" alt="">
       </div>
-      <div class="max-w-80ch pl-0 lg:pl-8">
+      <div class="my-auto max-w-80ch pl-0 lg:pl-8">
         <h4
-          class="text-base font-bold lg:text-7xl"
-        >
-          {{ t('title') }}
-        </h4>
-        <p class="mt-6 lg:text-2xl">
+          class="text-base text-white font-bold lg:text-7xl"
+          v-html="t('title')"
+        />
+        <p class="mt-6 text-white lg:text-2xl">
           {{ t('subtitle') }}
         </p>
 
         <NuxtLink
-          class="mt-4 inline-block rounded-4 from-[#009EAB] via-[#017680] to-[#FCB932] from-0% to-98% via-47% bg-gradient-to-l px-10 py-2 text-white font-extrabold transition lg:mt-15 lg:px-18 lg:py-5 lg:text-xl hover:opacity-90 hover:ring-4 hover:ring-white/50"
+          class="mt-4 inline-block rounded-4 bg-[#FCB932] px-10 py-2 text-white font-extrabold transition lg:mt-15 lg:px-18 lg:py-5 lg:text-xl hover:opacity-90 hover:ring-4 hover:ring-white/50"
           to="contact"
         >
           {{ $t('contact-us') }}
@@ -80,13 +78,13 @@ const cards = [
       v-for="card, idx in cards"
       v-slot="{ open }" :key="idx"
       as="div"
-      class="border-1px border-transparent rounded-xl bg-[#FEF5E6] shadow-md [&[data-headlessui-state=open]]:border-[#FCB932]/15 hover:border-[#FCB932]/30 all:transition"
+      class="border-1px border-[#F6F6F6] rounded-xl bg-[#F6F6F6] [&[data-headlessui-state=open]]:border-[#D5E2ED] hover:border-[#D5E2ED] [&[data-headlessui-state=open]]:bg-[#F1F5F8] hover:bg-[#F1F5F8] all:transition"
     >
-      <DisclosureButton as="div" class="flex cursor-pointer items-center justify-between px-14 py-5 text-xs font-bold leading-normal lg:text-2xl">
+      <DisclosureButton as="div" class="flex cursor-pointer items-center justify-between px-14 py-5 text-xs text-[#183A64] font-bold leading-normal lg:text-2xl">
         <span>{{ card.title }} </span>
         <UnoIcon class="ml-2 h-10 w-10 flex-none" :class="open ? 'i-ic-round-minus' : 'i-ic-round-plus'" />
       </DisclosureButton>
-      <DisclosurePanel class="text-md mt-8 px-14 pb-5 text-[#181B34]/60 text-white">
+      <DisclosurePanel class="text-md mt-8 px-14 pb-5 text-[#D5E2ED]">
         ...
       </DisclosurePanel>
     </Disclosure>
@@ -97,7 +95,7 @@ const cards = [
 
 <i18n lang="yaml">
 fr:
-  title: Nos garanties
+  title: Nos <span class="text-[#FCB932]"> garanties </span>
   subtitle: Notre section "Garanties" vous offre une vue d'ensemble complète des garanties incluses dans notre offre d'assurance automobile digitale, ainsi que des options de couverture supplémentaires pour une protection optimale.
   item1:
     title: Résponsabilité civile

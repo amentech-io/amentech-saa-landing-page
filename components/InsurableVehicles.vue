@@ -5,17 +5,17 @@ const { t } = useI18n({
 const cards = [
   {
     title: t('item1.title'),
-    icon: '/moto.svg',
+    icon: resolveComponent('Moto'),
     description: t('item1.description'),
   },
   {
     title: t('item2.title'),
-    icon: '/car.svg',
+    icon: resolveComponent('Car'),
     description: t('item2.description'),
   },
   {
     title: t('item3.title'),
-    icon: '/truck.svg',
+    icon: resolveComponent('Truck'),
     description: t('item3.description'),
   },
 ]
@@ -30,34 +30,35 @@ function clickHandler(idx: number) {
   <section class="mt-12 lg:mt-40">
     <div class="relative mx-auto py-11 container lg:pb-23 lg:pt-25">
       <div class="relative mb-40">
-        <div class="absolute inset-0 mx-auto aspect-1 w-1/5 rounded-full bg-[#FCB932]/35 blur-150" />
         <img class="absolute inset-0 mx-auto" src="/arc.png" alt="arc">
       </div>
 
-      <h3 class="mx-auto max-w-max flex items-center px-6 text-center text-lg font-bold lg:text-12.5/15">
+      <h3 class="mx-auto max-w-max flex items-center px-6 text-center text-lg text-[#193B64] font-bold lg:text-12.5/15">
         <span v-html="t('title')" />
       </h3>
 
-      <p class="mx-auto mt-3 max-w-60ch px-6 text-center text-xs font-medium lg:mt-10 lg:text-2xl">
+      <p class="mx-auto mt-3 max-w-60ch px-6 text-center text-xs text-[#193B64] font-medium lg:mt-10 lg:text-2xl">
         {{ t('subtitle') }}
       </p>
 
       <div class="mt-5 flex flex-wrap justify-center gap-4 lg:mt-22 lg:justify-center lg:gap-5 2xl:pl-0">
         <div
           v-for="card, idx in cards" :key="idx"
-          class="text-cente [background:linear-gradient(0deg,rgba(252,185,50,0.32)3.21%,rgba(252,185,50,0.04)46.13%,rgba(252,185,50,0.24)97.93%)] relative flex flex-none gap-4 border border-[#05031F] border-transparent rounded-full px-5 py-4 hover:border-[#009EAB] lg:px-27 lg:py-8 lg:text-3xl"
+          class="group text-cente relative w-15ch flex flex-none items-center justify-center gap-1 rounded-full bg-[#193B64] px-1 py-2 transition-all lg:w-20ch lg:gap-4 hover:bg-[#F2BC50] lg:px-20 lg:py-8 lg:text-3xl lg:hover:w-[30ch]"
           @mouseover="clickHandler(idx)"
         >
-          <div class="rtl:scale-x--100">
-            <img class="mx-auto h-12 w-12 p-2 lg:h-18 lg:w-18 lg:p-3" :src="card.icon" alt="">
+          <div class="h-full scale-50 lg:scale-100">
+            <ClientOnly>
+              <component :is="card.icon" class="block text-[#F2BC50] lg:scale-100 group-hover:text-[#193B64]" />
+            </ClientOnly>
           </div>
 
-          <p class="mt-4 text-sm font-bold lg:mt-6 lg:text-2xl">
+          <p class="text-sm text-white font-bold lg:text-2xl group-hover:text-[#193B64]">
             {{ card.title }}
           </p>
         </div>
       </div>
-      <p class="mx-auto mt-3 max-w-64ch px-6 text-center text-xs font-medium lg:mt-13 lg:text-2xl">
+      <p class="mx-auto mt-3 max-w-64ch px-6 text-center text-xs text-[#193B64] font-medium lg:mt-13 lg:text-2xl">
         {{ t(`item${selectedItem}.description`) }}
       </p>
     </div>

@@ -37,6 +37,13 @@ export default defineConfig({
           'Lato:100,200,300,400,500,600,700,800,900',
           'El Messiri:100,200,300,400,500,600,700,800,900',
         ],
+        lobster: 'Branding SF:100',
+        branding: [
+          {
+            name: 'Branding SF',
+            weights: ['400', '700'],
+          },
+        ],
         // jost: 'Jost',
         // serif: 'DM Serif Display',
         // mono: 'DM Mono',

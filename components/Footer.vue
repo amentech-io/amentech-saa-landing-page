@@ -16,6 +16,7 @@ const footer = [
       { title: 'Acceuil', href: '/' },
       { title: 'FAQ', href: '/faq' },
       { title: 'Contact', href: '/contact' },
+      { title: 'Conditions générales d’utilisation', href: '/terms-of-use' },
     ],
   },
   {
@@ -44,13 +45,13 @@ const footer = [
 </script>
 
 <template>
-  <footer class="border-t bg-[#002A2D]">
+  <footer class="from-[#050E16] via-[#0A163B] to-[#010306] bg-gradient-to-tr">
     <div class="mx-auto flex flex-col px-4 pb-13 pt-15 container 2xl:flex-row">
       <div>
         <div class="max-w-38">
           <img src="/logo-saa.png" alt="">
         </div>
-        <p class="mt-3 uppercase text-white">
+        <p class="mt-3 text-white uppercase">
           {{ t('our-app') }}
         </p>
 
@@ -59,7 +60,7 @@ const footer = [
           <img src="/playstore-mono.png" alt="playstore">
         </div>
 
-        <p class="mt-3 uppercase text-white">
+        <p class="mt-3 text-white uppercase">
           {{ t('follow-us') }}
         </p>
 
@@ -78,7 +79,7 @@ const footer = [
           as="div"
         >
           <DisclosureButton as="div" class="flex cursor-pointer items-center justify-between text-xs font-bold leading-normal">
-            <span class="text-bold uppercase text-[#B7B7B7]"> {{ i.title }} </span>
+            <span class="text-bold text-[#B7B7B7] uppercase"> {{ i.title }} </span>
             <UnoIcon i-ic-outline-keyboard-arrow-down class="ml-2 h-4 w-4 lg:invisible" :class="open && 'rotate--180'" />
           </DisclosureButton>
           <DisclosurePanel
@@ -99,7 +100,7 @@ const footer = [
 
         <Disclosure v-slot="{ open }" as="div">
           <DisclosureButton as="div" class="flex cursor-pointer items-center justify-between text-xs font-bold leading-normal">
-            <span class="text-bold uppercase text-[#B7B7B7]"> Contact </span>
+            <span class="text-bold text-[#B7B7B7] uppercase"> Contact </span>
             <UnoIcon i-ic-outline-keyboard-arrow-down class="ml-2 h-4 w-4 lg:invisible" :class="open && 'rotate--180'" />
           </DisclosureButton>
           <DisclosurePanel
@@ -144,11 +145,10 @@ const footer = [
       </div>
     </div>
 
-    <div class="mx-auto flex items-center justify-center gap-4 border-t-1px py-7 container">
-      <p class="text-xs text-white">
-        SAA SPA © 2023 Conçu et développé par
+    <div class="mx-auto flex items-center justify-center gap-4 border-t-1px border-white/40 py-7 container">
+      <p class="font-branding text-xs text-white">
+        Design and technology by <a href="https://amentech.dz"><b>AMENTECH</b></a>
       </p>
-      <img src="/logo-amentech-mono.png" alt="amentech">
     </div>
   </footer>
 </template>
