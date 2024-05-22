@@ -3,6 +3,8 @@ const { t } = useI18n({
   useScope: 'local',
 })
 
+const config = useRuntimeConfig()
+
 const cards = [
   {
     title: t('item1.title'),
@@ -71,7 +73,7 @@ function selectItem(idx: number) {
             :class="idx !== itemSelected && 'lg:hidden'"
             class="relative grid place-content-center lg:row-span-4 lg:col-start-2 lg:row-start-1 lg:h-50rem"
           >
-            <img class="z-10 aspect-1 w-full object-contain lg:aspect-auto" :src="`/mobile-app-${idx + 1}.png`" alt="mobile app">
+            <img class="z-10 aspect-1 w-full object-contain lg:aspect-auto" :src="`${config.app.baseURL}mobile-app-${idx + 1}.png`" alt="mobile app">
           </div>
         </template>
       </div>
