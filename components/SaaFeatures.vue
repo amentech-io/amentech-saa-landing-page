@@ -42,7 +42,7 @@ const cards = [
           v-for="card, idx in cards" :key="idx"
           class="box-gradient group relative flex-none snap-start border-1px border-transparent rounded-8 px-5 py-4 shadow-md hover:border-transparent lg:px-8 lg:py-6"
         >
-          <p class="mt-4 max-w-20ch text-sm font-bold lg:mt-6 lg:text-2xl group-hover:text-[#F77B26]">
+          <p class="mt-4 text-sm font-bold lg:mt-6 lg:text-2xl group-hover:text-[#F77B26]">
             {{ card.title }}
           </p>
           <p class="mt-3 text-xs leading-loose lg:mt-4 lg:text-xl">
