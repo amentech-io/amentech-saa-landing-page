@@ -2,9 +2,6 @@
 const { t } = useI18n({
   useScope: 'local',
 })
-
-const config = useRuntimeConfig()
-
 const cards = [
   {
     title: t('item1.title'),
@@ -56,7 +53,7 @@ const cards = [
               class="px-5 py-4 lg:px-8 lg:py-6"
             >
               <div class="mx-auto h-9 w-9 rounded-full lg:h-26 lg:w-26 rtl:scale-x--100">
-                <img :src="config.app.baseURL + card.icon" alt="guard card">
+                <img :src="card.icon" alt="guard card">
               </div>
               <p class="mt-4 text-center text-xs font-bold lg:mt-6 lg:whitespace-nowrap lg:text-xl">
                 {{ card.title }}

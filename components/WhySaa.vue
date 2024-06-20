@@ -3,11 +3,9 @@ const { t } = useI18n({
   useScope: 'local',
 })
 
-const config = useRuntimeConfig()
-
 const cards = [
-  { title: t('item1.title'), subtitle: t('item1.subtitle'), img: `/why-saa-1.png` },
-  { title: t('item2.title'), subtitle: t('item2.subtitle'), img: `/why-saa-2.png` },
+  { title: t('item1.title'), subtitle: t('item1.subtitle'), img: '/why-saa-1.png' },
+  { title: t('item2.title'), subtitle: t('item2.subtitle'), img: '/why-saa-2.png' },
 ]
 </script>
 
@@ -24,7 +22,7 @@ const cards = [
           class="relative rounded-7 lg:flex lg:items-center lg:justify-between lg:bg-[#FAF7F1] lg:shadow-[0px_4px_25px_0px_#181B3412]"
           :class="idx === 1 && 'flex-row-reverse'"
         >
-          <div class="bg-[#FAF7F1] px-6 py-4 lg:mx-auto lg:max-w-1/2 lg:px-22 lg:py-17">
+          <div class="px-6 py-4 bg-[#FAF7F1] lg:mx-auto lg:max-w-1/2 lg:px-22 lg:py-17">
             <h3
               class="text-sm text-[#193B64] font-bold lg:text-3xl"
               v-html="i.title"
@@ -38,7 +36,7 @@ const cards = [
             <div class="relative">
               <img
                 class="mt-5 h-full w-full object-contain lg:mt-0"
-                :src="config.app.baseURL + i.img"
+                :src="i.img"
                 alt="hand holding phone"
               >
             </div>
