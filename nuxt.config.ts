@@ -14,11 +14,6 @@ export default defineNuxtConfig({
     // '@vueuse/motion/nuxt',
     // '@nuxt/image-edge',
   ],
-  runtimeConfig: {
-    public: {
-      baseURL: process.env.NUXT_APP_BASE_URL,
-    },
-  },
   vuefire: {
     config: {
       apiKey: process.env.FIREBASE_APIKEY,
